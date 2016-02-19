@@ -142,6 +142,9 @@ int main(int argc, char **argv)
 
     if(part == "part1") {
     	if (question == "q3") {
+
+    		// randomly picking input image
+    		
       		char temp_result[1024];
       		int dirmove = chdir(result);
     		cout<<"picking random...\n";
@@ -149,21 +152,33 @@ int main(int argc, char **argv)
     		cout<< "picked image : "<<filelist[imgindex]<<"\n";
     		string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
     		string place = inputFile.substr(0, inputFile.find("_"));
+
+    		// Getting image vector for input image and forming descriptors
+
     		CImg<double> input_image(inputFile.c_str());
 			int imgwidth = input_image.width();
 			CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
 			vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
 			print_descriptor(descriptors, input_image);
+
+			// Initialization for matching process
+
 			int max_matches[filecount-1];
     		vector<string> images(filecount-1);
     		vector<SiftDescriptor> matches(descriptors.size());
 			vector<int> distances(descriptors.size());
 			for(int i=0;i<filecount;i++) {
+
+				// Getting image vector for query image and forming descriptors
+
 				string infile2 = filelist[i];
 	    		CImg<double> input_image2(infile2.c_str());
 	    		gray = input_image2.get_RGBtoHSI().get_channel(2);
 				vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
 				print_descriptor(descriptors2, input_image2);
+
+				// Calculating distances and finding matches
+
 				calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
 				int count = 0;
 				for (int j=0;j<descriptors.size();j++) {
@@ -190,6 +205,9 @@ int main(int argc, char **argv)
     		cout<<"Precision = "<<float(correct)/10.0<<"\n";
 
     	} else if(question == "q4") {
+
+    		// randomly picking input image
+
     		char temp_result[1024];
       		int dirmove = chdir(result);
     		cout<<"picking random...\n";
@@ -197,32 +215,42 @@ int main(int argc, char **argv)
     		cout<< "picked image : "<<filelist[imgindex]<<"\n";
     		string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
     		string place = inputFile.substr(0, inputFile.find("_"));
+
+    		// Getting image vector for input image and forming descriptors
+
     		CImg<double> input_image(inputFile.c_str());
 			int imgwidth = input_image.width();
 			CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
 			vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
 			print_descriptor(descriptors, input_image);
-			vector<vector<int> > fv = quantize_vectors(descriptors, 500.0, 20);
-			int max_matches[filecount-1];
-    		vector<string> images(filecount-1);
-    		vector<SiftDescriptor> matches(descriptors.size());
-			vector<int> distances(descriptors.size());
+
+			// Quantizing vectors with k dimensions
+
+			vector<vector<int> > fv = quantize_vectors(descriptors, 400.0, 20);
+
 			for(int i=0;i<filecount;i++) {
+
+				// Getting image and forming the descriptors
+
 				string infile2 = filelist[i];
 	    		CImg<double> input_image2(infile2.c_str());
 	    		gray = input_image2.get_RGBtoHSI().get_channel(2);
 				vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
-				vector<vector<int> > f1v = quantize_vectors(descriptors2, 500.0, 20);
+
+				// Quantizing with k dimensions
+
+				vector<vector<int> > f1v = quantize_vectors(descriptors2, 400.0, 20);
 				int match_count = 0;
 				print_descriptor(descriptors2, input_image2);
+
+				// Running through all the vectors to find matches and finding the least distance match
+
 				for(int j=0;j<fv.size();j++) {
 					int dist = 999999;
 					for(int y=0;y<f1v.size();y++) {
 						if(fv[j] == f1v[y]){
-							// cout << "Matched....\n";
 							int temp = euclidean(descriptors[j], descriptors2[y]);
 							if(temp<dist) {
-								// cout<<temp<<"\n";
 								dist = temp;
 							}
 						}
@@ -233,26 +261,39 @@ int main(int argc, char **argv)
 				cout<<"Matches: "<<match_count<<" for image: "<<infile2<<"\n";
 			}
     	} else {
+
+    		// Getting image vector for input image and forming descriptors
+    		
 			string inputFile = argv[3];
 			CImg<double> input_image(inputFile.c_str());
 			int imgwidth = input_image.width();
 			CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
 			vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
 			print_descriptor(descriptors, input_image);
+
 	    	if(question == "q1") {
 	    		if(argc < 4) {
 					cout << "Insufficent number of arguments; correct usage:" << endl;
 					cout << "    a2 part_id question_number ..." << endl;
 					return -1;
 	    		}
+
+				// Getting image and forming the descriptors
+
 	    		string infile2 = argv[4];
 	    		CImg<double> input_image2(infile2.c_str());
 	    		gray = input_image2.get_RGBtoHSI().get_channel(2);
 				vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
 				print_descriptor(descriptors2, input_image2);
+
+				// Calculating distances and finding matches
+
 				vector<SiftDescriptor> matches(descriptors.size());
 				vector<int> distances(descriptors.size());
 				calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
+
+				// Forming output image and drawing lines
+
 				CImg<double> output_image = input_image.append(input_image2);
 				const unsigned char color[] = { 255,128,64 };
 				for(int i=0;i<descriptors.size();i++) {
@@ -263,6 +304,7 @@ int main(int argc, char **argv)
 				output_image.get_normalize(0,255).save("output1.png");
 				input_image.get_normalize(0,255).save("sift.png");
 				input_image2.get_normalize(0,255).save("sift2.png");
+
 	    	} else if(question == "q2") {
 	    		if(argc < 4) {
 					cout << "Insufficent number of arguments; correct usage:" << endl;
@@ -272,11 +314,17 @@ int main(int argc, char **argv)
 	    		int max_matches[argc-4];
 	    		vector<string> images(argc-4);
 	    		for(int i=4;i<argc;i++) {
+
+					// Getting image and forming the descriptors
+
 	    			string infile2 = argv[i];
 		    		CImg<double> input_image2(infile2.c_str());
 		    		gray = input_image2.get_RGBtoHSI().get_channel(2);
 					vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
 					print_descriptor(descriptors2, input_image2);
+
+					// Calculating distances and finding matches
+
 					vector<SiftDescriptor> matches(descriptors.size());
 					vector<int> distances(descriptors.size());
 					calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
