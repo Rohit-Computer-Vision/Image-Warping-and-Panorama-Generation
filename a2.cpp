@@ -64,15 +64,15 @@ void calculate_distance_and_matches(vector<SiftDescriptor> &matches, vector<int>
 	}
 }
 
-int quick_partition(int max_matches[], vector<string>& images, int low, int hi) {
-	int pivot = max_matches[low];
+int quick_partition(double max_matches[], vector<string>& images, int low, int hi) {
+	double pivot = max_matches[low];
 	int left = low+1;
 	int right = hi;
 	bool complete = false;
 	while(complete != true) {
-		while(left <= right && max_matches[left] >= pivot)
+		while(left <= right && max_matches[left] <= pivot)
 			left++;
-		while(max_matches[right] <= pivot && right >= left)
+		while(max_matches[right] >= pivot && right >= left)
 			right--;
 		if(right < left) {
 			complete = true;
@@ -86,7 +86,7 @@ int quick_partition(int max_matches[], vector<string>& images, int low, int hi) 
 	return right;
 }
 
-void quicksort(int max_matches[], vector<string>& images, int low, int hi) {
+void quicksort(double max_matches[], vector<string>& images, int low, int hi) {
 	int p;
 	if(low < hi) {
 		p = quick_partition(max_matches, images, low, hi);
@@ -95,143 +95,89 @@ void quicksort(int max_matches[], vector<string>& images, int low, int hi) {
 	}
 }
 
-vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors, float w, int k) {
-	vector<vector<int> > x_vec;
+vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors, const vector<vector<double> > x_vec, float w, int k) {
+	vector<vector<int> > result;
 	for(int i=0;i<descriptors.size();i++) {
 		vector<int> temp;
 		for(int l=0;l<k;l++) {
-			float sum = 0.0;
+			double sum = 0.0;
 			for(int j=0;j<128;j++) {
-				sum += ((double)(rand() % 100) / 100.0) * descriptors[i].descriptor[j];
+				sum += x_vec[l][j] * descriptors[i].descriptor[j];
 			}
 			temp.push_back((int)(sum/w));
 		}
-		x_vec.push_back(temp);
+		result.push_back(temp);
 	}
-	return x_vec;
-}
-
-void apply_transformation(CImg<double> &input) {
-	double transformation[3][3] = {0.907, 0.258, -182, -0.153, 1.44, 58, -0.000306, 0.000731, 1};
-	double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0.000264587,-0.000597069,1.08278};
-	//double transformation_inverse[3][3] = {1.397602, -0.391042,277.044,0.13525199999999998,0.8513080000000001,-24.76,0.00032879700000000003,-0.000741965,1.345554};
-	
-	double I[3][3];
-	
-	CImg<double> warped(input.width(), input.height());
-	double sum = 0;
-	int new_coord[] = {0,0,1};
-	double out[] = {0,0,0};
-
-	warped.fill(255, 255, 255);
-	cout << input.data(25,25,1,1) << endl;
-	cout << input(25,25,1,1) << endl;
-
-	//this is only to check whether the inverse is correct
-	/*for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			for (int k = 0; k < 3; k++) {
-				sum += transformation[i][k] * transformation_inverse[k][j];
-			}
-			cout << sum << endl;
-			sum = 0;
-		}
-	}*/
-	cout << new_coord[0] << "," << new_coord[1] << "," << new_coord[2] << endl;
-	
-	//for (int i = 0; i < input.height(); i++) {
-		//for (int j = 0; j < input.width(); j++){
-	for (int i = 0; i < 1; i++) {
-		for (int j = 0; j < 1; j++){
-			new_coord[0] = i;
-			new_coord[1] = j;			
-			for (int m = 0; m < 3; m++) {
-				sum = 0;
-				for (int n = 0; n < 3; n++) {
-					sum += transformation_inverse[m][n] * new_coord[n];
-				}
-				cout << "\n " << abs(sum);
-				out[m] = abs(sum);
-			}
-			cout << endl << i << "," << j << "," << out[0]/out[2] << "," << out[1]/out[2];
-			//cout << ",";// << input(out[0], out[1], 1, 0);
-			//warped(i,j,1, 0) = input(out[0], out[1], 1, 0);
-			
-			//write rgb to warped
-			//for(int rgb = 0; rgb<3;rgb++) {
-				//warped(i,j,0,rgb) = input(out[0], out[1], 0, rgb);
-			//}
-			
-		}
-	}
-	
-	cout << endl << endl << input.height() << "," << input.width() << endl;
-	warped.save("part2_q1_warped.png");
-	
+	return result;
 }
 
 void inverseWarp(CImg<double> input_image)//,double arr[3][3])
 {
-  int sum=0;
-  CImg<double> warped(input_image.width(),input_image.height(),input_image.depth(),input_image.spectrum());
-  warped.fill(255,255,255);
-  int w = 1;
-  double coordinates[3]={0,0,w};
-  double out[3];
+  double sum=0.0;
+  CImg<double> warped = input_image;
+  warped.fill(0,0,0);
+  double coordinates[3]={0,0,1.0};
+  double out[3] = {0,0,0};
   //double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0.000264587,-0.000597069,1.08278};
-  double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0,0,1};
+  // double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0.0,0.0,1.0};
+  double transformation_inverse[3][3];
+  transformation_inverse[0][0]=1.124668581; transformation_inverse[0][1]=-0.314676504; transformation_inverse[0][2]=222.940924688;
+  transformation_inverse[1][0]=0.108839051; transformation_inverse[1][1]=0.685058665; transformation_inverse[1][2]=-19.924695338;
+  transformation_inverse[2][0]=0.000264587; transformation_inverse[2][1]=-0.00059706; transformation_inverse[2][2]=1.082784875;
   
-  double m[3][3] = {0.907, 0.258, -182, -0.153, 1.44, 58, -0.000306, 0.000731, 1};
-  double minv[3][3];
-  double det = 	m[0][0] * (m[1][1] * m[2][2] - m[2][1] * m[1][2]) -
-				m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0]) +
-				m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]);
+ //  double m[3][3] = {0.907, 0.258, -182.0, -0.153, 1.44, 58.0, -0.000306, 0.000731, 1.0};
+ //  double minv[3][3];
+ //  double det = 	m[0][0] * (m[1][1] * m[2][2] - m[2][1] * m[1][2]) -
+	// 			m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0]) +
+	// 			m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]);
 
-	double invdet = 1 / det;
+	// double invdet = 1 / det;
 
-	minv[0][0] = invdet * (m[1][1] * m[2][2] - m[2][1] * m[1][2]);
-	minv[0][1] = invdet * (m[0][2] * m[2][1] - m[0][1] * m[2][2]);
-	minv[0][2] = invdet * (m[0][1] * m[1][2] - m[0][2] * m[1][1]);
-	minv[1][0] = invdet * (m[1][2] * m[2][0] - m[1][0] * m[2][2]);
-	minv[1][1] = invdet * (m[0][0] * m[2][2] - m[0][2] * m[2][0]);
-	minv[1][2] = invdet * (m[1][0] * m[0][2] - m[0][0] * m[1][2]);
-	minv[2][0] = invdet * (m[1][0] * m[2][1] - m[2][0] * m[1][1]);
-	minv[2][1] = invdet * (m[2][0] * m[0][1] - m[0][0] * m[2][1]);
-	minv[2][2] = invdet * (m[0][0] * m[1][1] - m[1][0] * m[0][1]);
+	// minv[0][0] = invdet * (m[1][1] * m[2][2] - m[2][1] * m[1][2]);
+	// minv[0][1] = invdet * (m[0][2] * m[2][1] - m[0][1] * m[2][2]);
+	// minv[0][2] = invdet * (m[0][1] * m[1][2] - m[0][2] * m[1][1]);
+	// minv[1][0] = invdet * (m[1][2] * m[2][0] - m[1][0] * m[2][2]);
+	// minv[1][1] = invdet * (m[0][0] * m[2][2] - m[0][2] * m[2][0]);
+	// minv[1][2] = invdet * (m[1][0] * m[0][2] - m[0][0] * m[1][2]);
+	// minv[2][0] = invdet * (m[1][0] * m[2][1] - m[2][0] * m[1][1]);
+	// minv[2][1] = invdet * (m[2][0] * m[0][1] - m[0][0] * m[2][1]);
+	// minv[2][2] = invdet * (m[0][0] * m[1][1] - m[1][0] * m[0][1]);
 
-  //double transformation_inverse[3][3] = minv;
+ //  //double transformation_inverse[3][3] = minv;
   
-  for(int x=0;x<3;x++){
-    for(int y=0;y<3;y++)
-		cout << minv[x][y] << " ";
-	cout << endl;
-  }
-  cout << endl << endl;
+ //  for(int x=0;x<3;x++){
+ //    for(int y=0;y<3;y++)
+	// 	cout << minv[x][y] << " ";
+	// cout << endl;
+ //  }
+ //  cout << endl << endl;
   
   
-	for(int x=0;x<input_image.width();x++)
-    for(int y=0;y<input_image.height();y++)
-        {
-          coordinates[0]=x;
-          coordinates[1]=y;
-          for(int i=0;i<3;i++)
-           {
-              sum=0;
-              for(int k=0;k<3;k++)
-                sum=sum+transformation_inverse[i][k]*coordinates[k];
-                out[i]=abs(sum);
-            }
-			
-        if(out[0]<input_image.width() && out[0]>=0 && out[1]<input_image.height() && out[1]>=0)
-          {
-            warped(x,y,0,0)=input_image(out[0],out[1],0,0);
-            warped(x,y,0,1)=input_image(out[0],out[1],0,1);
-            warped(x,y,0,2)=input_image(out[0],out[1],0,2);
-			//warped(x,y,w,0)=input_image(out[0],out[1],w,0);
-            //warped(x,y,w,1)=input_image(out[0],out[1],w,1);
-            //warped(x,y,w,2)=input_image(out[0]out[1],w,2);
-          }
-      }
+	for(int x=0;x<input_image.width();x++){
+	    for(int y=0;y<input_image.height();y++)
+	        {
+	          coordinates[0]=x;
+	          coordinates[1]=y;
+	          for(int i=0;i<3;i++)
+	           {
+	              sum=0.0;
+	              for(int k=0;k<3;k++){
+	              	sum=sum+(transformation_inverse[i][k]*coordinates[k]);
+	              }
+	              out[i]=sum;
+	            }
+
+	            out[1] = out[1]/out[2];
+	            out[0] = out[0]/out[2];
+				
+	        if(out[0]<input_image.width() && out[0]>=0 && out[1]<input_image.height() && out[1]>=0)
+	          {
+	            warped(x,y,0,0)=input_image(floor(out[0]),floor(out[1]),0,0);
+	            warped(x,y,0,1)=input_image(floor(out[0]),floor(out[1]),0,1);
+	            warped(x,y,0,2)=input_image(floor(out[0]),floor(out[1]),0,2);
+	          }
+	      }
+  	}
   warped.save("part2-q1.png");
 }
 
@@ -264,7 +210,7 @@ int main(int argc, char **argv)
     string question = argv[2];
     srand (time(NULL));
 
-	/*if(part == "part1") {
+	if(part == "part1") {
     	if (question == "q3") {
 
     		// randomly picking input image
@@ -287,7 +233,7 @@ int main(int argc, char **argv)
 
 			// Initialization for matching process
 
-			int max_matches[filecount-1];
+			double max_matches[filecount-1];
     		vector<string> images(filecount-1);
     		vector<SiftDescriptor> matches(descriptors.size());
 			vector<int> distances(descriptors.size());
@@ -304,14 +250,18 @@ int main(int argc, char **argv)
 				// Calculating distances and finding matches
 
 				calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
-				int count = 0;
+				int min = 1000000;
+				int next_min = 0;
+				double ratio = 0.0;
 				for (int j=0;j<descriptors.size();j++) {
-					if(distances[j] < 150) {
-						count++;
+					if(min > distances[j]){
+						next_min = min;
+						min = distances[j];
 					}
+					ratio = double(min)/double(next_min);
 				}
-				cout<<filelist[i]<<"    "<<count<<" matches here \n";
-				max_matches[i] = count;
+				cout<<filelist[i]<<"    "<<ratio<<" matches here \n";
+				max_matches[i] = ratio;
 				images[i] = filelist[i];
 			}
 
@@ -349,8 +299,17 @@ int main(int argc, char **argv)
 			print_descriptor(descriptors, input_image);
 
 			// Quantizing vectors with k dimensions
+			vector<vector<double> > x_vec;
+			int k_val = 10;
+			for(int l=0;l<k_val;l++) {
+				vector<double> temp_doub;
+				for(int i=0;i<128;i++) {
+					temp_doub.push_back((double)(rand() % 100) / 100.0);
+				}
+				x_vec.push_back(temp_doub);
+			}
 
-			vector<vector<int> > fv = quantize_vectors(descriptors, 400.0, 20);
+			vector<vector<int> > fv = quantize_vectors(descriptors, x_vec, 500.0, k_val);
 
 			for(int i=0;i<filecount;i++) {
 
@@ -363,26 +322,27 @@ int main(int argc, char **argv)
 
 				// Quantizing with k dimensions
 
-				vector<vector<int> > f1v = quantize_vectors(descriptors2, 400.0, 20);
-				int match_count = 0;
+				vector<vector<int> > f1v = quantize_vectors(descriptors2, x_vec, 500.0, k_val);
+				double match_ratio = 0;
 				print_descriptor(descriptors2, input_image2);
 
 				// Running through all the vectors to find matches and finding the least distance match
 
 				for(int j=0;j<fv.size();j++) {
 					int dist = 999999;
+					int second_dist = 999999;
 					for(int y=0;y<f1v.size();y++) {
 						if(fv[j] == f1v[y]){
 							int temp = euclidean(descriptors[j], descriptors2[y]);
 							if(temp<dist) {
+								second_dist = dist;
 								dist = temp;
 							}
 						}
 					}
-					if(dist < 400)
-						match_count++;
+					match_ratio = double(dist) / double(second_dist);
 				}
-				cout<<"Matches: "<<match_count<<" for image: "<<infile2<<"\n";
+				cout<<"Matches: "<<match_ratio<<" for image: "<<infile2<<"\n";
 			}
     	} else {
 
@@ -435,7 +395,7 @@ int main(int argc, char **argv)
 					cout << "    a2 part_id question_number ..." << endl;
 					return -1;
 	    		}
-	    		int max_matches[argc-4];
+	    		double max_matches[argc-4];
 	    		vector<string> images(argc-4);
 	    		for(int i=4;i<argc;i++) {
 
@@ -452,13 +412,17 @@ int main(int argc, char **argv)
 					vector<SiftDescriptor> matches(descriptors.size());
 					vector<int> distances(descriptors.size());
 					calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
-					int count = 0;
+					int min = 1000000;
+					int next_min = 0;
+					double ratio = 0.0;
 					for (int j=0;j<descriptors.size();j++) {
-						if(distances[j] < 50) {
-							count++;
+						if(min > distances[j]) {
+							next_min = min;
+							min = distances[j];
 						}
 					}
-					max_matches[i-4] = count;
+					ratio = double(min)/double(next_min);
+					max_matches[i-4] = ratio;
 					images[i-4] = argv[i];
 	    		}
 	    		quicksort(max_matches, images, 0, argc-5);
@@ -472,15 +436,11 @@ int main(int argc, char **argv)
 	    		cout<<"Wrong option...Please enter a question number";
 	    	}
 	    }
-    }
-    else*/ 
-		if(part == "part2") {
+    } else if(part == "part2") {
 		if (question == "q1") {
 			cout << "Part2 - Question 1:" << '\n';
 			string inputFile = argv[3];
 			CImg<double> input_image(inputFile.c_str());
-			
-			//apply_transformation(input_image);
 			inverseWarp(input_image);
 		}
     }
