@@ -1,10 +1,3 @@
-// B657 assignment 2 skeleton code
-//
-// Compile with: "make"
-//
-// See assignment handout for command line and project specifications.
-
-//2#define cimg_use_jpeg
 #include "CImg.h"
 #include <ctime>
 #include <iostream>
@@ -111,74 +104,53 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors, 
 	return result;
 }
 
-void inverseWarp(CImg<double> input_image)//,double arr[3][3])
-{
-  double sum=0.0;
-  CImg<double> warped = input_image;
-  warped.fill(0,0,0);
-  double coordinates[3]={0,0,1.0};
-  double out[3] = {0,0,0};
-  //double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0.000264587,-0.000597069,1.08278};
-  // double transformation_inverse[3][3] = {1.12467, -0.314677,222.941,0.108839,0.685059,-19.9247,0.0,0.0,1.0};
-  double transformation_inverse[3][3];
-  transformation_inverse[0][0]=1.124668581; transformation_inverse[0][1]=-0.314676504; transformation_inverse[0][2]=222.940924688;
-  transformation_inverse[1][0]=0.108839051; transformation_inverse[1][1]=0.685058665; transformation_inverse[1][2]=-19.924695338;
-  transformation_inverse[2][0]=0.000264587; transformation_inverse[2][1]=-0.00059706; transformation_inverse[2][2]=1.082784875;
+void inverseWarp(CImg<double> input_image, CImg<double> warped) {
+	double sum=0.0;
+	warped.fill(255,255,255);
+	double coordinates[3] = {0,0,1.0};
+	double out[3] = {0,0,0};
   
- //  double m[3][3] = {0.907, 0.258, -182.0, -0.153, 1.44, 58.0, -0.000306, 0.000731, 1.0};
- //  double minv[3][3];
- //  double det = 	m[0][0] * (m[1][1] * m[2][2] - m[2][1] * m[1][2]) -
-	// 			m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0]) +
-	// 			m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]);
+	double transformation[3][3] = {0.907, 0.258, -182.0, -0.153, 1.44, 58.0, -0.000306, 0.000731, 1.0};
+	double t_inv[3][3];
+	double det = 	transformation[0][0] * (transformation[1][1] * transformation[2][2] - transformation[2][1] * transformation[1][2]) -
+					transformation[0][1] * (transformation[1][0] * transformation[2][2] - transformation[1][2] * transformation[2][0]) +
+					transformation[0][2] * (transformation[1][0] * transformation[2][1] - transformation[1][1] * transformation[2][0]);
 
-	// double invdet = 1 / det;
+	double invdet = 1 / det;
 
-	// minv[0][0] = invdet * (m[1][1] * m[2][2] - m[2][1] * m[1][2]);
-	// minv[0][1] = invdet * (m[0][2] * m[2][1] - m[0][1] * m[2][2]);
-	// minv[0][2] = invdet * (m[0][1] * m[1][2] - m[0][2] * m[1][1]);
-	// minv[1][0] = invdet * (m[1][2] * m[2][0] - m[1][0] * m[2][2]);
-	// minv[1][1] = invdet * (m[0][0] * m[2][2] - m[0][2] * m[2][0]);
-	// minv[1][2] = invdet * (m[1][0] * m[0][2] - m[0][0] * m[1][2]);
-	// minv[2][0] = invdet * (m[1][0] * m[2][1] - m[2][0] * m[1][1]);
-	// minv[2][1] = invdet * (m[2][0] * m[0][1] - m[0][0] * m[2][1]);
-	// minv[2][2] = invdet * (m[0][0] * m[1][1] - m[1][0] * m[0][1]);
+	t_inv[0][0] = invdet * (transformation[1][1] * transformation[2][2] - transformation[2][1] * transformation[1][2]);
+	t_inv[0][1] = invdet * (transformation[0][2] * transformation[2][1] - transformation[0][1] * transformation[2][2]);
+	t_inv[0][2] = invdet * (transformation[0][1] * transformation[1][2] - transformation[0][2] * transformation[1][1]);
+	t_inv[1][0] = invdet * (transformation[1][2] * transformation[2][0] - transformation[1][0] * transformation[2][2]);
+	t_inv[1][1] = invdet * (transformation[0][0] * transformation[2][2] - transformation[0][2] * transformation[2][0]);
+	t_inv[1][2] = invdet * (transformation[1][0] * transformation[0][2] - transformation[0][0] * transformation[1][2]);
+	t_inv[2][0] = invdet * (transformation[1][0] * transformation[2][1] - transformation[2][0] * transformation[1][1]);
+	t_inv[2][1] = invdet * (transformation[2][0] * transformation[0][1] - transformation[0][0] * transformation[2][1]);
+	t_inv[2][2] = invdet * (transformation[0][0] * transformation[1][1] - transformation[1][0] * transformation[0][1]);
 
- //  //double transformation_inverse[3][3] = minv;
-  
- //  for(int x=0;x<3;x++){
- //    for(int y=0;y<3;y++)
-	// 	cout << minv[x][y] << " ";
-	// cout << endl;
- //  }
- //  cout << endl << endl;
-  
   
 	for(int x=0;x<input_image.width();x++){
-	    for(int y=0;y<input_image.height();y++)
-	        {
-	          coordinates[0]=x;
-	          coordinates[1]=y;
-	          for(int i=0;i<3;i++)
-	           {
-	              sum=0.0;
-	              for(int k=0;k<3;k++){
-	              	sum=sum+(transformation_inverse[i][k]*coordinates[k]);
-	              }
-	              out[i]=sum;
-	            }
+	    for(int y=0;y<input_image.height();y++) {
+			coordinates[0]=x;
+			coordinates[1]=y;
+			for(int i=0;i<3;i++) {
+				sum=0.0;
+				for(int k=0;k<3;k++){
+					sum += t_inv[i][k]*coordinates[k];
+				}
+				out[i]=sum;
+			}
+			out[1] = out[1]/out[2];
+			out[0] = out[0]/out[2];
 
-	            out[1] = out[1]/out[2];
-	            out[0] = out[0]/out[2];
-				
-	        if(out[0]<input_image.width() && out[0]>=0 && out[1]<input_image.height() && out[1]>=0)
-	          {
-	            warped(x,y,0,0)=input_image(floor(out[0]),floor(out[1]),0,0);
-	            warped(x,y,0,1)=input_image(floor(out[0]),floor(out[1]),0,1);
-	            warped(x,y,0,2)=input_image(floor(out[0]),floor(out[1]),0,2);
-	          }
-	      }
+			if(out[0]<input_image.width() && out[0]>=0 && out[1]<input_image.height() && out[1]>=0) {
+				warped(x,y,0,0)=input_image(floor(out[0]),floor(out[1]),0,0);
+				warped(x,y,0,1)=input_image(floor(out[0]),floor(out[1]),0,1);
+				warped(x,y,0,2)=input_image(floor(out[0]),floor(out[1]),0,2);
+			}
+		}
   	}
-  warped.save("part2-q1.png");
+	warped.save("part2-q1.png");
 }
 
 int main(int argc, char **argv)
@@ -441,7 +413,8 @@ int main(int argc, char **argv)
 			cout << "Part2 - Question 1:" << '\n';
 			string inputFile = argv[3];
 			CImg<double> input_image(inputFile.c_str());
-			inverseWarp(input_image);
+			CImg<double> warped = input_image;
+			inverseWarp(input_image, warped);
 		}
     }
     else
