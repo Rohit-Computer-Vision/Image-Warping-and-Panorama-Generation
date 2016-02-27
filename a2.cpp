@@ -41,20 +41,22 @@ int euclidean(const SiftDescriptor descriptor1, const SiftDescriptor descriptor2
 	return sqrt(sum);
 }
 
-void calculate_distance_and_matches(vector<SiftDescriptor> &matches, vector<int> &distances, const vector<SiftDescriptor> descriptors, const vector<SiftDescriptor> descriptors2) {
-	int dist, min_dist;
+void calculate_distance_and_matches(vector<SiftDescriptor> &matches, vector<double> &distances, const vector<SiftDescriptor> descriptors, const vector<SiftDescriptor> descriptors2) {
+	int dist, min_dist, next_min = 0;
 	for(int i=0;i<descriptors.size();i++) {
 		min_dist = euclidean(descriptors[i], descriptors2[0]);
 		matches[i] = descriptors2[0];
 		for(int j=1;j<descriptors2.size();j++) {
 			dist = euclidean(descriptors[i],descriptors2[j]);
 			if(dist < min_dist) {
+				next_min = min_dist;
 				min_dist = dist;
 				matches[i] = descriptors2[j];
 			}
 		}
-		distances[i] = min_dist;
+		distances[i] = (double)min_dist/(double)next_min;
 	}
+	sort(distances.begin(), distances.end());
 }
 
 int quick_partition(double max_matches[], vector<string>& images, int low, int hi) {
@@ -208,7 +210,7 @@ int main(int argc, char **argv)
 			double max_matches[filecount-1];
     		vector<string> images(filecount-1);
     		vector<SiftDescriptor> matches(descriptors.size());
-			vector<int> distances(descriptors.size());
+			vector<double> distances(descriptors.size());
 			for(int i=0;i<filecount;i++) {
 
 				// Getting image vector for query image and forming descriptors
@@ -222,19 +224,10 @@ int main(int argc, char **argv)
 				// Calculating distances and finding matches
 
 				calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
-				int min = 1000000;
-				int next_min = 0;
-				double ratio = 0.0;
-				for (int j=0;j<descriptors.size();j++) {
-					if(min > distances[j]){
-						next_min = min;
-						min = distances[j];
-					}
-					ratio = double(min)/double(next_min);
-				}
-				cout<<filelist[i]<<"    "<<ratio<<" matches here \n";
-				max_matches[i] = ratio;
+				int ind = descriptors2.size()/40;
+				max_matches[i] = distances[ind];
 				images[i] = filelist[i];
+				// cout<<"the match"<<filelist[i]<<"   "<<max_matches[i]<<"\n";
 			}
 
 			quicksort(max_matches, images, 0, filecount-1);
@@ -283,6 +276,9 @@ int main(int argc, char **argv)
 
 			vector<vector<int> > fv = quantize_vectors(descriptors, x_vec, 500.0, k_val);
 
+			double max_matches[filecount];
+    		vector<string> images(filecount);
+
 			for(int i=0;i<filecount;i++) {
 
 				// Getting image and forming the descriptors
@@ -295,27 +291,45 @@ int main(int argc, char **argv)
 				// Quantizing with k dimensions
 
 				vector<vector<int> > f1v = quantize_vectors(descriptors2, x_vec, 500.0, k_val);
-				double match_ratio = 0;
+				double match_ratio = 0.0;
 				print_descriptor(descriptors2, input_image2);
 
 				// Running through all the vectors to find matches and finding the least distance match
 
+				vector <double> temp_dists;
+
 				for(int j=0;j<fv.size();j++) {
 					int dist = 999999;
-					int second_dist = 999999;
 					for(int y=0;y<f1v.size();y++) {
 						if(fv[j] == f1v[y]){
 							int temp = euclidean(descriptors[j], descriptors2[y]);
 							if(temp<dist) {
-								second_dist = dist;
 								dist = temp;
 							}
 						}
 					}
-					match_ratio = double(dist) / double(second_dist);
+					temp_dists.push_back((double)dist);
 				}
-				cout<<"Matches: "<<match_ratio<<" for image: "<<infile2<<"\n";
+				sort(temp_dists.begin(), temp_dists.end());
+				int ind = descriptors2.size()/40;
+				match_ratio = temp_dists[ind];
+				max_matches[i] = match_ratio;
+				images[i] = filelist[i];
+				// cout<<"Matches: "<<match_ratio<<" for image: "<<infile2<<"\n";
 			}
+			quicksort(max_matches, images, 0, filecount-1);
+
+    		cout << "The match status is : \n";
+    		int correct = 0;
+    		for(int i=0;i<filecount;i++) {
+    			cout << "image: " << images[i] << " \t|| matches: " << max_matches[i] << "\n";
+    			if(i < 10 && (place.length() < images[i].length()) && (images[i].find(place) != std::string::npos)) {
+    				correct++;
+    			}
+    		}
+
+    		cout<<"Precision = "<<float(correct)/10.0<<"\n";
+
     	} else {
 
     		// Getting image vector for input image and forming descriptors
@@ -345,7 +359,7 @@ int main(int argc, char **argv)
 				// Calculating distances and finding matches
 
 				vector<SiftDescriptor> matches(descriptors.size());
-				vector<int> distances(descriptors.size());
+				vector<double> distances(descriptors.size());
 				calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
 
 				// Forming output image and drawing lines
@@ -353,7 +367,7 @@ int main(int argc, char **argv)
 				CImg<double> output_image = input_image.append(input_image2);
 				const unsigned char color[] = { 255,128,64 };
 				for(int i=0;i<descriptors.size();i++) {
-					if(distances[i] < 100) {
+					if(distances[i] < 50) {
 						output_image.draw_line(descriptors[i].col, descriptors[i].row, descriptors2[i].col+imgwidth, descriptors2[i].row, color);
 					}
 				}
@@ -382,19 +396,10 @@ int main(int argc, char **argv)
 					// Calculating distances and finding matches
 
 					vector<SiftDescriptor> matches(descriptors.size());
-					vector<int> distances(descriptors.size());
+					vector<double> distances(descriptors.size());
 					calculate_distance_and_matches(matches, distances, descriptors, descriptors2);
-					int min = 1000000;
-					int next_min = 0;
-					double ratio = 0.0;
-					for (int j=0;j<descriptors.size();j++) {
-						if(min > distances[j]) {
-							next_min = min;
-							min = distances[j];
-						}
-					}
-					ratio = double(min)/double(next_min);
-					max_matches[i-4] = ratio;
+					int ind = descriptors2.size()/40;
+					max_matches[i-4] = distances[ind];
 					images[i-4] = argv[i];
 	    		}
 	    		quicksort(max_matches, images, 0, argc-5);
