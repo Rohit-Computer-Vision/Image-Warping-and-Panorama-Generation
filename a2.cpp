@@ -113,19 +113,17 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors,
 	return result;
 }
 
-void inverseWarp(CImg<double> input_image, CImg<double> &warped,
-		double transformation[3][3], int flag = 0) {
+void inverseWarp(CImg<double> input_image, CImg<double>& warped,
+	double transformation[3][3], int flag = 0) {
 	double sum = 0.0;
 	warped.fill(255, 255, 255);
 	double coordinates[3] = { 0, 0, 1.0 };
 	double out[3] = { 0, 0, 0 };
 
-	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
-			-0.000306, 0.000731, 1.0 };
+	// double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
+	// 		-0.000306, 0.000731, 1.0 };
 	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
-	//double transformation1[3][3] = { 1.3468,0,0,1.309,0,0,0,0,1 };
-	//double transformation1[3][3] = { 0.708683, 0, 0, 1.11204, 0, 0, 0, 0, 1 };
-
+	double transformation1[3][3] = { 5.73598, -4.93054, 519.11, 4.20396, -3.58771, 367.323, 0.0108999, -0.00940478, 1.0  };
 	if (flag == 1) {
 		transformation = transformation1;
 	}
@@ -624,13 +622,14 @@ int main(int argc, char **argv) {
 				}
 
 				//increase this to try more sets of points
-				int reps = 500;
-				for (int q = 0; q < reps; q++) {
-					cout << endl << "Rep:" << q << endl;
+				int q = -1, reps = 10000;
+				while (q < reps) {
+					q++;
+					cout << "\n\nRep:" << q;
 					inliers = 0;
+					srand(time(NULL));
 					for (r = 0; r < 4; r++) {
 						// gives a random number between 0 and image width
-						srand(time(NULL));
 						rand_x = rand() % img_rows;
 						rand_y = rand() % img_cols;
 						x[r] = descriptors[rand_x].col;
@@ -683,15 +682,15 @@ int main(int argc, char **argv) {
 						new_image_x_dash /= new_image_w_dash;
 						new_image_y_dash /= new_image_w_dash;
 
-						cout << endl;
-						for (int b = 0; b < 3; b++)
-							for (int c = 0; c < 3; c++)
-								cout << homography[b][c] << " ";
-						cout << endl;
+						// //cout << endl;
+						// for (int b = 0; b < 3; b++)
+						// 	for (int c = 0; c < 3; c++)
+						// 		cout << homography[b][c] << " ";
+						// //cout << endl;
 
-						cout << endl << "new: " << new_image_x_dash << ","
-								<< new_image_y_dash << endl;
-						cout << "img: " << image_x_dash << "," << image_y_dash;
+						// cout << "\nnew: " << new_image_x_dash << ","
+						// 		<< new_image_y_dash << endl;
+						// cout << "img: " << image_x_dash << "," << image_y_dash;
 
 						//check number of inliers and save best h
 						threshold = 20; //radius of pixel range to check for classifying a point as an inlier
@@ -709,13 +708,13 @@ int main(int argc, char **argv) {
 					if (max_inliers < inliers) {
 						max_inliers = inliers;
 						global_h = h;
-						cout << endl << "h: ";
+						/*cout << "\nh: ";
 						for (int v = 0; v < 8; v++)
 							cout << h(0, v) << " ";
 
 						cout << endl << "global: ";
 						for (int v = 0; v < 8; v++)
-							cout << global_h(0, v) << " ";
+							cout << global_h(0, v) << " "; */
 
 					}
 
