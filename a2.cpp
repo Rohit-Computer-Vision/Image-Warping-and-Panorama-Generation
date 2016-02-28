@@ -114,23 +114,7 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors,
 	return result;
 }
 
-void inverseWarp(CImg<double> input_image, CImg<double>& warped,
-	double transformation[3][3], int flag = 0) {
-	double sum = 0.0;
-	warped.fill(255, 255, 255);
-	double coordinates[3] = { 0, 0, 1.0 };
-	double out[3] = { 0, 0, 0 };
-
-	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
-			-0.000306, 0.000731, 1.0 };
-	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
-	// double transformation1[3][3] = { 1.70676, -1.50589, 391.045, 2.70702, -1.99364, 436.17, 0.0070001, -0.00490387, 1.0  };
-	if (flag == 1) {
-		transformation = transformation1;
-	}
-
-	//cout << transformation[0][0] << endl << "";
-	double t_inv[3][3];
+void findInverse(double transformation[3][3], double t_inv[3][3]) {
 	double det = transformation[0][0]
 			* (transformation[1][1] * transformation[2][2]
 					- transformation[2][1] * transformation[1][2])
@@ -171,8 +155,25 @@ void inverseWarp(CImg<double> input_image, CImg<double>& warped,
 	t_inv[2][2] = invdet
 			* (transformation[0][0] * transformation[1][1]
 					- transformation[1][0] * transformation[0][1]);
+}
 
-	int p1x,p1x2,p1y,p1y2;
+void inverseWarp(CImg<double> input_image, CImg<double>& warped,
+		double transformation[3][3], int flag) {
+	double sum = 0.0;
+	warped.fill(255, 255, 255);
+	double coordinates[3] = { 0, 0, 1.0 };
+	double out[3] = { 0, 0, 0 };
+
+	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
+			-0.000306, 0.000731, 1.0 };
+	if (flag == 1) {
+		transformation = transformation1;
+	}
+
+	double t_inv[3][3];
+	findInverse(transformation, t_inv);
+
+	int p1x, p1x2, p1y, p1y2;
 	for (int x = 0; x < input_image.width(); x++) {
 		for (int y = 0; y < input_image.height(); y++) {
 			coordinates[0] = x;
@@ -187,33 +188,58 @@ void inverseWarp(CImg<double> input_image, CImg<double>& warped,
 			out[1] = out[1] / out[2];
 			out[0] = out[0] / out[2];
 
-			int p1x=out[0],p1x2=p1x+1;
-			if(p1x2>=input_image.width()) {
-				p1x2=input_image.width()-1;
+			int p1x = out[0], p1x2 = p1x + 1;
+			if (p1x2 >= input_image.width()) {
+				p1x2 = input_image.width() - 1;
 			}
 
-			int p1y=out[1], p1y2=p1y+1;
-			if(p1y2>=input_image.height()) {
-				p1y2=input_image.height()-1;
+			int p1y = out[1], p1y2 = p1y + 1;
+			if (p1y2 >= input_image.height()) {
+				p1y2 = input_image.height() - 1;
 			}
 
-			if (out[0] < input_image.width() && out[0] >= 0 && out[1] < input_image.height() && out[1] >= 0) {
+			if (out[0] < input_image.width() && out[0] >= 0
+					&& out[1] < input_image.height() && out[1] >= 0) {
 				//references for interpolation:
 				//1. www.csee.wvu.edu/~xinl/courses/ee465/image_interpolation.ppt
 				//2. https://www.cis.rit.edu/class/simg782/lectures/lecture_02/lec782_05_02.pdf
 				//3. https://kogs-www.informatik.uni-hamburg.de/~neumann/BV-WS-2007/BV-3-07.pdf
-				warped(x, y, 0, 0) =	input_image(p1x,p1y,0,0) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
-										input_image(p1x2,p1y,0,0) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x,p1y,0,0) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x2,p1y2,0,0) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
-				warped(x, y, 0, 1) =	input_image(p1x,p1y,0,1) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
-										input_image(p1x2,p1y,0,1) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x,p1y,0,1) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x2,p1y2,0,1) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
-				warped(x, y, 0, 2) =	input_image(p1x,p1y,0,2) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
-										input_image(p1x2,p1y,0,2) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x,p1y,0,2) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
-										input_image(p1x2,p1y2,0,2) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
+				warped(x, y, 0, 0) = input_image(p1x, p1y, 0, 0)
+						* ((out[1] - p1y) * (p1x2 - out[0]))
+						/ ((p1x2 - p1x) * (p1y2 - p1y))
+						+ input_image(p1x2, p1y, 0, 0)
+								* (((out[0] - p1x) * (p1y2 - out[1]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x, p1y, 0, 0)
+								* (((p1y2 - out[1]) * (p1x2 - out[0]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x2, p1y2, 0, 0)
+								* ((out[0] - p1x) * (out[1] - p1y))
+								/ ((p1x2 - p1x) * (p1y2 - p1y));
+				warped(x, y, 0, 1) = input_image(p1x, p1y, 0, 1)
+						* ((out[1] - p1y) * (p1x2 - out[0]))
+						/ ((p1x2 - p1x) * (p1y2 - p1y))
+						+ input_image(p1x2, p1y, 0, 1)
+								* (((out[0] - p1x) * (p1y2 - out[1]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x, p1y, 0, 1)
+								* (((p1y2 - out[1]) * (p1x2 - out[0]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x2, p1y2, 0, 1)
+								* ((out[0] - p1x) * (out[1] - p1y))
+								/ ((p1x2 - p1x) * (p1y2 - p1y));
+				warped(x, y, 0, 2) = input_image(p1x, p1y, 0, 2)
+						* ((out[1] - p1y) * (p1x2 - out[0]))
+						/ ((p1x2 - p1x) * (p1y2 - p1y))
+						+ input_image(p1x2, p1y, 0, 2)
+								* (((out[0] - p1x) * (p1y2 - out[1]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x, p1y, 0, 2)
+								* (((p1y2 - out[1]) * (p1x2 - out[0]))
+										/ ((p1x2 - p1x) * (p1y2 - p1y)))
+						+ input_image(p1x2, p1y2, 0, 2)
+								* ((out[0] - p1x) * (out[1] - p1y))
+								/ ((p1x2 - p1x) * (p1y2 - p1y));
 
 				//without interpolation, it gives correct output but a little staggered. Pixels are out of its grid space in the target location
 				//warped(x, y, 0, 0) = input_image(floor(out[0]), floor(out[1]), 0, 0);
@@ -356,9 +382,180 @@ void question4(const CImg<double> input_image,
 	cout << "Precision = " << float(correct) / 10.0 << endl;
 }
 
+void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
+	CImg<double> input_image(inputFile.c_str());
+	int imgwidth = input_image.width();
+	CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
+	vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
+	//print_descriptor(descriptors, input_image);
+
+	// Getting image and forming the descriptors
+
+	CImg<double> input_image2(infile2.c_str());
+	gray = input_image2.get_RGBtoHSI().get_channel(2);
+	vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
+	//print_descriptor(descriptors2, input_image2);
+
+	// Calculating distances and finding matches
+
+	vector<SiftDescriptor> matches(descriptors.size());
+	vector<double> distances(descriptors.size());
+	calculate_distance_and_matches(matches, distances, descriptors,
+			descriptors2);
+
+	int img_rows = input_image.width();
+	int img_cols = input_image.height();
+	//declaring these as CImg bcoz solver has these parameters and return value
+	CImg<double> trans(8, 8);
+	trans.fill(0, 0, 0);
+	CImg<double> h(1, 8);
+	//CImg<double> global_h(1, 8); //declared already
+	double homography[3][3]; //to pass to inverseWarp
+	CImg<double> new_coords(1, 8);
+	CImg<double> warped = input_image;
+
+	int i, r, k, rand_x, rand_y;
+	int x[4], y[4], x_dash[4], y_dash[4];
+	double image_x, image_y, image_x_dash, image_y_dash;
+	double new_image_x_dash, new_image_y_dash, new_image_w_dash;
+	int max_inliers = 0, inliers = 0;
+
+	//initializations for elements that are 1
+	for (int i = 0; i < 8; i += 2) {
+		trans(2, i) = 1;
+		trans(5, i + 1) = 1;
+	}
+
+	//increase this to try more sets of points
+	int q = -1, reps = 10000;
+	int threshold = 50; //radius of pixel range to check for classifying a point as an inlier
+	for (int q = 0; q < reps; q++) {
+		cout << endl << "Rep:" << q;
+		inliers = 0;
+		srand(time(NULL));
+//		cout << "\npoints: " << endl;
+		for (r = 0; r < 4; r++) {
+			// gives a random number between 0 and image width
+			rand_x = rand() % img_rows;
+			rand_y = rand() % img_cols;
+			x[r] = descriptors[rand_x].col;
+			y[r] = descriptors[rand_y].row;
+			x_dash[r] = matches[rand_x].col;
+			y_dash[r] = matches[rand_y].row;
+//			cout << x[r] << "," << y[r] << " " << x_dash[r] << "," << y_dash[r] << endl;
+		}
+
+		//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
+		for (k = 0; k < 8; k += 2) {
+			int u = k / 2;
+			trans(0, k) = x[u];
+			trans(1, k) = y[u];
+			trans(6, k) = -x[u] * x_dash[u];
+			trans(7, k) = -y[u] * x_dash[u];
+			new_coords(0, k) = x_dash[u];
+
+			trans(3, k + 1) = x[u];
+			trans(4, k + 1) = y[u];
+			trans(6, k + 1) = -x[u] * y_dash[u];
+			trans(7, k + 1) = -y[u] * y_dash[u];
+			new_coords(0, k + 1) = y_dash[u];
+		}
+//		cout << "\ntrans: " << endl;
+//		for (k = 0; k < 8; k++) {
+//			for (int k2 = 0; k2 < 8; k2++)
+//				cout << trans(k2, k) << " ";
+//			cout << endl;
+//		}
+//		cout << "\nnew_coords: " << endl;
+//		for (k = 0; k < 8; k++)
+//			cout << new_coords(0, k) << " ";
+		h = new_coords;
+		h.solve(trans);
+		/*cout << endl << "trans: ";
+		 for (int v = 0; v < 8; v++) {
+		 for (int l = 0; l < 8; l++)
+		 cout << trans(v,l) << " ";
+		 cout << endl << "";
+		 }
+		 cout << endl << "new_coords: ";
+		 for (int v = 0; v < 8; v++)
+		 cout << new_coords(0, v) << " ";
+		 cout << endl << "";*/
+
+		convert_to_3x3(h, homography);
+		for (int m = 0; m < descriptors.size() - 1; m++) {
+			image_x = descriptors[m].col;
+			image_y = descriptors[m].row;
+			image_x_dash = matches[m].col;
+			image_y_dash = matches[m].row;
+
+			new_image_x_dash = homography[0][0] * image_x
+					+ homography[0][1] * image_y + homography[0][2];
+			new_image_y_dash = homography[1][0] * image_x
+					+ homography[1][1] * image_y + homography[1][2];
+			new_image_w_dash = homography[2][0] * image_x
+					+ homography[2][1] * image_y + homography[2][2];
+
+			new_image_x_dash /= new_image_w_dash;
+			new_image_y_dash /= new_image_w_dash;
+
+			// //cout << endl;
+			// for (int b = 0; b < 3; b++)
+			// 	for (int c = 0; c < 3; c++)
+			// 		cout << homography[b][c] << " ";
+			// //cout << endl;
+
+			// cout << "\nnew: " << new_image_x_dash << ","
+			// 		<< new_image_y_dash << endl;
+			// cout << "img: " << image_x_dash << "," << image_y_dash;
+
+			//check number of inliers and save best h
+
+			if (new_image_x_dash >= image_x_dash - threshold
+					&& new_image_x_dash <= image_x_dash + threshold) {
+				if (new_image_y_dash >= image_y_dash - threshold
+						&& new_image_y_dash <= image_y_dash + threshold) {
+					inliers++;
+				}
+			}
+		}
+		cout << " Inliers: " << inliers;
+		if (max_inliers < inliers) {
+			max_inliers = inliers;
+			global_h = h;
+			/*cout << "\nh: ";
+			 for (int v = 0; v < 8; v++)
+			 cout << h(0, v) << " ";
+
+			 cout << endl << "global: ";
+			 for (int v = 0; v < 8; v++)
+			 cout << global_h(0, v) << " "; */
+
+		}
+
+	}
+	cout << endl << "Global h: ";
+	for (int g = 0; g < 8; g++) {
+		cout << global_h(0, g) << " ";
+	}
+	cout << endl;
+	convert_to_3x3(global_h, homography);
+	cout << endl << "Global homography: ";
+	for (int g = 0; g < 3; g++)
+		for (int g2 = 0; g2 < 3; g2++)
+			cout << homography[g][g2] << " ";
+	cout << endl;
+
+	CImg<double> warped1 = input_image;
+	inverseWarp(input_image, warped1, homography, 0);
+	warped1.save("part2-q2_1.png");
+	CImg<double> warped2 = input_image2;
+	inverseWarp(input_image2, warped2, homography, 0);
+	warped2.save("part2-q2_2.png");
+}
+
 int main(int argc, char **argv) {
 	try {
-
 		DIR *dir;
 		struct dirent *ent;
 		char cwd[1024];
@@ -386,27 +583,30 @@ int main(int argc, char **argv) {
 
 		if (part == "part1") {
 			if (question == "q3") {
-				int start_s=clock();
+				int start_s = clock();
 				// randomly picking input image
 				char temp_result[1024];
 				int dirmove = chdir(result);
-				cout<<"picking random..." << endl;
-				int imgindex = (rand() % filecount)+1;
-				cout<< "picked image : "<<filelist[imgindex]<<endl << "";
-				string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
+				cout << "picking random..." << endl;
+				int imgindex = (rand() % filecount) + 1;
+				cout << "picked image : " << filelist[imgindex] << endl << "";
+				string inputFile = strcpy(temp_result,
+						filelist[imgindex].c_str());
 				string place = inputFile.substr(0, inputFile.find("_"));
 				// for (int o = 0; o < filecount; o++) {
-					// char temp_result[1024];
-					// string inputFile = strcpy(temp_result, filelist[o].c_str());
-					// string place = inputFile.substr(0, inputFile.find("_"));
-					question3(inputFile, filecount, filelist, place);
+				// char temp_result[1024];
+				// string inputFile = strcpy(temp_result, filelist[o].c_str());
+				// string place = inputFile.substr(0, inputFile.find("_"));
+				question3(inputFile, filecount, filelist, place);
 				// }
-				int stop_s=clock();
-				cout << "Time Taken: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << " seconds" << endl;
+				int stop_s = clock();
+				cout << "Time Taken: "
+						<< (stop_s - start_s) / double(CLOCKS_PER_SEC)
+						<< " seconds" << endl;
 
 			} else if (question == "q4") {
 
-				int start_s=clock();
+				int start_s = clock();
 
 				// randomly picking input image
 
@@ -415,7 +615,8 @@ int main(int argc, char **argv) {
 				cout << "picking random..." << endl;
 				int imgindex = (rand() % filecount) + 1;
 				cout << "picked image : " << filelist[imgindex] << endl << "";
-				string inputFile = strcpy(temp_result,filelist[imgindex].c_str());
+				string inputFile = strcpy(temp_result,
+						filelist[imgindex].c_str());
 				string place = inputFile.substr(0, inputFile.find("_"));
 				CImg<double> input_image(inputFile.c_str());
 				int imgwidth = input_image.width();
@@ -427,8 +628,10 @@ int main(int argc, char **argv) {
 					question4(input_image, descriptors, filecount, filelist,
 							place);
 				}
-				int stop_s=clock();
-				cout << "Time Taken: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << " seconds" << endl;
+				int stop_s = clock();
+				cout << "Time Taken: "
+						<< (stop_s - start_s) / double(CLOCKS_PER_SEC)
+						<< " seconds" << endl;
 
 			} else {
 
@@ -548,10 +751,11 @@ int main(int argc, char **argv) {
 				cout << "Part2 - Question 1:" << endl;
 				string inputFile = argv[3];
 				CImg<double> input_image(inputFile.c_str());
-				CImg<double> warped = input_image;
 				double transformation[3][3];
+				CImg<double> warped = input_image;
 				inverseWarp(input_image, warped, transformation, 1);
 				warped.save("part2-q1.png");
+
 			} else if (question == "q2") {
 				cout << "Part2 - Question 2:" << endl;
 				if (argc < 4) {
@@ -561,161 +765,14 @@ int main(int argc, char **argv) {
 					return -1;
 				}
 
-				// Getting image vector for input image and forming descriptors
-
 				string inputFile = argv[3];
-				CImg<double> input_image(inputFile.c_str());
-				int imgwidth = input_image.width();
-				CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
-				vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
-				print_descriptor(descriptors, input_image);
-
-				// Getting image and forming the descriptors
-
 				string infile2 = argv[4];
-				CImg<double> input_image2(infile2.c_str());
-				gray = input_image2.get_RGBtoHSI().get_channel(2);
-				vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
-				print_descriptor(descriptors2, input_image2);
-
-				// Calculating distances and finding matches
-
-				vector<SiftDescriptor> matches(descriptors.size());
-				vector<double> distances(descriptors.size());
-				calculate_distance_and_matches(matches, distances, descriptors,
-						descriptors2);
-
-				//col is x-coord, row is y-coord
-				//cout << descriptors[10].col << "," << descriptors[10].row << endl;
-
-				int img_rows = input_image.width();
-				int img_cols = input_image.height();
-				//declaring these as CImg bcoz solver has these parameters and return value
-				CImg<double> trans(8, 8);
-				trans.fill(0, 0, 0);
-				CImg<double> h(1, 8);
 				CImg<double> global_h(1, 8);
-				double homography[3][3]; //to pass to inverseWarp
-				CImg<double> new_coords(1, 8);
-				CImg<double> warped = input_image;
-
-				int i, r, k, rand_x, rand_y;
-				int x[4], y[4], x_dash[4], y_dash[4];
-				double image_x, image_y, image_x_dash, image_y_dash;
-				double new_image_x_dash, new_image_y_dash, new_image_w_dash;
-				int max_inliers = 0, inliers = 0, threshold;
-
-				//initializations for elements that are 1
-				for (int i = 0; i < 8; i += 2) {
-					trans(2, i) = 1;
-					trans(5, i + 1) = 1;
-				}
-
-				//increase this to try more sets of points
-				int q = -1, reps = 10000;
-				while (q < reps) {
-					q++;
-					cout << "\n\nRep:" << q;
-					inliers = 0;
-					srand(time(NULL));
-					for (r = 0; r < 4; r++) {
-						// gives a random number between 0 and image width
-						rand_x = rand() % img_rows;
-						rand_y = rand() % img_cols;
-						x[r] = descriptors[rand_x].col;
-						y[r] = descriptors[rand_y].row;
-						x_dash[r] = matches[rand_x].col;
-						y_dash[r] = matches[rand_y].row;
-					}
-					//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
-					for (k = 0; k < 8; k += 2) {
-						int u = k / 2;
-						trans(0, k) = x[u];
-						trans(1, k) = y[u];
-						trans(6, k) = -x[u] * x_dash[u];
-						trans(7, k) = -y[u] * x_dash[u];
-						new_coords(0, k) = x_dash[u];
-
-						trans(3, k + 1) = x[u];
-						trans(4, k + 1) = y[u];
-						trans(6, k + 1) = -x[u] * y_dash[u];
-						trans(7, k + 1) = -y[u] * y_dash[u];
-						new_coords(0, k + 1) = y_dash[u];
-					}
-					h = new_coords;
-					h.solve(trans);
-					/*cout << endl << "trans: ";
-					 for (int v = 0; v < 8; v++) {
-					 for (int l = 0; l < 8; l++)
-					 cout << trans(v,l) << " ";
-					 cout << endl << "";
-					 }
-					 cout << endl << "new_coords: ";
-					 for (int v = 0; v < 8; v++)
-					 cout << new_coords(0, v) << " ";
-					 cout << endl << "";*/
-
-					convert_to_3x3(h, homography);
-					for (int m = 0; m < descriptors.size() - 1; m++) {
-						image_x = descriptors[m].col;
-						image_y = descriptors[m].row;
-						image_x_dash = matches[m].col;
-						image_y_dash = matches[m].row;
-
-						new_image_x_dash = homography[0][0] * image_x
-								+ homography[0][1] * image_y + homography[0][2];
-						new_image_y_dash = homography[1][0] * image_x
-								+ homography[1][1] * image_y + homography[1][2];
-						new_image_w_dash = homography[2][0] * image_x
-								+ homography[2][1] * image_y + homography[2][2];
-
-						new_image_x_dash /= new_image_w_dash;
-						new_image_y_dash /= new_image_w_dash;
-
-						// //cout << endl;
-						// for (int b = 0; b < 3; b++)
-						// 	for (int c = 0; c < 3; c++)
-						// 		cout << homography[b][c] << " ";
-						// //cout << endl;
-
-						// cout << "\nnew: " << new_image_x_dash << ","
-						// 		<< new_image_y_dash << endl;
-						// cout << "img: " << image_x_dash << "," << image_y_dash;
-
-						//check number of inliers and save best h
-						threshold = 20; //radius of pixel range to check for classifying a point as an inlier
-						if (new_image_x_dash >= image_x_dash - threshold
-								&& new_image_x_dash
-										<= image_x_dash + threshold) {
-							if (new_image_y_dash >= image_y_dash - threshold
-									&& new_image_y_dash
-											<= image_y_dash + threshold) {
-								inliers++;
-							}
-						}
-					}
-					cout << " Inliers: " << inliers << endl;
-					if (max_inliers < inliers) {
-						max_inliers = inliers;
-						global_h = h;
-						/*cout << "\nh: ";
-						for (int v = 0; v < 8; v++)
-							cout << h(0, v) << " ";
-
-						cout << endl << "global: ";
-						for (int v = 0; v < 8; v++)
-							cout << global_h(0, v) << " "; */
-
-					}
-
-				}
-				cout << endl << "Global h: ";
-				for (int g = 0; g < 8; g++) {
-					cout << global_h(0, g) << " ";
-				}
-				cout << endl;
+				part2q2(inputFile, infile2, global_h);
+				cout << endl << "\n\n Main global: ";
+				for (int v = 0; v < 8; v++)
+					cout << global_h(0, v) << " ";
 			}
-
 		} else
 			throw std::string("unknown part!");
 
