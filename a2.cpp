@@ -10,6 +10,7 @@
 #include <time.h>
 #include <map>
 #include <math.h>
+#include <ctime>
 
 //Use the cimg namespace to access the functions easily
 using namespace cimg_library;
@@ -120,10 +121,10 @@ void inverseWarp(CImg<double> input_image, CImg<double>& warped,
 	double coordinates[3] = { 0, 0, 1.0 };
 	double out[3] = { 0, 0, 0 };
 
-	// double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
-	// 		-0.000306, 0.000731, 1.0 };
+	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
+			-0.000306, 0.000731, 1.0 };
 	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
-	double transformation1[3][3] = { 1.70676, -1.50589, 391.045, 2.70702, -1.99364, 436.17, 0.0070001, -0.00490387, 1.0  };
+	// double transformation1[3][3] = { 1.70676, -1.50589, 391.045, 2.70702, -1.99364, 436.17, 0.0070001, -0.00490387, 1.0  };
 	if (flag == 1) {
 		transformation = transformation1;
 	}
@@ -239,16 +240,12 @@ void convert_to_3x3(CImg<double> h, double homography[3][3]) {
 void question3(string inputFile, int filecount, vector<string> filelist,
 		string place) {
 // Getting image vector for input image and forming descriptors
-
-	cout << "Matches for file: " << inputFile << endl;
 	CImg<double> input_image(inputFile.c_str());
 	int imgwidth = input_image.width();
 	CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
 	vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
-// print_descriptor(descriptors, input_image);
 
 // Initialization for matching process
-
 	double max_matches[filecount];
 	vector<string> images(filecount);
 	vector<SiftDescriptor> matches(descriptors.size());
@@ -256,20 +253,16 @@ void question3(string inputFile, int filecount, vector<string> filelist,
 	for (int i = 0; i < filecount; i++) {
 
 // Getting image vector for query image and forming descriptors
-
 		CImg<double> input_image2(filelist[i].c_str());
 		gray = input_image2.get_RGBtoHSI().get_channel(2);
 		vector<SiftDescriptor> descriptors2 = Sift::compute_sift(gray);
-// print_descriptor(descriptors2, input_image2);
 
 // Calculating distances and finding matches
-
 		calculate_distance_and_matches(matches, distances, descriptors,
 				descriptors2);
 		int ind = descriptors2.size() / 40;
 		max_matches[i] = distances[ind];
 		images[i] = filelist[i];
-// cout<<"completed for: "<<filelist[i]<<endl << "";
 	}
 
 	quicksort(max_matches, images, 0, filecount - 1);
@@ -323,7 +316,6 @@ void question4(const CImg<double> input_image,
 		vector<vector<int> > f1v = quantize_vectors(descriptors2, x_vec, 500.0,
 				k_val);
 		double match_ratio = 0.0;
-		print_descriptor(descriptors2, input_image2);
 
 // Running through all the vectors to find matches and finding the least distance match
 
@@ -394,54 +386,49 @@ int main(int argc, char **argv) {
 
 		if (part == "part1") {
 			if (question == "q3") {
-
+				int start_s=clock();
 				// randomly picking input image
-
-				// char temp_result[1024];
-				// int dirmove = chdir(result);
-				// cout<<"picking random..." << endl;
-				// int imgindex = (rand() % filecount)+1;
-				// cout<< "picked image : "<<filelist[imgindex]<<endl << "";
-				// string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
-				// string place = inputFile.substr(0, inputFile.find("_"));
+				char temp_result[1024];
 				int dirmove = chdir(result);
-				for (int o = 0; o < filecount; o++) {
-					char temp_result[1024];
-					string inputFile = strcpy(temp_result, filelist[o].c_str());
-					string place = inputFile.substr(0, inputFile.find("_"));
+				cout<<"picking random..." << endl;
+				int imgindex = (rand() % filecount)+1;
+				cout<< "picked image : "<<filelist[imgindex]<<endl << "";
+				string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
+				string place = inputFile.substr(0, inputFile.find("_"));
+				// for (int o = 0; o < filecount; o++) {
+					// char temp_result[1024];
+					// string inputFile = strcpy(temp_result, filelist[o].c_str());
+					// string place = inputFile.substr(0, inputFile.find("_"));
 					question3(inputFile, filecount, filelist, place);
-				}
+				// }
+				int stop_s=clock();
+				cout << "Time Taken: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << " seconds" << endl;
 
 			} else if (question == "q4") {
 
+				int start_s=clock();
+
 				// randomly picking input image
 
-				// char temp_result[1024];
-				// int dirmove = chdir(result);
-				// cout << "picking random..." << endl;
-				// int imgindex = (rand() % filecount) + 1;
-				// cout << "picked image : " << filelist[imgindex] << endl << "";
-				// string inputFile = strcpy(temp_result,
-				// 		filelist[imgindex].c_str());
-				// string place = inputFile.substr(0, inputFile.find("_"));
-
+				char temp_result[1024];
 				int dirmove = chdir(result);
-				for (int o = 0; o < filecount; o++) {
-					char temp_result[1024];
-					string inputFile = strcpy(temp_result, filelist[o].c_str());
-					string place = inputFile.substr(0, inputFile.find("_"));
-					CImg<double> input_image(inputFile.c_str());
-					int imgwidth = input_image.width();
-					CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
-					vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
-					int trials = 3;
-					cout<<"Matching for : "<<filelist[o]<<"\n";
-					for (int r = 0; r < trials; r++) {
-						cout << "Trial : " << r << " " << endl;
-						question4(input_image, descriptors, filecount, filelist,
-								place);
-					}
+				cout << "picking random..." << endl;
+				int imgindex = (rand() % filecount) + 1;
+				cout << "picked image : " << filelist[imgindex] << endl << "";
+				string inputFile = strcpy(temp_result,filelist[imgindex].c_str());
+				string place = inputFile.substr(0, inputFile.find("_"));
+				CImg<double> input_image(inputFile.c_str());
+				int imgwidth = input_image.width();
+				CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
+				vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
+				int trials = 1;
+				for (int r = 0; r < trials; r++) {
+					cout << "Trial : " << r << " " << endl;
+					question4(input_image, descriptors, filecount, filelist,
+							place);
 				}
+				int stop_s=clock();
+				cout << "Time Taken: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << " seconds" << endl;
 
 			} else {
 
