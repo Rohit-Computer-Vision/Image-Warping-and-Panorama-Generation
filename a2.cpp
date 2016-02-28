@@ -113,21 +113,24 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors,
 	return result;
 }
 
-void inverseWarp(CImg<double> input_image, CImg<double> warped,
-	double transformation[3][3], int flag = 0) {
+void inverseWarp(CImg<double> input_image, CImg<double> &warped,
+		double transformation[3][3], int flag = 0) {
 	double sum = 0.0;
 	warped.fill(255, 255, 255);
 	double coordinates[3] = { 0, 0, 1.0 };
 	double out[3] = { 0, 0, 0 };
 
-	//double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0, -0.000306, 0.000731, 1.0 };
+	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
+			-0.000306, 0.000731, 1.0 };
 	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
-	double transformation1[3][3] = { 1.3468,0,0,1.309,0,0,0,0,1 };
+	//double transformation1[3][3] = { 1.3468,0,0,1.309,0,0,0,0,1 };
+	//double transformation1[3][3] = { 0.708683, 0, 0, 1.11204, 0, 0, 0, 0, 1 };
+
 	if (flag == 1) {
 		transformation = transformation1;
 	}
 
-	//cout << transformation[0][0] << "\n";
+	//cout << transformation[0][0] << endl << "";
 	double t_inv[3][3];
 	double det = transformation[0][0]
 			* (transformation[1][1] * transformation[2][2]
@@ -139,7 +142,7 @@ void inverseWarp(CImg<double> input_image, CImg<double> warped,
 					* (transformation[1][0] * transformation[2][1]
 							- transformation[1][1] * transformation[2][0]);
 
-	cout << "\nDeterminant:" << det << "\n\n";
+	cout << endl << "Determinant:" << det << endl;
 	double invdet = 1 / det;
 
 	t_inv[0][0] = invdet
@@ -170,6 +173,7 @@ void inverseWarp(CImg<double> input_image, CImg<double> warped,
 			* (transformation[0][0] * transformation[1][1]
 					- transformation[1][0] * transformation[0][1]);
 
+	int p1x,p1x2,p1y,p1y2;
 	for (int x = 0; x < input_image.width(); x++) {
 		for (int y = 0; y < input_image.height(); y++) {
 			coordinates[0] = x;
@@ -184,17 +188,42 @@ void inverseWarp(CImg<double> input_image, CImg<double> warped,
 			out[1] = out[1] / out[2];
 			out[0] = out[0] / out[2];
 
-			if (out[0] < input_image.width() && out[0] >= 0
-					&& out[1] < input_image.height() && out[1] >= 0) {
-				warped(x, y, 0, 0) = input_image(floor(out[0]), floor(out[1]),
-						0, 0);
-				warped(x, y, 0, 1) = input_image(floor(out[0]), floor(out[1]),
-						0, 1);
-				warped(x, y, 0, 2) = input_image(floor(out[0]), floor(out[1]),
-						0, 2);
+			int p1x=out[0],p1x2=p1x+1;
+			if(p1x2>=input_image.width()) {
+				p1x2=input_image.width()-1;
+			}
+
+			int p1y=out[1], p1y2=p1y+1;
+			if(p1y2>=input_image.height()) {
+				p1y2=input_image.height()-1;
+			}
+
+			if (out[0] < input_image.width() && out[0] >= 0 && out[1] < input_image.height() && out[1] >= 0) {
+				//references for interpolation:
+				//1. www.csee.wvu.edu/~xinl/courses/ee465/image_interpolation.ppt
+				//2. https://www.cis.rit.edu/class/simg782/lectures/lecture_02/lec782_05_02.pdf
+				//3. https://kogs-www.informatik.uni-hamburg.de/~neumann/BV-WS-2007/BV-3-07.pdf
+				warped(x, y, 0, 0) =	input_image(p1x,p1y,0,0) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
+										input_image(p1x2,p1y,0,0) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x,p1y,0,0) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x2,p1y2,0,0) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
+				warped(x, y, 0, 1) =	input_image(p1x,p1y,0,1) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
+										input_image(p1x2,p1y,0,1) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x,p1y,0,1) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x2,p1y2,0,1) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
+				warped(x, y, 0, 2) =	input_image(p1x,p1y,0,2) * ((out[1]-p1y)*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y)) +
+										input_image(p1x2,p1y,0,2) * (((out[0]-p1x)*(p1y2-out[1]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x,p1y,0,2) * (((p1y2-out[1])*(p1x2-out[0]))/((p1x2-p1x)*(p1y2-p1y))) +
+										input_image(p1x2,p1y2,0,2) * ((out[0]-p1x)*(out[1]-p1y))/((p1x2-p1x)*(p1y2-p1y));
+
+				//without interpolation, it gives correct output but a little staggered. Pixels are out of its grid space in the target location
+				//warped(x, y, 0, 0) = input_image(floor(out[0]), floor(out[1]), 0, 0);
+				//warped(x, y, 0, 1) = input_image(floor(out[0]), floor(out[1]), 0, 1);
+				//warped(x, y, 0, 2) = input_image(floor(out[0]), floor(out[1]), 0, 2);
 			}
 		}
 	}
+
 }
 
 void convert_to_3x3(CImg<double> h, double homography[3][3]) {
@@ -213,7 +242,7 @@ void question3(string inputFile, int filecount, vector<string> filelist,
 		string place) {
 // Getting image vector for input image and forming descriptors
 
-	cout << "Matches for file: " << inputFile << " \n";
+	cout << "Matches for file: " << inputFile << endl;
 	CImg<double> input_image(inputFile.c_str());
 	int imgwidth = input_image.width();
 	CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
@@ -242,23 +271,23 @@ void question3(string inputFile, int filecount, vector<string> filelist,
 		int ind = descriptors2.size() / 40;
 		max_matches[i] = distances[ind];
 		images[i] = filelist[i];
-// cout<<"completed for: "<<filelist[i]<<"\n";
+// cout<<"completed for: "<<filelist[i]<<endl << "";
 	}
 
 	quicksort(max_matches, images, 0, filecount - 1);
 
-	cout << "The match status is : \n";
+	cout << "The match status is : " << endl;
 	int correct = 0;
 	for (int i = 0; i < 10; i++) {
 		cout << "image: " << images[i] << " \t|| matches: " << max_matches[i]
-				<< "\n";
+				<< endl;
 		if ((place.length() < images[i].length())
 				&& (images[i].find(place) != std::string::npos)) {
 			correct++;
 		}
 	}
 
-	cout << "Precision = " << float(correct) / 10.0 << "\n";
+	cout << "Precision = " << float(correct) / 10.0 << endl;
 }
 
 void question4(const CImg<double> input_image,
@@ -319,22 +348,22 @@ void question4(const CImg<double> input_image,
 		match_ratio = temp_dists[ind];
 		max_matches[i] = match_ratio;
 		images[i] = filelist[i];
-// cout<<"Matches: "<<match_ratio<<" for image: "<<infile2<<"\n";
+// cout<<"Matches: "<<match_ratio<<" for image: "<<infile2<<endl << "";
 	}
 	quicksort(max_matches, images, 0, filecount - 1);
 
-	cout << "The match status is : \n";
+	cout << "The match status is : " << endl;
 	int correct = 0;
 	for (int i = 0; i < 10; i++) {
 		cout << "image: " << images[i] << " \t|| matches: " << max_matches[i]
-				<< "\n";
+				<< endl;
 		if ((place.length() < images[i].length())
 				&& (images[i].find(place) != std::string::npos)) {
 			correct++;
 		}
 	}
 
-	cout << "Precision = " << float(correct) / 10.0 << "\n";
+	cout << "Precision = " << float(correct) / 10.0 << endl;
 }
 
 int main(int argc, char **argv) {
@@ -372,9 +401,9 @@ int main(int argc, char **argv) {
 
 				// char temp_result[1024];
 				// int dirmove = chdir(result);
-				// cout<<"picking random...\n";
+				// cout<<"picking random..." << endl;
 				// int imgindex = (rand() % filecount)+1;
-				// cout<< "picked image : "<<filelist[imgindex]<<"\n";
+				// cout<< "picked image : "<<filelist[imgindex]<<endl << "";
 				// string inputFile = strcpy(temp_result, filelist[imgindex].c_str());
 				// string place = inputFile.substr(0, inputFile.find("_"));
 				int dirmove = chdir(result);
@@ -391,9 +420,9 @@ int main(int argc, char **argv) {
 
 				char temp_result[1024];
 				int dirmove = chdir(result);
-				cout << "picking random...\n";
+				cout << "picking random..." << endl;
 				int imgindex = (rand() % filecount) + 1;
-				cout << "picked image : " << filelist[imgindex] << "\n";
+				cout << "picked image : " << filelist[imgindex] << endl << "";
 				string inputFile = strcpy(temp_result,
 						filelist[imgindex].c_str());
 				string place = inputFile.substr(0, inputFile.find("_"));
@@ -408,7 +437,7 @@ int main(int argc, char **argv) {
 
 				int trials = 3;
 				for (int r = 0; r < trials; r++) {
-					cout << "Trial : " << r << " \n";
+					cout << "Trial : " << r << " " << endl;
 					question4(input_image, descriptors, filecount, filelist,
 							place);
 				}
@@ -513,12 +542,12 @@ int main(int argc, char **argv) {
 
 					quicksort(max_matches, images, 0, argc - 5);
 
-					cout << "The match status is : \n";
+					cout << "The match status is : " << endl;
 
 					for (int i = 0; i < argc - 4; i++) {
 
 						cout << "image: " << images[i] << " || matches: "
-								<< max_matches[i] << "\n";
+								<< max_matches[i] << endl << "";
 
 					}
 
@@ -528,7 +557,7 @@ int main(int argc, char **argv) {
 			}
 		} else if (part == "part2") {
 			if (question == "q1") {
-				cout << "Part2 - Question 1:" << '\n';
+				cout << "Part2 - Question 1:" << endl;
 				string inputFile = argv[3];
 				CImg<double> input_image(inputFile.c_str());
 				CImg<double> warped = input_image;
@@ -536,7 +565,7 @@ int main(int argc, char **argv) {
 				inverseWarp(input_image, warped, transformation, 1);
 				warped.save("part2-q1.png");
 			} else if (question == "q2") {
-				cout << "Part2 - Question 2:" << '\n';
+				cout << "Part2 - Question 2:" << endl;
 				if (argc < 4) {
 					cout << "Insufficent number of arguments; correct usage:"
 							<< endl;
@@ -595,10 +624,9 @@ int main(int argc, char **argv) {
 				}
 
 				//increase this to try more sets of points
-				int q = -1, reps = 500;
-				while (q < reps) {
-					q++;
-					cout << "\n\nRep:" << q;
+				int reps = 500;
+				for (int q = 0; q < reps; q++) {
+					cout << endl << "Rep:" << q << endl;
 					inliers = 0;
 					for (r = 0; r < 4; r++) {
 						// gives a random number between 0 and image width
@@ -611,7 +639,6 @@ int main(int argc, char **argv) {
 						y_dash[r] = matches[rand_y].row;
 					}
 					//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
-					//cout << "\nDone with 4 points";
 					for (k = 0; k < 8; k += 2) {
 						int u = k / 2;
 						trans(0, k) = x[u];
@@ -626,22 +653,20 @@ int main(int argc, char **argv) {
 						trans(7, k + 1) = -y[u] * y_dash[u];
 						new_coords(0, k + 1) = y_dash[u];
 					}
-					//cout << "\nDone with trans inits";
-					h = new_coords.solve(trans);
-					/*cout << "\ntrans: ";
-					for (int v = 0; v < 8; v++) {
-						for (int l = 0; l < 8; l++)
-							cout << trans(v,l) << " ";
-						cout << "\n";
-					}
-					cout << "\nnew_coords: ";
-					for (int v = 0; v < 8; v++)
-						cout << new_coords(0, v) << " ";
-					cout << "\n";*/
+					h = new_coords;
+					h.solve(trans);
+					/*cout << endl << "trans: ";
+					 for (int v = 0; v < 8; v++) {
+					 for (int l = 0; l < 8; l++)
+					 cout << trans(v,l) << " ";
+					 cout << endl << "";
+					 }
+					 cout << endl << "new_coords: ";
+					 for (int v = 0; v < 8; v++)
+					 cout << new_coords(0, v) << " ";
+					 cout << endl << "";*/
 
-					//cout << "\nafter solve";
 					convert_to_3x3(h, homography);
-					//cout << "\nafter converting to 3x3";
 					for (int m = 0; m < descriptors.size() - 1; m++) {
 						image_x = descriptors[m].col;
 						image_y = descriptors[m].row;
@@ -658,13 +683,13 @@ int main(int argc, char **argv) {
 						new_image_x_dash /= new_image_w_dash;
 						new_image_y_dash /= new_image_w_dash;
 
-						//cout << endl;
+						cout << endl;
 						for (int b = 0; b < 3; b++)
 							for (int c = 0; c < 3; c++)
 								cout << homography[b][c] << " ";
-						//cout << endl;
+						cout << endl;
 
-						cout << "\nnew: " << new_image_x_dash << ","
+						cout << endl << "new: " << new_image_x_dash << ","
 								<< new_image_y_dash << endl;
 						cout << "img: " << image_x_dash << "," << image_y_dash;
 
@@ -680,26 +705,26 @@ int main(int argc, char **argv) {
 							}
 						}
 					}
-					cout << "\n Inliers: " << inliers;
+					cout << " Inliers: " << inliers << endl;
 					if (max_inliers < inliers) {
 						max_inliers = inliers;
 						global_h = h;
-						/*cout << "\nh: ";
+						cout << endl << "h: ";
 						for (int v = 0; v < 8; v++)
 							cout << h(0, v) << " ";
 
 						cout << endl << "global: ";
 						for (int v = 0; v < 8; v++)
 							cout << global_h(0, v) << " ";
-						*/
+
 					}
-					//cout<<"\nfinishing one loop";
+
 				}
-				cout << "\nGlobal h: ";
+				cout << endl << "Global h: ";
 				for (int g = 0; g < 8; g++) {
 					cout << global_h(0, g) << " ";
 				}
-				cout << "\n\n";
+				cout << endl;
 			}
 
 		} else
