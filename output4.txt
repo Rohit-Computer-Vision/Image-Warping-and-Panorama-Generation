@@ -1,0 +1,3960 @@
+Matching for : bigben_10.jpg
+Trial : 0 
+The match status is : 
+image: bigben_10.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 190
+image: tatemodern_13.jpg 	|| matches: 206
+image: londoneye_22.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 213
+image: londoneye_13.jpg 	|| matches: 233
+image: empirestate_23.jpg 	|| matches: 236
+image: bigben_3.jpg 	|| matches: 236
+image: bigben_14.jpg 	|| matches: 236
+image: tatemodern_4.jpg 	|| matches: 238
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: bigben_10.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 235
+image: notredame_1.jpg 	|| matches: 237
+image: tatemodern_11.jpg 	|| matches: 238
+image: londoneye_13.jpg 	|| matches: 240
+image: trafalgarsquare_20.jpg 	|| matches: 241
+image: londoneye_23.jpg 	|| matches: 243
+image: londoneye_9.jpg 	|| matches: 244
+image: tatemodern_9.jpg 	|| matches: 245
+image: empirestate_9.jpg 	|| matches: 248
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: bigben_10.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 193
+image: tatemodern_9.jpg 	|| matches: 202
+image: bigben_3.jpg 	|| matches: 204
+image: tatemodern_13.jpg 	|| matches: 206
+image: londoneye_23.jpg 	|| matches: 213
+image: londoneye_22.jpg 	|| matches: 213
+image: notredame_1.jpg 	|| matches: 221
+image: empirestate_9.jpg 	|| matches: 225
+image: tatemodern_2.jpg 	|| matches: 230
+Precision = 0.2
+Matching for : bigben_12.jpg
+Trial : 0 
+The match status is : 
+image: bigben_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 112
+image: tatemodern_6.jpg 	|| matches: 143
+image: trafalgarsquare_20.jpg 	|| matches: 153
+image: tatemodern_9.jpg 	|| matches: 163
+image: tatemodern_8.jpg 	|| matches: 165
+image: tatemodern_11.jpg 	|| matches: 173
+image: tatemodern_16.jpg 	|| matches: 173
+image: trafalgarsquare_5.jpg 	|| matches: 174
+image: bigben_6.jpg 	|| matches: 176
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: bigben_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 126
+image: tatemodern_6.jpg 	|| matches: 133
+image: trafalgarsquare_20.jpg 	|| matches: 155
+image: tatemodern_11.jpg 	|| matches: 160
+image: tatemodern_9.jpg 	|| matches: 173
+image: tatemodern_8.jpg 	|| matches: 175
+image: bigben_6.jpg 	|| matches: 176
+image: trafalgarsquare_5.jpg 	|| matches: 176
+image: empirestate_9.jpg 	|| matches: 179
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: bigben_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 132
+image: tatemodern_6.jpg 	|| matches: 154
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: tatemodern_9.jpg 	|| matches: 179
+image: tatemodern_8.jpg 	|| matches: 184
+image: bigben_16.jpg 	|| matches: 194
+image: empirestate_12.jpg 	|| matches: 195
+image: tatemodern_11.jpg 	|| matches: 197
+image: empirestate_9.jpg 	|| matches: 197
+Precision = 0.2
+Matching for : bigben_13.jpg
+Trial : 0 
+The match status is : 
+image: bigben_13.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 168
+image: tatemodern_13.jpg 	|| matches: 172
+image: tatemodern_6.jpg 	|| matches: 172
+image: trafalgarsquare_20.jpg 	|| matches: 187
+image: empirestate_9.jpg 	|| matches: 192
+image: bigben_16.jpg 	|| matches: 197
+image: empirestate_25.jpg 	|| matches: 199
+image: empirestate_14.jpg 	|| matches: 200
+image: tatemodern_16.jpg 	|| matches: 205
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: bigben_13.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 162
+image: trafalgarsquare_20.jpg 	|| matches: 167
+image: tatemodern_13.jpg 	|| matches: 172
+image: tatemodern_6.jpg 	|| matches: 175
+image: empirestate_9.jpg 	|| matches: 182
+image: trafalgarsquare_5.jpg 	|| matches: 191
+image: empirestate_14.jpg 	|| matches: 195
+image: empirestate_25.jpg 	|| matches: 195
+image: bigben_12.jpg 	|| matches: 196
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: bigben_13.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 167
+image: trafalgarsquare_20.jpg 	|| matches: 167
+image: bigben_16.jpg 	|| matches: 179
+image: empirestate_9.jpg 	|| matches: 181
+image: tatemodern_13.jpg 	|| matches: 184
+image: tatemodern_6.jpg 	|| matches: 188
+image: tatemodern_11.jpg 	|| matches: 196
+image: trafalgarsquare_5.jpg 	|| matches: 199
+image: trafalgarsquare_1.jpg 	|| matches: 200
+Precision = 0.2
+Matching for : bigben_14.jpg
+Trial : 0 
+The match status is : 
+image: bigben_14.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 172
+image: tatemodern_6.jpg 	|| matches: 181
+image: tatemodern_9.jpg 	|| matches: 183
+image: tatemodern_4.jpg 	|| matches: 186
+image: bigben_6.jpg 	|| matches: 188
+image: trafalgarsquare_6.jpg 	|| matches: 204
+image: trafalgarsquare_5.jpg 	|| matches: 206
+image: bigben_12.jpg 	|| matches: 206
+image: empirestate_14.jpg 	|| matches: 213
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: bigben_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 155
+image: trafalgarsquare_20.jpg 	|| matches: 169
+image: tatemodern_6.jpg 	|| matches: 175
+image: tatemodern_9.jpg 	|| matches: 192
+image: trafalgarsquare_5.jpg 	|| matches: 195
+image: bigben_6.jpg 	|| matches: 201
+image: tatemodern_11.jpg 	|| matches: 202
+image: trafalgarsquare_6.jpg 	|| matches: 205
+image: bigben_8.jpg 	|| matches: 207
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: bigben_14.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 178
+image: tatemodern_4.jpg 	|| matches: 178
+image: tatemodern_6.jpg 	|| matches: 202
+image: bigben_8.jpg 	|| matches: 209
+image: trafalgarsquare_6.jpg 	|| matches: 210
+image: trafalgarsquare_5.jpg 	|| matches: 213
+image: empirestate_9.jpg 	|| matches: 214
+image: colosseum_6.jpg 	|| matches: 217
+image: bigben_6.jpg 	|| matches: 218
+Precision = 0.3
+Matching for : bigben_16.jpg
+Trial : 0 
+The match status is : 
+image: bigben_16.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 185
+image: tatemodern_13.jpg 	|| matches: 186
+image: empirestate_9.jpg 	|| matches: 187
+image: notredame_1.jpg 	|| matches: 190
+image: tatemodern_9.jpg 	|| matches: 194
+image: tatemodern_4.jpg 	|| matches: 195
+image: bigben_12.jpg 	|| matches: 198
+image: trafalgarsquare_5.jpg 	|| matches: 199
+image: bigben_13.jpg 	|| matches: 206
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: bigben_16.jpg 	|| matches: 0
+image: empirestate_9.jpg 	|| matches: 169
+image: trafalgarsquare_20.jpg 	|| matches: 174
+image: tatemodern_9.jpg 	|| matches: 174
+image: notredame_1.jpg 	|| matches: 174
+image: trafalgarsquare_5.jpg 	|| matches: 177
+image: tatemodern_6.jpg 	|| matches: 181
+image: trafalgarsquare_1.jpg 	|| matches: 184
+image: bigben_6.jpg 	|| matches: 189
+image: bigben_12.jpg 	|| matches: 191
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: bigben_16.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 184
+image: notredame_1.jpg 	|| matches: 190
+image: trafalgarsquare_20.jpg 	|| matches: 190
+image: empirestate_9.jpg 	|| matches: 195
+image: tatemodern_13.jpg 	|| matches: 196
+image: tatemodern_9.jpg 	|| matches: 198
+image: tatemodern_8.jpg 	|| matches: 202
+image: bigben_12.jpg 	|| matches: 203
+image: tatemodern_4.jpg 	|| matches: 203
+Precision = 0.2
+Matching for : bigben_2.jpg
+Trial : 0 
+The match status is : 
+image: bigben_2.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 208
+image: empirestate_14.jpg 	|| matches: 212
+image: bigben_14.jpg 	|| matches: 213
+image: empirestate_9.jpg 	|| matches: 218
+image: bigben_16.jpg 	|| matches: 220
+image: bigben_3.jpg 	|| matches: 221
+image: bigben_6.jpg 	|| matches: 224
+image: bigben_8.jpg 	|| matches: 224
+image: notredame_1.jpg 	|| matches: 224
+Precision = 0.6
+Trial : 1 
+The match status is : 
+image: bigben_2.jpg 	|| matches: 0
+image: bigben_14.jpg 	|| matches: 207
+image: tatemodern_13.jpg 	|| matches: 209
+image: tatemodern_4.jpg 	|| matches: 212
+image: bigben_16.jpg 	|| matches: 218
+image: empirestate_25.jpg 	|| matches: 218
+image: bigben_6.jpg 	|| matches: 219
+image: empirestate_14.jpg 	|| matches: 219
+image: eiffel_1.jpg 	|| matches: 223
+image: empirestate_9.jpg 	|| matches: 223
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: bigben_2.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 195
+image: eiffel_1.jpg 	|| matches: 208
+image: tatemodern_13.jpg 	|| matches: 208
+image: bigben_6.jpg 	|| matches: 208
+image: empirestate_14.jpg 	|| matches: 211
+image: bigben_14.jpg 	|| matches: 219
+image: trafalgarsquare_5.jpg 	|| matches: 222
+image: bigben_3.jpg 	|| matches: 222
+image: empirestate_9.jpg 	|| matches: 222
+Precision = 0.4
+Matching for : bigben_3.jpg
+Trial : 0 
+The match status is : 
+image: bigben_3.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 194
+image: tatemodern_9.jpg 	|| matches: 199
+image: empirestate_14.jpg 	|| matches: 209
+image: notredame_1.jpg 	|| matches: 211
+image: tatemodern_11.jpg 	|| matches: 216
+image: londoneye_13.jpg 	|| matches: 217
+image: tatemodern_6.jpg 	|| matches: 219
+image: londoneye_23.jpg 	|| matches: 219
+image: trafalgarsquare_8.jpg 	|| matches: 221
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: bigben_3.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 200
+image: bigben_10.jpg 	|| matches: 201
+image: tatemodern_13.jpg 	|| matches: 201
+image: bigben_6.jpg 	|| matches: 211
+image: trafalgarsquare_5.jpg 	|| matches: 214
+image: empirestate_14.jpg 	|| matches: 214
+image: tatemodern_4.jpg 	|| matches: 214
+image: londoneye_13.jpg 	|| matches: 215
+image: londoneye_23.jpg 	|| matches: 221
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: bigben_3.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 206
+image: tatemodern_9.jpg 	|| matches: 207
+image: tatemodern_11.jpg 	|| matches: 215
+image: londoneye_23.jpg 	|| matches: 217
+image: empirestate_14.jpg 	|| matches: 217
+image: tatemodern_2.jpg 	|| matches: 218
+image: londoneye_13.jpg 	|| matches: 223
+image: bigben_10.jpg 	|| matches: 224
+image: trafalgarsquare_5.jpg 	|| matches: 224
+Precision = 0.2
+Matching for : bigben_6.jpg
+Trial : 0 
+The match status is : 
+image: bigben_6.jpg 	|| matches: 0
+image: bigben_8.jpg 	|| matches: 142
+image: tatemodern_4.jpg 	|| matches: 152
+image: tatemodern_6.jpg 	|| matches: 153
+image: trafalgarsquare_20.jpg 	|| matches: 164
+image: tatemodern_9.jpg 	|| matches: 180
+image: tatemodern_8.jpg 	|| matches: 186
+image: bigben_12.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 190
+image: empirestate_14.jpg 	|| matches: 193
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: bigben_6.jpg 	|| matches: 0
+image: bigben_8.jpg 	|| matches: 138
+image: tatemodern_4.jpg 	|| matches: 167
+image: trafalgarsquare_20.jpg 	|| matches: 168
+image: tatemodern_9.jpg 	|| matches: 184
+image: tatemodern_6.jpg 	|| matches: 185
+image: tatemodern_8.jpg 	|| matches: 187
+image: bigben_12.jpg 	|| matches: 193
+image: eiffel_18.jpg 	|| matches: 194
+image: bigben_14.jpg 	|| matches: 197
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: bigben_6.jpg 	|| matches: 0
+image: bigben_8.jpg 	|| matches: 145
+image: trafalgarsquare_20.jpg 	|| matches: 165
+image: tatemodern_4.jpg 	|| matches: 167
+image: tatemodern_6.jpg 	|| matches: 171
+image: tatemodern_11.jpg 	|| matches: 181
+image: tatemodern_9.jpg 	|| matches: 181
+image: bigben_12.jpg 	|| matches: 185
+image: trafalgarsquare_5.jpg 	|| matches: 187
+image: tatemodern_8.jpg 	|| matches: 190
+Precision = 0.3
+Matching for : bigben_7.jpg
+Trial : 0 
+The match status is : 
+image: bigben_7.jpg 	|| matches: 0
+image: eiffel_19.jpg 	|| matches: 143
+image: tatemodern_4.jpg 	|| matches: 159
+image: tatemodern_9.jpg 	|| matches: 168
+image: tatemodern_6.jpg 	|| matches: 169
+image: notredame_25.jpg 	|| matches: 172
+image: tatemodern_11.jpg 	|| matches: 174
+image: trafalgarsquare_20.jpg 	|| matches: 174
+image: bigben_12.jpg 	|| matches: 182
+image: empirestate_9.jpg 	|| matches: 185
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: bigben_7.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 136
+image: tatemodern_4.jpg 	|| matches: 156
+image: tatemodern_9.jpg 	|| matches: 166
+image: bigben_12.jpg 	|| matches: 171
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: tatemodern_11.jpg 	|| matches: 183
+image: empirestate_9.jpg 	|| matches: 183
+image: bigben_6.jpg 	|| matches: 184
+image: trafalgarsquare_5.jpg 	|| matches: 187
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: bigben_7.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 135
+image: tatemodern_6.jpg 	|| matches: 175
+image: trafalgarsquare_20.jpg 	|| matches: 178
+image: bigben_12.jpg 	|| matches: 185
+image: eiffel_19.jpg 	|| matches: 193
+image: tatemodern_9.jpg 	|| matches: 193
+image: empirestate_9.jpg 	|| matches: 194
+image: bigben_16.jpg 	|| matches: 194
+image: trafalgarsquare_5.jpg 	|| matches: 195
+Precision = 0.3
+Matching for : bigben_8.jpg
+Trial : 0 
+The match status is : 
+image: bigben_8.jpg 	|| matches: 0
+image: bigben_6.jpg 	|| matches: 140
+image: tatemodern_4.jpg 	|| matches: 172
+image: tatemodern_6.jpg 	|| matches: 182
+image: trafalgarsquare_20.jpg 	|| matches: 186
+image: tatemodern_9.jpg 	|| matches: 191
+image: tatemodern_8.jpg 	|| matches: 197
+image: bigben_16.jpg 	|| matches: 203
+image: empirestate_14.jpg 	|| matches: 204
+image: trafalgarsquare_5.jpg 	|| matches: 207
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: bigben_8.jpg 	|| matches: 0
+image: bigben_6.jpg 	|| matches: 127
+image: tatemodern_4.jpg 	|| matches: 169
+image: tatemodern_9.jpg 	|| matches: 191
+image: trafalgarsquare_20.jpg 	|| matches: 194
+image: bigben_16.jpg 	|| matches: 197
+image: tatemodern_6.jpg 	|| matches: 198
+image: empirestate_9.jpg 	|| matches: 204
+image: bigben_14.jpg 	|| matches: 205
+image: bigben_12.jpg 	|| matches: 206
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: bigben_8.jpg 	|| matches: 0
+image: bigben_6.jpg 	|| matches: 125
+image: trafalgarsquare_20.jpg 	|| matches: 194
+image: tatemodern_4.jpg 	|| matches: 197
+image: tatemodern_6.jpg 	|| matches: 198
+image: tatemodern_9.jpg 	|| matches: 202
+image: tatemodern_8.jpg 	|| matches: 204
+image: trafalgarsquare_5.jpg 	|| matches: 205
+image: bigben_14.jpg 	|| matches: 207
+image: bigben_12.jpg 	|| matches: 209
+Precision = 0.4
+Matching for : colosseum_11.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_11.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 227
+image: tatemodern_9.jpg 	|| matches: 236
+image: notredame_1.jpg 	|| matches: 236
+image: trafalgarsquare_5.jpg 	|| matches: 237
+image: colosseum_6.jpg 	|| matches: 239
+image: tatemodern_6.jpg 	|| matches: 240
+image: bigben_16.jpg 	|| matches: 242
+image: tatemodern_13.jpg 	|| matches: 244
+image: empirestate_25.jpg 	|| matches: 246
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: colosseum_11.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 233
+image: tatemodern_4.jpg 	|| matches: 241
+image: tatemodern_9.jpg 	|| matches: 243
+image: trafalgarsquare_5.jpg 	|| matches: 243
+image: louvre_14.jpg 	|| matches: 243
+image: bigben_16.jpg 	|| matches: 247
+image: colosseum_6.jpg 	|| matches: 248
+image: londoneye_22.jpg 	|| matches: 249
+image: tatemodern_13.jpg 	|| matches: 250
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: colosseum_11.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 233
+image: colosseum_6.jpg 	|| matches: 241
+image: tatemodern_4.jpg 	|| matches: 242
+image: trafalgarsquare_20.jpg 	|| matches: 243
+image: notredame_1.jpg 	|| matches: 244
+image: tatemodern_16.jpg 	|| matches: 245
+image: bigben_16.jpg 	|| matches: 245
+image: empirestate_25.jpg 	|| matches: 247
+image: trafalgarsquare_5.jpg 	|| matches: 248
+Precision = 0.2
+Matching for : colosseum_12.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 151
+image: tatemodern_6.jpg 	|| matches: 172
+image: trafalgarsquare_20.jpg 	|| matches: 173
+image: eiffel_18.jpg 	|| matches: 181
+image: tatemodern_9.jpg 	|| matches: 185
+image: trafalgarsquare_5.jpg 	|| matches: 187
+image: bigben_6.jpg 	|| matches: 192
+image: empirestate_15.jpg 	|| matches: 194
+image: trafalgarsquare_6.jpg 	|| matches: 194
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 151
+image: tatemodern_9.jpg 	|| matches: 172
+image: trafalgarsquare_20.jpg 	|| matches: 173
+image: tatemodern_6.jpg 	|| matches: 174
+image: bigben_6.jpg 	|| matches: 179
+image: tatemodern_11.jpg 	|| matches: 180
+image: tatemodern_8.jpg 	|| matches: 186
+image: eiffel_18.jpg 	|| matches: 189
+image: trafalgarsquare_6.jpg 	|| matches: 191
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 147
+image: tatemodern_6.jpg 	|| matches: 176
+image: trafalgarsquare_20.jpg 	|| matches: 183
+image: eiffel_18.jpg 	|| matches: 184
+image: tatemodern_9.jpg 	|| matches: 195
+image: tatemodern_11.jpg 	|| matches: 199
+image: trafalgarsquare_5.jpg 	|| matches: 200
+image: empirestate_15.jpg 	|| matches: 200
+image: bigben_6.jpg 	|| matches: 204
+Precision = 0.1
+Matching for : colosseum_13.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 185
+image: tatemodern_9.jpg 	|| matches: 194
+image: trafalgarsquare_20.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 204
+image: tatemodern_11.jpg 	|| matches: 210
+image: tatemodern_4.jpg 	|| matches: 211
+image: empirestate_15.jpg 	|| matches: 214
+image: eiffel_1.jpg 	|| matches: 217
+image: empirestate_9.jpg 	|| matches: 220
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 192
+image: tatemodern_6.jpg 	|| matches: 194
+image: trafalgarsquare_20.jpg 	|| matches: 205
+image: notredame_25.jpg 	|| matches: 208
+image: tatemodern_9.jpg 	|| matches: 209
+image: empirestate_15.jpg 	|| matches: 211
+image: londoneye_16.jpg 	|| matches: 211
+image: tatemodern_4.jpg 	|| matches: 211
+image: notredame_20.jpg 	|| matches: 216
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 185
+image: tatemodern_9.jpg 	|| matches: 190
+image: tatemodern_6.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 198
+image: tatemodern_11.jpg 	|| matches: 201
+image: trafalgarsquare_6.jpg 	|| matches: 204
+image: sanmarco_14.jpg 	|| matches: 205
+image: empirestate_9.jpg 	|| matches: 212
+image: londoneye_16.jpg 	|| matches: 214
+Precision = 0.1
+Matching for : colosseum_15.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_15.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 212
+image: tatemodern_13.jpg 	|| matches: 222
+image: tatemodern_4.jpg 	|| matches: 227
+image: tatemodern_6.jpg 	|| matches: 230
+image: tatemodern_9.jpg 	|| matches: 236
+image: tatemodern_8.jpg 	|| matches: 237
+image: trafalgarsquare_20.jpg 	|| matches: 240
+image: notredame_1.jpg 	|| matches: 241
+image: trafalgarsquare_5.jpg 	|| matches: 247
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_15.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 215
+image: tatemodern_4.jpg 	|| matches: 217
+image: tatemodern_13.jpg 	|| matches: 221
+image: trafalgarsquare_20.jpg 	|| matches: 223
+image: tatemodern_9.jpg 	|| matches: 234
+image: notredame_1.jpg 	|| matches: 236
+image: trafalgarsquare_5.jpg 	|| matches: 236
+image: tatemodern_11.jpg 	|| matches: 242
+image: tatemodern_8.jpg 	|| matches: 243
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 211
+image: tatemodern_9.jpg 	|| matches: 230
+image: tatemodern_13.jpg 	|| matches: 235
+image: notredame_1.jpg 	|| matches: 239
+image: tatemodern_6.jpg 	|| matches: 239
+image: trafalgarsquare_20.jpg 	|| matches: 242
+image: tatemodern_11.jpg 	|| matches: 247
+image: empirestate_14.jpg 	|| matches: 252
+image: tatemodern_2.jpg 	|| matches: 254
+Precision = 0.1
+Matching for : colosseum_18.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_18.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 203
+image: tatemodern_11.jpg 	|| matches: 213
+image: tatemodern_9.jpg 	|| matches: 218
+image: trafalgarsquare_20.jpg 	|| matches: 219
+image: tatemodern_13.jpg 	|| matches: 226
+image: empirestate_9.jpg 	|| matches: 229
+image: empirestate_14.jpg 	|| matches: 229
+image: tatemodern_6.jpg 	|| matches: 229
+image: empirestate_25.jpg 	|| matches: 231
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_18.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 194
+image: tatemodern_6.jpg 	|| matches: 221
+image: tatemodern_16.jpg 	|| matches: 223
+image: tatemodern_9.jpg 	|| matches: 228
+image: tatemodern_13.jpg 	|| matches: 229
+image: tatemodern_11.jpg 	|| matches: 231
+image: empirestate_14.jpg 	|| matches: 233
+image: sanmarco_14.jpg 	|| matches: 236
+image: tatemodern_8.jpg 	|| matches: 236
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_18.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 203
+image: tatemodern_9.jpg 	|| matches: 206
+image: tatemodern_13.jpg 	|| matches: 216
+image: tatemodern_16.jpg 	|| matches: 222
+image: empirestate_14.jpg 	|| matches: 223
+image: tatemodern_11.jpg 	|| matches: 226
+image: trafalgarsquare_20.jpg 	|| matches: 226
+image: tatemodern_6.jpg 	|| matches: 227
+image: eiffel_18.jpg 	|| matches: 228
+Precision = 0.1
+Matching for : colosseum_3.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 156
+image: trafalgarsquare_20.jpg 	|| matches: 158
+image: tatemodern_6.jpg 	|| matches: 181
+image: colosseum_8.jpg 	|| matches: 181
+image: empirestate_9.jpg 	|| matches: 182
+image: tatemodern_13.jpg 	|| matches: 185
+image: trafalgarsquare_5.jpg 	|| matches: 186
+image: tatemodern_9.jpg 	|| matches: 190
+image: trafalgarsquare_1.jpg 	|| matches: 190
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: colosseum_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 155
+image: trafalgarsquare_20.jpg 	|| matches: 164
+image: colosseum_8.jpg 	|| matches: 181
+image: tatemodern_9.jpg 	|| matches: 184
+image: trafalgarsquare_5.jpg 	|| matches: 185
+image: tatemodern_6.jpg 	|| matches: 187
+image: notredame_1.jpg 	|| matches: 187
+image: bigben_16.jpg 	|| matches: 190
+image: empirestate_9.jpg 	|| matches: 191
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: colosseum_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 133
+image: trafalgarsquare_20.jpg 	|| matches: 164
+image: trafalgarsquare_5.jpg 	|| matches: 171
+image: tatemodern_9.jpg 	|| matches: 179
+image: colosseum_8.jpg 	|| matches: 181
+image: tatemodern_13.jpg 	|| matches: 182
+image: tatemodern_6.jpg 	|| matches: 187
+image: notredame_1.jpg 	|| matches: 189
+image: bigben_16.jpg 	|| matches: 189
+Precision = 0.2
+Matching for : colosseum_4.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_4.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 214
+image: trafalgarsquare_5.jpg 	|| matches: 223
+image: tatemodern_13.jpg 	|| matches: 223
+image: empirestate_14.jpg 	|| matches: 225
+image: bigben_3.jpg 	|| matches: 225
+image: empirestate_10.jpg 	|| matches: 226
+image: tatemodern_11.jpg 	|| matches: 228
+image: tatemodern_9.jpg 	|| matches: 230
+image: tatemodern_4.jpg 	|| matches: 230
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_4.jpg 	|| matches: 0
+image: sanmarco_14.jpg 	|| matches: 221
+image: tatemodern_4.jpg 	|| matches: 223
+image: tatemodern_13.jpg 	|| matches: 225
+image: tatemodern_9.jpg 	|| matches: 230
+image: empirestate_25.jpg 	|| matches: 231
+image: louvre_14.jpg 	|| matches: 232
+image: empirestate_14.jpg 	|| matches: 232
+image: colosseum_6.jpg 	|| matches: 232
+image: tatemodern_6.jpg 	|| matches: 233
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: colosseum_4.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 218
+image: tatemodern_13.jpg 	|| matches: 223
+image: tatemodern_9.jpg 	|| matches: 224
+image: empirestate_14.jpg 	|| matches: 225
+image: tatemodern_6.jpg 	|| matches: 226
+image: sanmarco_14.jpg 	|| matches: 226
+image: tatemodern_16.jpg 	|| matches: 227
+image: trafalgarsquare_6.jpg 	|| matches: 228
+image: empirestate_9.jpg 	|| matches: 229
+Precision = 0.1
+Matching for : colosseum_5.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_5.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 198
+image: louvre_14.jpg 	|| matches: 210
+image: tatemodern_4.jpg 	|| matches: 214
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: tatemodern_6.jpg 	|| matches: 218
+image: notredame_19.jpg 	|| matches: 222
+image: bigben_16.jpg 	|| matches: 223
+image: empirestate_14.jpg 	|| matches: 223
+image: empirestate_9.jpg 	|| matches: 227
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_5.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 202
+image: tatemodern_9.jpg 	|| matches: 202
+image: trafalgarsquare_20.jpg 	|| matches: 217
+image: louvre_14.jpg 	|| matches: 223
+image: bigben_16.jpg 	|| matches: 223
+image: trafalgarsquare_5.jpg 	|| matches: 223
+image: tatemodern_6.jpg 	|| matches: 226
+image: empirestate_9.jpg 	|| matches: 228
+image: empirestate_14.jpg 	|| matches: 228
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_5.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 193
+image: tatemodern_6.jpg 	|| matches: 202
+image: tatemodern_4.jpg 	|| matches: 208
+image: louvre_14.jpg 	|| matches: 215
+image: notredame_1.jpg 	|| matches: 218
+image: empirestate_14.jpg 	|| matches: 220
+image: bigben_16.jpg 	|| matches: 220
+image: trafalgarsquare_20.jpg 	|| matches: 220
+image: empirestate_9.jpg 	|| matches: 221
+Precision = 0.1
+Matching for : colosseum_6.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_6.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 195
+image: tatemodern_4.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 201
+image: tatemodern_13.jpg 	|| matches: 202
+image: tatemodern_11.jpg 	|| matches: 202
+image: tatemodern_9.jpg 	|| matches: 207
+image: tatemodern_16.jpg 	|| matches: 213
+image: notredame_1.jpg 	|| matches: 217
+image: empirestate_14.jpg 	|| matches: 224
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: colosseum_6.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 201
+image: tatemodern_13.jpg 	|| matches: 204
+image: trafalgarsquare_20.jpg 	|| matches: 206
+image: tatemodern_9.jpg 	|| matches: 218
+image: tatemodern_11.jpg 	|| matches: 221
+image: tatemodern_4.jpg 	|| matches: 221
+image: bigben_6.jpg 	|| matches: 226
+image: tatemodern_8.jpg 	|| matches: 226
+image: empirestate_15.jpg 	|| matches: 227
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: colosseum_6.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 204
+image: tatemodern_6.jpg 	|| matches: 206
+image: tatemodern_11.jpg 	|| matches: 207
+image: tatemodern_13.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 217
+image: empirestate_9.jpg 	|| matches: 217
+image: eiffel_18.jpg 	|| matches: 219
+image: tatemodern_8.jpg 	|| matches: 219
+image: empirestate_15.jpg 	|| matches: 220
+Precision = 0.1
+Matching for : colosseum_8.jpg
+Trial : 0 
+The match status is : 
+image: colosseum_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 147
+image: trafalgarsquare_20.jpg 	|| matches: 167
+image: tatemodern_9.jpg 	|| matches: 168
+image: tatemodern_6.jpg 	|| matches: 174
+image: tatemodern_13.jpg 	|| matches: 175
+image: trafalgarsquare_5.jpg 	|| matches: 176
+image: tatemodern_16.jpg 	|| matches: 177
+image: colosseum_3.jpg 	|| matches: 180
+image: tatemodern_14.jpg 	|| matches: 184
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: colosseum_8.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 161
+image: tatemodern_4.jpg 	|| matches: 171
+image: trafalgarsquare_20.jpg 	|| matches: 174
+image: tatemodern_13.jpg 	|| matches: 177
+image: tatemodern_6.jpg 	|| matches: 181
+image: colosseum_3.jpg 	|| matches: 181
+image: tatemodern_16.jpg 	|| matches: 183
+image: empirestate_9.jpg 	|| matches: 183
+image: trafalgarsquare_6.jpg 	|| matches: 184
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: colosseum_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 157
+image: trafalgarsquare_20.jpg 	|| matches: 170
+image: colosseum_3.jpg 	|| matches: 175
+image: tatemodern_9.jpg 	|| matches: 175
+image: trafalgarsquare_5.jpg 	|| matches: 177
+image: sanmarco_14.jpg 	|| matches: 189
+image: empirestate_9.jpg 	|| matches: 190
+image: tatemodern_13.jpg 	|| matches: 191
+image: tatemodern_6.jpg 	|| matches: 193
+Precision = 0.2
+Matching for : eiffel_1.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_1.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 206
+image: tatemodern_9.jpg 	|| matches: 207
+image: trafalgarsquare_20.jpg 	|| matches: 208
+image: empirestate_15.jpg 	|| matches: 210
+image: empirestate_9.jpg 	|| matches: 213
+image: colosseum_6.jpg 	|| matches: 213
+image: tatemodern_4.jpg 	|| matches: 214
+image: tatemodern_16.jpg 	|| matches: 217
+image: tatemodern_24.jpg 	|| matches: 217
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: eiffel_1.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 178
+image: tatemodern_4.jpg 	|| matches: 189
+image: trafalgarsquare_20.jpg 	|| matches: 196
+image: tatemodern_9.jpg 	|| matches: 203
+image: tatemodern_24.jpg 	|| matches: 204
+image: trafalgarsquare_5.jpg 	|| matches: 215
+image: eiffel_18.jpg 	|| matches: 217
+image: tatemodern_16.jpg 	|| matches: 217
+image: empirestate_9.jpg 	|| matches: 218
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: eiffel_1.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 198
+image: trafalgarsquare_20.jpg 	|| matches: 200
+image: tatemodern_9.jpg 	|| matches: 204
+image: tatemodern_6.jpg 	|| matches: 204
+image: tatemodern_8.jpg 	|| matches: 213
+image: tatemodern_24.jpg 	|| matches: 215
+image: notredame_25.jpg 	|| matches: 216
+image: tatemodern_13.jpg 	|| matches: 219
+image: empirestate_15.jpg 	|| matches: 220
+Precision = 0.1
+Matching for : eiffel_15.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_15.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 172
+image: tatemodern_9.jpg 	|| matches: 192
+image: tatemodern_4.jpg 	|| matches: 197
+image: louvre_14.jpg 	|| matches: 199
+image: trafalgarsquare_5.jpg 	|| matches: 200
+image: empirestate_14.jpg 	|| matches: 205
+image: bigben_16.jpg 	|| matches: 207
+image: tatemodern_16.jpg 	|| matches: 212
+image: tatemodern_11.jpg 	|| matches: 213
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: eiffel_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 172
+image: trafalgarsquare_20.jpg 	|| matches: 191
+image: trafalgarsquare_5.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 201
+image: tatemodern_11.jpg 	|| matches: 203
+image: louvre_14.jpg 	|| matches: 203
+image: bigben_16.jpg 	|| matches: 204
+image: tatemodern_9.jpg 	|| matches: 204
+image: empirestate_14.jpg 	|| matches: 205
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: eiffel_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 172
+image: trafalgarsquare_20.jpg 	|| matches: 183
+image: tatemodern_6.jpg 	|| matches: 195
+image: tatemodern_11.jpg 	|| matches: 198
+image: tatemodern_9.jpg 	|| matches: 200
+image: trafalgarsquare_5.jpg 	|| matches: 204
+image: tatemodern_16.jpg 	|| matches: 205
+image: empirestate_14.jpg 	|| matches: 210
+image: tatemodern_13.jpg 	|| matches: 220
+Precision = 0.1
+Matching for : eiffel_18.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_18.jpg 	|| matches: 0
+image: eiffel_19.jpg 	|| matches: 108
+image: tatemodern_11.jpg 	|| matches: 143
+image: tatemodern_6.jpg 	|| matches: 147
+image: eiffel_6.jpg 	|| matches: 153
+image: tatemodern_8.jpg 	|| matches: 154
+image: trafalgarsquare_20.jpg 	|| matches: 155
+image: tatemodern_4.jpg 	|| matches: 159
+image: tatemodern_9.jpg 	|| matches: 172
+image: empirestate_15.jpg 	|| matches: 183
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: eiffel_18.jpg 	|| matches: 0
+image: eiffel_19.jpg 	|| matches: 103
+image: tatemodern_6.jpg 	|| matches: 147
+image: tatemodern_8.jpg 	|| matches: 148
+image: tatemodern_4.jpg 	|| matches: 153
+image: tatemodern_11.jpg 	|| matches: 153
+image: trafalgarsquare_20.jpg 	|| matches: 156
+image: tatemodern_9.jpg 	|| matches: 173
+image: bigben_6.jpg 	|| matches: 174
+image: empirestate_15.jpg 	|| matches: 185
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: eiffel_18.jpg 	|| matches: 0
+image: eiffel_19.jpg 	|| matches: 108
+image: tatemodern_11.jpg 	|| matches: 140
+image: tatemodern_6.jpg 	|| matches: 142
+image: tatemodern_8.jpg 	|| matches: 148
+image: eiffel_6.jpg 	|| matches: 149
+image: tatemodern_4.jpg 	|| matches: 153
+image: trafalgarsquare_20.jpg 	|| matches: 159
+image: tatemodern_2.jpg 	|| matches: 160
+image: tatemodern_9.jpg 	|| matches: 163
+Precision = 0.3
+Matching for : eiffel_19.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_19.jpg 	|| matches: 0
+image: eiffel_18.jpg 	|| matches: 164
+image: tatemodern_11.jpg 	|| matches: 216
+image: tatemodern_4.jpg 	|| matches: 232
+image: trafalgarsquare_20.jpg 	|| matches: 234
+image: trafalgarsquare_5.jpg 	|| matches: 255
+image: tatemodern_9.jpg 	|| matches: 258
+image: tatemodern_6.jpg 	|| matches: 259
+image: londoneye_16.jpg 	|| matches: 260
+image: notredame_20.jpg 	|| matches: 261
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: eiffel_19.jpg 	|| matches: 0
+image: eiffel_18.jpg 	|| matches: 183
+image: tatemodern_11.jpg 	|| matches: 185
+image: trafalgarsquare_20.jpg 	|| matches: 226
+image: tatemodern_4.jpg 	|| matches: 228
+image: tatemodern_6.jpg 	|| matches: 248
+image: tatemodern_8.jpg 	|| matches: 249
+image: trafalgarsquare_5.jpg 	|| matches: 257
+image: londoneye_16.jpg 	|| matches: 263
+image: tatemodern_9.jpg 	|| matches: 265
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: eiffel_19.jpg 	|| matches: 0
+image: eiffel_18.jpg 	|| matches: 178
+image: trafalgarsquare_20.jpg 	|| matches: 215
+image: tatemodern_11.jpg 	|| matches: 228
+image: tatemodern_4.jpg 	|| matches: 264
+image: eiffel_6.jpg 	|| matches: 265
+image: trafalgarsquare_5.jpg 	|| matches: 266
+image: notredame_25.jpg 	|| matches: 268
+image: tatemodern_9.jpg 	|| matches: 270
+image: tatemodern_6.jpg 	|| matches: 271
+Precision = 0.3
+Matching for : eiffel_2.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_2.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 181
+image: eiffel_5.jpg 	|| matches: 183
+image: tatemodern_6.jpg 	|| matches: 200
+image: empirestate_25.jpg 	|| matches: 202
+image: tatemodern_9.jpg 	|| matches: 202
+image: sanmarco_14.jpg 	|| matches: 205
+image: bigben_6.jpg 	|| matches: 206
+image: eiffel_1.jpg 	|| matches: 207
+image: notredame_20.jpg 	|| matches: 208
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: eiffel_2.jpg 	|| matches: 0
+image: eiffel_5.jpg 	|| matches: 180
+image: trafalgarsquare_20.jpg 	|| matches: 196
+image: tatemodern_6.jpg 	|| matches: 198
+image: trafalgarsquare_5.jpg 	|| matches: 200
+image: tatemodern_9.jpg 	|| matches: 200
+image: tatemodern_13.jpg 	|| matches: 202
+image: tatemodern_16.jpg 	|| matches: 206
+image: empirestate_14.jpg 	|| matches: 206
+image: notredame_20.jpg 	|| matches: 207
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: eiffel_2.jpg 	|| matches: 0
+image: eiffel_5.jpg 	|| matches: 183
+image: trafalgarsquare_20.jpg 	|| matches: 192
+image: empirestate_25.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 212
+image: louvre_14.jpg 	|| matches: 213
+image: sanmarco_14.jpg 	|| matches: 213
+image: notredame_20.jpg 	|| matches: 215
+image: empirestate_14.jpg 	|| matches: 219
+image: empirestate_10.jpg 	|| matches: 219
+Precision = 0.2
+Matching for : eiffel_22.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_22.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 190
+image: tatemodern_4.jpg 	|| matches: 198
+image: tatemodern_9.jpg 	|| matches: 206
+image: tatemodern_6.jpg 	|| matches: 207
+image: tatemodern_8.jpg 	|| matches: 210
+image: eiffel_18.jpg 	|| matches: 214
+image: eiffel_19.jpg 	|| matches: 217
+image: eiffel_6.jpg 	|| matches: 219
+image: trafalgarsquare_20.jpg 	|| matches: 225
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: eiffel_22.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 205
+image: tatemodern_11.jpg 	|| matches: 217
+image: tatemodern_6.jpg 	|| matches: 220
+image: tatemodern_4.jpg 	|| matches: 220
+image: tatemodern_9.jpg 	|| matches: 222
+image: eiffel_6.jpg 	|| matches: 223
+image: louvre_14.jpg 	|| matches: 225
+image: eiffel_18.jpg 	|| matches: 228
+image: londoneye_16.jpg 	|| matches: 229
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: eiffel_22.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 211
+image: tatemodern_9.jpg 	|| matches: 215
+image: tatemodern_6.jpg 	|| matches: 217
+image: trafalgarsquare_20.jpg 	|| matches: 219
+image: eiffel_18.jpg 	|| matches: 230
+image: tatemodern_11.jpg 	|| matches: 231
+image: trafalgarsquare_6.jpg 	|| matches: 236
+image: tatemodern_16.jpg 	|| matches: 238
+image: notredame_1.jpg 	|| matches: 238
+Precision = 0.2
+Matching for : eiffel_3.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_3.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 197
+image: empirestate_14.jpg 	|| matches: 204
+image: bigben_6.jpg 	|| matches: 206
+image: louvre_14.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 211
+image: tatemodern_16.jpg 	|| matches: 213
+image: tatemodern_11.jpg 	|| matches: 216
+image: tatemodern_4.jpg 	|| matches: 217
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: eiffel_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 196
+image: trafalgarsquare_5.jpg 	|| matches: 200
+image: eiffel_18.jpg 	|| matches: 206
+image: empirestate_14.jpg 	|| matches: 208
+image: notredame_20.jpg 	|| matches: 210
+image: trafalgarsquare_20.jpg 	|| matches: 210
+image: louvre_14.jpg 	|| matches: 212
+image: eiffel_1.jpg 	|| matches: 214
+image: eiffel_19.jpg 	|| matches: 215
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: eiffel_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 195
+image: trafalgarsquare_20.jpg 	|| matches: 210
+image: eiffel_18.jpg 	|| matches: 211
+image: trafalgarsquare_5.jpg 	|| matches: 211
+image: eiffel_1.jpg 	|| matches: 213
+image: empirestate_14.jpg 	|| matches: 214
+image: bigben_6.jpg 	|| matches: 216
+image: tatemodern_6.jpg 	|| matches: 217
+image: tatemodern_11.jpg 	|| matches: 219
+Precision = 0.3
+Matching for : eiffel_5.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_5.jpg 	|| matches: 0
+image: eiffel_2.jpg 	|| matches: 191
+image: tatemodern_6.jpg 	|| matches: 214
+image: tatemodern_4.jpg 	|| matches: 225
+image: tatemodern_9.jpg 	|| matches: 225
+image: tatemodern_16.jpg 	|| matches: 231
+image: trafalgarsquare_20.jpg 	|| matches: 234
+image: eiffel_18.jpg 	|| matches: 234
+image: empirestate_14.jpg 	|| matches: 235
+image: empirestate_9.jpg 	|| matches: 235
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: eiffel_5.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 189
+image: eiffel_2.jpg 	|| matches: 190
+image: trafalgarsquare_20.jpg 	|| matches: 209
+image: tatemodern_6.jpg 	|| matches: 210
+image: tatemodern_16.jpg 	|| matches: 219
+image: tatemodern_13.jpg 	|| matches: 219
+image: tatemodern_9.jpg 	|| matches: 221
+image: empirestate_25.jpg 	|| matches: 229
+image: trafalgarsquare_6.jpg 	|| matches: 232
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: eiffel_5.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 185
+image: tatemodern_6.jpg 	|| matches: 194
+image: eiffel_2.jpg 	|| matches: 196
+image: trafalgarsquare_20.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 221
+image: eiffel_1.jpg 	|| matches: 224
+image: empirestate_14.jpg 	|| matches: 225
+image: empirestate_25.jpg 	|| matches: 225
+image: tatemodern_13.jpg 	|| matches: 228
+Precision = 0.3
+Matching for : eiffel_6.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_6.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 231
+image: tatemodern_4.jpg 	|| matches: 240
+image: tatemodern_11.jpg 	|| matches: 242
+image: tatemodern_9.jpg 	|| matches: 260
+image: eiffel_18.jpg 	|| matches: 261
+image: sanmarco_14.jpg 	|| matches: 265
+image: bigben_14.jpg 	|| matches: 265
+image: bigben_6.jpg 	|| matches: 268
+image: londoneye_16.jpg 	|| matches: 269
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: eiffel_6.jpg 	|| matches: 0
+image: eiffel_19.jpg 	|| matches: 244
+image: trafalgarsquare_20.jpg 	|| matches: 246
+image: tatemodern_6.jpg 	|| matches: 259
+image: tatemodern_11.jpg 	|| matches: 262
+image: eiffel_18.jpg 	|| matches: 267
+image: tatemodern_9.jpg 	|| matches: 269
+image: tatemodern_13.jpg 	|| matches: 272
+image: londoneye_16.jpg 	|| matches: 273
+image: trafalgarsquare_1.jpg 	|| matches: 273
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: eiffel_6.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 236
+image: trafalgarsquare_20.jpg 	|| matches: 248
+image: tatemodern_9.jpg 	|| matches: 252
+image: tatemodern_4.jpg 	|| matches: 254
+image: tatemodern_6.jpg 	|| matches: 255
+image: eiffel_18.jpg 	|| matches: 255
+image: eiffel_19.jpg 	|| matches: 263
+image: bigben_14.jpg 	|| matches: 263
+image: eiffel_1.jpg 	|| matches: 269
+Precision = 0.4
+Matching for : eiffel_7.jpg
+Trial : 0 
+The match status is : 
+image: eiffel_7.jpg 	|| matches: 0
+image: eiffel_18.jpg 	|| matches: 198
+image: tatemodern_4.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 205
+image: londoneye_16.jpg 	|| matches: 206
+image: trafalgarsquare_20.jpg 	|| matches: 206
+image: notredame_20.jpg 	|| matches: 215
+image: eiffel_1.jpg 	|| matches: 217
+image: tatemodern_11.jpg 	|| matches: 218
+image: tatemodern_9.jpg 	|| matches: 221
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: eiffel_7.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 210
+image: eiffel_18.jpg 	|| matches: 214
+image: notredame_20.jpg 	|| matches: 215
+image: eiffel_1.jpg 	|| matches: 218
+image: tatemodern_6.jpg 	|| matches: 221
+image: tatemodern_9.jpg 	|| matches: 225
+image: bigben_14.jpg 	|| matches: 228
+image: londoneye_8.jpg 	|| matches: 228
+image: sanmarco_14.jpg 	|| matches: 229
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: eiffel_7.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 208
+image: eiffel_18.jpg 	|| matches: 212
+image: tatemodern_6.jpg 	|| matches: 213
+image: tatemodern_11.jpg 	|| matches: 220
+image: trafalgarsquare_20.jpg 	|| matches: 221
+image: tatemodern_9.jpg 	|| matches: 222
+image: notredame_20.jpg 	|| matches: 223
+image: eiffel_1.jpg 	|| matches: 226
+image: notredame_25.jpg 	|| matches: 230
+Precision = 0.3
+Matching for : empirestate_10.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_10.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 130
+image: tatemodern_4.jpg 	|| matches: 137
+image: sanmarco_1.jpg 	|| matches: 149
+image: tatemodern_13.jpg 	|| matches: 152
+image: tatemodern_9.jpg 	|| matches: 157
+image: tatemodern_6.jpg 	|| matches: 159
+image: trafalgarsquare_20.jpg 	|| matches: 161
+image: empirestate_9.jpg 	|| matches: 161
+image: notredame_1.jpg 	|| matches: 162
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: empirestate_10.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 129
+image: tatemodern_11.jpg 	|| matches: 143
+image: sanmarco_1.jpg 	|| matches: 151
+image: tatemodern_6.jpg 	|| matches: 166
+image: trafalgarsquare_20.jpg 	|| matches: 169
+image: empirestate_9.jpg 	|| matches: 169
+image: trafalgarsquare_5.jpg 	|| matches: 172
+image: empirestate_15.jpg 	|| matches: 173
+image: tatemodern_13.jpg 	|| matches: 173
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: empirestate_10.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 128
+image: tatemodern_4.jpg 	|| matches: 133
+image: sanmarco_1.jpg 	|| matches: 145
+image: tatemodern_13.jpg 	|| matches: 149
+image: empirestate_9.jpg 	|| matches: 158
+image: trafalgarsquare_20.jpg 	|| matches: 161
+image: empirestate_15.jpg 	|| matches: 165
+image: notredame_1.jpg 	|| matches: 166
+image: empirestate_12.jpg 	|| matches: 175
+Precision = 0.4
+Matching for : empirestate_12.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 105
+image: tatemodern_11.jpg 	|| matches: 135
+image: tatemodern_6.jpg 	|| matches: 143
+image: trafalgarsquare_20.jpg 	|| matches: 150
+image: empirestate_9.jpg 	|| matches: 151
+image: bigben_12.jpg 	|| matches: 154
+image: empirestate_10.jpg 	|| matches: 158
+image: tatemodern_13.jpg 	|| matches: 161
+image: trafalgarsquare_5.jpg 	|| matches: 164
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: empirestate_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 103
+image: trafalgarsquare_20.jpg 	|| matches: 140
+image: tatemodern_6.jpg 	|| matches: 143
+image: tatemodern_11.jpg 	|| matches: 145
+image: tatemodern_13.jpg 	|| matches: 155
+image: empirestate_15.jpg 	|| matches: 155
+image: empirestate_9.jpg 	|| matches: 156
+image: empirestate_10.jpg 	|| matches: 156
+image: bigben_12.jpg 	|| matches: 159
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: empirestate_12.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 101
+image: trafalgarsquare_20.jpg 	|| matches: 138
+image: tatemodern_11.jpg 	|| matches: 144
+image: tatemodern_6.jpg 	|| matches: 145
+image: trafalgarsquare_5.jpg 	|| matches: 147
+image: tatemodern_13.jpg 	|| matches: 150
+image: empirestate_9.jpg 	|| matches: 150
+image: bigben_12.jpg 	|| matches: 151
+image: empirestate_15.jpg 	|| matches: 159
+Precision = 0.3
+Matching for : empirestate_14.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_14.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 146
+image: tatemodern_4.jpg 	|| matches: 148
+image: tatemodern_13.jpg 	|| matches: 148
+image: tatemodern_9.jpg 	|| matches: 156
+image: tatemodern_6.jpg 	|| matches: 160
+image: notredame_1.jpg 	|| matches: 161
+image: tatemodern_11.jpg 	|| matches: 162
+image: notredame_4.jpg 	|| matches: 162
+image: empirestate_9.jpg 	|| matches: 165
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: empirestate_14.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 145
+image: tatemodern_4.jpg 	|| matches: 149
+image: trafalgarsquare_20.jpg 	|| matches: 151
+image: empirestate_9.jpg 	|| matches: 162
+image: sanmarco_14.jpg 	|| matches: 167
+image: notredame_4.jpg 	|| matches: 170
+image: notredame_1.jpg 	|| matches: 170
+image: tatemodern_16.jpg 	|| matches: 170
+image: trafalgarsquare_5.jpg 	|| matches: 170
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: empirestate_14.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 151
+image: trafalgarsquare_20.jpg 	|| matches: 162
+image: tatemodern_4.jpg 	|| matches: 166
+image: empirestate_9.jpg 	|| matches: 166
+image: tatemodern_9.jpg 	|| matches: 169
+image: trafalgarsquare_6.jpg 	|| matches: 170
+image: sanmarco_14.jpg 	|| matches: 171
+image: notredame_4.jpg 	|| matches: 173
+image: empirestate_16.jpg 	|| matches: 173
+Precision = 0.3
+Matching for : empirestate_15.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 100
+image: trafalgarsquare_20.jpg 	|| matches: 122
+image: tatemodern_11.jpg 	|| matches: 129
+image: tatemodern_6.jpg 	|| matches: 134
+image: tatemodern_13.jpg 	|| matches: 141
+image: empirestate_9.jpg 	|| matches: 143
+image: tatemodern_8.jpg 	|| matches: 145
+image: bigben_12.jpg 	|| matches: 147
+image: tatemodern_9.jpg 	|| matches: 147
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: empirestate_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 107
+image: trafalgarsquare_20.jpg 	|| matches: 121
+image: tatemodern_6.jpg 	|| matches: 135
+image: tatemodern_13.jpg 	|| matches: 138
+image: tatemodern_11.jpg 	|| matches: 140
+image: tatemodern_9.jpg 	|| matches: 146
+image: empirestate_10.jpg 	|| matches: 151
+image: trafalgarsquare_5.jpg 	|| matches: 151
+image: bigben_12.jpg 	|| matches: 155
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: empirestate_15.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 99
+image: trafalgarsquare_20.jpg 	|| matches: 117
+image: tatemodern_6.jpg 	|| matches: 123
+image: tatemodern_8.jpg 	|| matches: 139
+image: sanmarco_14.jpg 	|| matches: 144
+image: empirestate_9.jpg 	|| matches: 145
+image: tatemodern_13.jpg 	|| matches: 145
+image: tatemodern_16.jpg 	|| matches: 146
+image: trafalgarsquare_5.jpg 	|| matches: 149
+Precision = 0.2
+Matching for : empirestate_16.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_16.jpg 	|| matches: 0
+image: empirestate_14.jpg 	|| matches: 161
+image: tatemodern_13.jpg 	|| matches: 162
+image: tatemodern_6.jpg 	|| matches: 166
+image: empirestate_25.jpg 	|| matches: 172
+image: empirestate_22.jpg 	|| matches: 178
+image: sanmarco_20.jpg 	|| matches: 188
+image: trafalgarsquare_20.jpg 	|| matches: 192
+image: bigben_6.jpg 	|| matches: 194
+image: empirestate_15.jpg 	|| matches: 196
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: empirestate_16.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 161
+image: empirestate_14.jpg 	|| matches: 163
+image: empirestate_25.jpg 	|| matches: 178
+image: tatemodern_6.jpg 	|| matches: 182
+image: sanmarco_20.jpg 	|| matches: 188
+image: empirestate_15.jpg 	|| matches: 197
+image: empirestate_12.jpg 	|| matches: 198
+image: tatemodern_4.jpg 	|| matches: 200
+image: empirestate_9.jpg 	|| matches: 202
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: empirestate_16.jpg 	|| matches: 0
+image: empirestate_14.jpg 	|| matches: 166
+image: tatemodern_13.jpg 	|| matches: 174
+image: empirestate_25.jpg 	|| matches: 190
+image: tatemodern_6.jpg 	|| matches: 194
+image: empirestate_9.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 201
+image: empirestate_12.jpg 	|| matches: 201
+image: empirestate_15.jpg 	|| matches: 201
+image: tatemodern_9.jpg 	|| matches: 204
+Precision = 0.6
+Matching for : empirestate_22.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_22.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 193
+image: empirestate_14.jpg 	|| matches: 216
+image: tatemodern_2.jpg 	|| matches: 221
+image: empirestate_25.jpg 	|| matches: 221
+image: tatemodern_9.jpg 	|| matches: 221
+image: trafalgarsquare_5.jpg 	|| matches: 224
+image: empirestate_9.jpg 	|| matches: 228
+image: tatemodern_4.jpg 	|| matches: 230
+image: notredame_1.jpg 	|| matches: 230
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: empirestate_22.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 205
+image: tatemodern_11.jpg 	|| matches: 210
+image: tatemodern_9.jpg 	|| matches: 214
+image: tatemodern_2.jpg 	|| matches: 216
+image: empirestate_14.jpg 	|| matches: 216
+image: tatemodern_6.jpg 	|| matches: 219
+image: notredame_1.jpg 	|| matches: 222
+image: empirestate_27.jpg 	|| matches: 222
+image: londoneye_13.jpg 	|| matches: 223
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: empirestate_22.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 191
+image: tatemodern_11.jpg 	|| matches: 215
+image: tatemodern_6.jpg 	|| matches: 218
+image: empirestate_27.jpg 	|| matches: 221
+image: trafalgarsquare_5.jpg 	|| matches: 221
+image: notredame_1.jpg 	|| matches: 223
+image: tatemodern_2.jpg 	|| matches: 224
+image: tatemodern_4.jpg 	|| matches: 224
+image: empirestate_14.jpg 	|| matches: 224
+Precision = 0.3
+Matching for : empirestate_23.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_23.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 109
+image: trafalgarsquare_20.jpg 	|| matches: 148
+image: trafalgarsquare_5.jpg 	|| matches: 163
+image: tatemodern_6.jpg 	|| matches: 166
+image: tatemodern_8.jpg 	|| matches: 192
+image: tatemodern_9.jpg 	|| matches: 193
+image: londoneye_22.jpg 	|| matches: 200
+image: bigben_12.jpg 	|| matches: 201
+image: tatemodern_13.jpg 	|| matches: 203
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: empirestate_23.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 119
+image: tatemodern_6.jpg 	|| matches: 193
+image: trafalgarsquare_5.jpg 	|| matches: 195
+image: tatemodern_9.jpg 	|| matches: 198
+image: tatemodern_13.jpg 	|| matches: 201
+image: tatemodern_8.jpg 	|| matches: 205
+image: londoneye_22.jpg 	|| matches: 207
+image: tatemodern_11.jpg 	|| matches: 210
+image: trafalgarsquare_20.jpg 	|| matches: 212
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: empirestate_23.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 103
+image: trafalgarsquare_20.jpg 	|| matches: 158
+image: trafalgarsquare_5.jpg 	|| matches: 170
+image: tatemodern_8.jpg 	|| matches: 170
+image: tatemodern_9.jpg 	|| matches: 188
+image: tatemodern_6.jpg 	|| matches: 192
+image: tatemodern_11.jpg 	|| matches: 196
+image: empirestate_9.jpg 	|| matches: 199
+image: tatemodern_13.jpg 	|| matches: 204
+Precision = 0.2
+Matching for : empirestate_25.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_25.jpg 	|| matches: 0
+image: eiffel_18.jpg 	|| matches: 176
+image: trafalgarsquare_20.jpg 	|| matches: 186
+image: tatemodern_9.jpg 	|| matches: 189
+image: tatemodern_13.jpg 	|| matches: 190
+image: empirestate_12.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 192
+image: empirestate_14.jpg 	|| matches: 194
+image: sanmarco_14.jpg 	|| matches: 195
+image: trafalgarsquare_6.jpg 	|| matches: 197
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: empirestate_25.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 144
+image: bigben_6.jpg 	|| matches: 150
+image: eiffel_18.jpg 	|| matches: 152
+image: tatemodern_9.jpg 	|| matches: 152
+image: tatemodern_13.jpg 	|| matches: 157
+image: tatemodern_4.jpg 	|| matches: 171
+image: empirestate_12.jpg 	|| matches: 173
+image: louvre_14.jpg 	|| matches: 174
+image: tatemodern_16.jpg 	|| matches: 175
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: empirestate_25.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 165
+image: tatemodern_4.jpg 	|| matches: 175
+image: trafalgarsquare_20.jpg 	|| matches: 179
+image: tatemodern_6.jpg 	|| matches: 184
+image: empirestate_9.jpg 	|| matches: 188
+image: sanmarco_14.jpg 	|| matches: 190
+image: tatemodern_9.jpg 	|| matches: 190
+image: tatemodern_16.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 192
+Precision = 0.2
+Matching for : empirestate_27.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_27.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 140
+image: tatemodern_11.jpg 	|| matches: 149
+image: tatemodern_4.jpg 	|| matches: 152
+image: notredame_1.jpg 	|| matches: 162
+image: tatemodern_2.jpg 	|| matches: 181
+image: empirestate_10.jpg 	|| matches: 181
+image: londoneye_13.jpg 	|| matches: 183
+image: londoneye_9.jpg 	|| matches: 184
+image: empirestate_9.jpg 	|| matches: 190
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: empirestate_27.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 102
+image: notredame_1.jpg 	|| matches: 150
+image: empirestate_9.jpg 	|| matches: 160
+image: empirestate_10.jpg 	|| matches: 166
+image: empirestate_14.jpg 	|| matches: 174
+image: tatemodern_2.jpg 	|| matches: 175
+image: londoneye_13.jpg 	|| matches: 177
+image: tatemodern_24.jpg 	|| matches: 179
+image: empirestate_22.jpg 	|| matches: 180
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: empirestate_27.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 103
+image: tatemodern_11.jpg 	|| matches: 169
+image: notredame_1.jpg 	|| matches: 169
+image: empirestate_10.jpg 	|| matches: 176
+image: empirestate_22.jpg 	|| matches: 177
+image: empirestate_9.jpg 	|| matches: 183
+image: tatemodern_24.jpg 	|| matches: 186
+image: londoneye_9.jpg 	|| matches: 186
+image: empirestate_16.jpg 	|| matches: 187
+Precision = 0.5
+Matching for : empirestate_9.jpg
+Trial : 0 
+The match status is : 
+image: empirestate_9.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 127
+image: trafalgarsquare_20.jpg 	|| matches: 147
+image: tatemodern_9.jpg 	|| matches: 151
+image: tatemodern_6.jpg 	|| matches: 160
+image: trafalgarsquare_5.jpg 	|| matches: 162
+image: tatemodern_24.jpg 	|| matches: 164
+image: tatemodern_13.jpg 	|| matches: 164
+image: tatemodern_11.jpg 	|| matches: 165
+image: empirestate_15.jpg 	|| matches: 170
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: empirestate_9.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 115
+image: trafalgarsquare_20.jpg 	|| matches: 127
+image: tatemodern_13.jpg 	|| matches: 144
+image: tatemodern_6.jpg 	|| matches: 145
+image: tatemodern_9.jpg 	|| matches: 151
+image: tatemodern_11.jpg 	|| matches: 158
+image: bigben_16.jpg 	|| matches: 159
+image: empirestate_15.jpg 	|| matches: 162
+image: bigben_12.jpg 	|| matches: 167
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: empirestate_9.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 127
+image: tatemodern_4.jpg 	|| matches: 135
+image: trafalgarsquare_20.jpg 	|| matches: 144
+image: tatemodern_6.jpg 	|| matches: 148
+image: tatemodern_11.jpg 	|| matches: 150
+image: trafalgarsquare_5.jpg 	|| matches: 156
+image: londoneye_13.jpg 	|| matches: 157
+image: notredame_1.jpg 	|| matches: 158
+image: tatemodern_9.jpg 	|| matches: 161
+Precision = 0.1
+Matching for : londoneye_12.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_12.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 206
+image: trafalgarsquare_20.jpg 	|| matches: 211
+image: tatemodern_9.jpg 	|| matches: 219
+image: londoneye_17.jpg 	|| matches: 220
+image: tatemodern_13.jpg 	|| matches: 222
+image: tatemodern_11.jpg 	|| matches: 228
+image: empirestate_14.jpg 	|| matches: 228
+image: tatemodern_4.jpg 	|| matches: 236
+image: colosseum_13.jpg 	|| matches: 237
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_12.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 194
+image: tatemodern_13.jpg 	|| matches: 214
+image: londoneye_16.jpg 	|| matches: 214
+image: londoneye_17.jpg 	|| matches: 216
+image: tatemodern_9.jpg 	|| matches: 221
+image: bigben_6.jpg 	|| matches: 231
+image: sanmarco_14.jpg 	|| matches: 231
+image: trafalgarsquare_20.jpg 	|| matches: 231
+image: empirestate_15.jpg 	|| matches: 233
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: londoneye_12.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 216
+image: tatemodern_11.jpg 	|| matches: 216
+image: tatemodern_9.jpg 	|| matches: 221
+image: londoneye_17.jpg 	|| matches: 227
+image: trafalgarsquare_20.jpg 	|| matches: 227
+image: tatemodern_6.jpg 	|| matches: 231
+image: colosseum_13.jpg 	|| matches: 232
+image: notredame_20.jpg 	|| matches: 234
+image: bigben_6.jpg 	|| matches: 235
+Precision = 0.3
+Matching for : londoneye_13.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_13.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 201
+image: londoneye_22.jpg 	|| matches: 218
+image: tatemodern_6.jpg 	|| matches: 220
+image: tatemodern_13.jpg 	|| matches: 227
+image: londoneye_9.jpg 	|| matches: 238
+image: trafalgarsquare_20.jpg 	|| matches: 239
+image: bigben_16.jpg 	|| matches: 239
+image: empirestate_9.jpg 	|| matches: 239
+image: tatemodern_2.jpg 	|| matches: 240
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_13.jpg 	|| matches: 0
+image: londoneye_22.jpg 	|| matches: 179
+image: tatemodern_11.jpg 	|| matches: 195
+image: trafalgarsquare_20.jpg 	|| matches: 197
+image: tatemodern_6.jpg 	|| matches: 200
+image: tatemodern_4.jpg 	|| matches: 202
+image: tatemodern_13.jpg 	|| matches: 209
+image: tatemodern_9.jpg 	|| matches: 216
+image: empirestate_9.jpg 	|| matches: 220
+image: tatemodern_8.jpg 	|| matches: 227
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: londoneye_13.jpg 	|| matches: 0
+image: londoneye_22.jpg 	|| matches: 191
+image: tatemodern_11.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 213
+image: tatemodern_13.jpg 	|| matches: 218
+image: empirestate_9.jpg 	|| matches: 223
+image: londoneye_9.jpg 	|| matches: 226
+image: trafalgarsquare_5.jpg 	|| matches: 227
+image: tatemodern_4.jpg 	|| matches: 229
+image: tatemodern_9.jpg 	|| matches: 231
+Precision = 0.3
+Matching for : londoneye_16.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_16.jpg 	|| matches: 0
+image: tatemodern_8.jpg 	|| matches: 213
+image: tatemodern_4.jpg 	|| matches: 217
+image: colosseum_13.jpg 	|| matches: 220
+image: notredame_25.jpg 	|| matches: 221
+image: eiffel_18.jpg 	|| matches: 223
+image: notredame_20.jpg 	|| matches: 233
+image: londoneye_8.jpg 	|| matches: 234
+image: londoneye_12.jpg 	|| matches: 237
+image: tatemodern_9.jpg 	|| matches: 237
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 204
+image: londoneye_17.jpg 	|| matches: 208
+image: notredame_25.jpg 	|| matches: 212
+image: bigben_3.jpg 	|| matches: 218
+image: colosseum_13.jpg 	|| matches: 221
+image: tatemodern_9.jpg 	|| matches: 223
+image: tatemodern_6.jpg 	|| matches: 225
+image: bigben_6.jpg 	|| matches: 226
+image: londoneye_12.jpg 	|| matches: 226
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: londoneye_16.jpg 	|| matches: 0
+image: colosseum_6.jpg 	|| matches: 211
+image: notredame_25.jpg 	|| matches: 221
+image: tatemodern_6.jpg 	|| matches: 222
+image: eiffel_18.jpg 	|| matches: 224
+image: notredame_20.jpg 	|| matches: 224
+image: tatemodern_4.jpg 	|| matches: 229
+image: empirestate_15.jpg 	|| matches: 232
+image: tatemodern_9.jpg 	|| matches: 233
+image: trafalgarsquare_20.jpg 	|| matches: 236
+Precision = 0.1
+Matching for : londoneye_17.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_17.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 198
+image: tatemodern_6.jpg 	|| matches: 200
+image: tatemodern_13.jpg 	|| matches: 204
+image: tatemodern_4.jpg 	|| matches: 211
+image: tatemodern_16.jpg 	|| matches: 217
+image: notredame_25.jpg 	|| matches: 218
+image: tatemodern_9.jpg 	|| matches: 222
+image: colosseum_6.jpg 	|| matches: 222
+image: londoneye_12.jpg 	|| matches: 224
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_17.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 184
+image: londoneye_16.jpg 	|| matches: 186
+image: tatemodern_4.jpg 	|| matches: 190
+image: tatemodern_6.jpg 	|| matches: 191
+image: eiffel_19.jpg 	|| matches: 204
+image: eiffel_18.jpg 	|| matches: 210
+image: colosseum_6.jpg 	|| matches: 210
+image: trafalgarsquare_20.jpg 	|| matches: 212
+image: empirestate_14.jpg 	|| matches: 212
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: londoneye_17.jpg 	|| matches: 0
+image: londoneye_16.jpg 	|| matches: 193
+image: tatemodern_6.jpg 	|| matches: 199
+image: londoneye_12.jpg 	|| matches: 203
+image: trafalgarsquare_20.jpg 	|| matches: 210
+image: tatemodern_9.jpg 	|| matches: 211
+image: tatemodern_4.jpg 	|| matches: 212
+image: tatemodern_13.jpg 	|| matches: 213
+image: empirestate_25.jpg 	|| matches: 215
+image: notredame_20.jpg 	|| matches: 216
+Precision = 0.3
+Matching for : londoneye_2.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_2.jpg 	|| matches: 0
+image: londoneye_23.jpg 	|| matches: 244
+image: londoneye_13.jpg 	|| matches: 247
+image: tatemodern_4.jpg 	|| matches: 249
+image: tatemodern_6.jpg 	|| matches: 254
+image: tatemodern_2.jpg 	|| matches: 254
+image: tatemodern_11.jpg 	|| matches: 255
+image: londoneye_22.jpg 	|| matches: 256
+image: trafalgarsquare_5.jpg 	|| matches: 261
+image: tatemodern_13.jpg 	|| matches: 262
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: londoneye_2.jpg 	|| matches: 0
+image: londoneye_22.jpg 	|| matches: 244
+image: tatemodern_13.jpg 	|| matches: 252
+image: tatemodern_6.jpg 	|| matches: 256
+image: tatemodern_4.jpg 	|| matches: 256
+image: londoneye_13.jpg 	|| matches: 264
+image: londoneye_23.jpg 	|| matches: 266
+image: empirestate_23.jpg 	|| matches: 270
+image: bigben_10.jpg 	|| matches: 271
+image: empirestate_9.jpg 	|| matches: 273
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: londoneye_2.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 232
+image: tatemodern_4.jpg 	|| matches: 240
+image: empirestate_23.jpg 	|| matches: 250
+image: tatemodern_13.jpg 	|| matches: 253
+image: londoneye_23.jpg 	|| matches: 254
+image: tatemodern_2.jpg 	|| matches: 261
+image: bigben_6.jpg 	|| matches: 266
+image: empirestate_14.jpg 	|| matches: 266
+image: bigben_16.jpg 	|| matches: 270
+Precision = 0.2
+Matching for : londoneye_21.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_21.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 212
+image: trafalgarsquare_20.jpg 	|| matches: 229
+image: bigben_16.jpg 	|| matches: 229
+image: louvre_14.jpg 	|| matches: 232
+image: tatemodern_8.jpg 	|| matches: 233
+image: tatemodern_9.jpg 	|| matches: 234
+image: bigben_12.jpg 	|| matches: 238
+image: tatemodern_13.jpg 	|| matches: 241
+image: tatemodern_4.jpg 	|| matches: 247
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: londoneye_21.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 222
+image: londoneye_13.jpg 	|| matches: 233
+image: londoneye_22.jpg 	|| matches: 237
+image: tatemodern_8.jpg 	|| matches: 246
+image: londoneye_8.jpg 	|| matches: 254
+image: bigben_12.jpg 	|| matches: 255
+image: louvre_14.jpg 	|| matches: 256
+image: tatemodern_11.jpg 	|| matches: 256
+image: tatemodern_13.jpg 	|| matches: 258
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: londoneye_21.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 220
+image: londoneye_22.jpg 	|| matches: 229
+image: tatemodern_9.jpg 	|| matches: 231
+image: tatemodern_2.jpg 	|| matches: 232
+image: trafalgarsquare_20.jpg 	|| matches: 238
+image: tatemodern_8.jpg 	|| matches: 244
+image: bigben_16.jpg 	|| matches: 248
+image: bigben_12.jpg 	|| matches: 251
+image: bigben_14.jpg 	|| matches: 254
+Precision = 0.2
+Matching for : londoneye_22.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_22.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 215
+image: londoneye_13.jpg 	|| matches: 237
+image: tatemodern_13.jpg 	|| matches: 246
+image: londoneye_23.jpg 	|| matches: 249
+image: empirestate_23.jpg 	|| matches: 256
+image: trafalgarsquare_5.jpg 	|| matches: 257
+image: notredame_1.jpg 	|| matches: 268
+image: tatemodern_6.jpg 	|| matches: 269
+image: trafalgarsquare_1.jpg 	|| matches: 276
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_22.jpg 	|| matches: 0
+image: londoneye_13.jpg 	|| matches: 211
+image: tatemodern_11.jpg 	|| matches: 221
+image: tatemodern_4.jpg 	|| matches: 236
+image: tatemodern_13.jpg 	|| matches: 245
+image: empirestate_23.jpg 	|| matches: 255
+image: tatemodern_6.jpg 	|| matches: 260
+image: bigben_10.jpg 	|| matches: 261
+image: tatemodern_2.jpg 	|| matches: 263
+image: empirestate_9.jpg 	|| matches: 263
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: londoneye_22.jpg 	|| matches: 0
+image: londoneye_13.jpg 	|| matches: 222
+image: tatemodern_13.jpg 	|| matches: 240
+image: empirestate_23.jpg 	|| matches: 247
+image: tatemodern_6.jpg 	|| matches: 249
+image: tatemodern_11.jpg 	|| matches: 253
+image: tatemodern_8.jpg 	|| matches: 258
+image: trafalgarsquare_5.jpg 	|| matches: 259
+image: londoneye_23.jpg 	|| matches: 262
+image: louvre_3.jpg 	|| matches: 263
+Precision = 0.3
+Matching for : londoneye_23.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_23.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 239
+image: tatemodern_11.jpg 	|| matches: 239
+image: londoneye_13.jpg 	|| matches: 247
+image: tatemodern_9.jpg 	|| matches: 251
+image: tatemodern_6.jpg 	|| matches: 253
+image: tatemodern_4.jpg 	|| matches: 256
+image: trafalgarsquare_5.jpg 	|| matches: 260
+image: sanmarco_14.jpg 	|| matches: 260
+image: empirestate_9.jpg 	|| matches: 261
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: londoneye_23.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 234
+image: tatemodern_6.jpg 	|| matches: 246
+image: empirestate_9.jpg 	|| matches: 257
+image: tatemodern_8.jpg 	|| matches: 258
+image: londoneye_13.jpg 	|| matches: 259
+image: notredame_1.jpg 	|| matches: 261
+image: londoneye_22.jpg 	|| matches: 263
+image: trafalgarsquare_5.jpg 	|| matches: 263
+image: tatemodern_16.jpg 	|| matches: 264
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: londoneye_23.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 231
+image: tatemodern_6.jpg 	|| matches: 240
+image: londoneye_22.jpg 	|| matches: 247
+image: londoneye_13.jpg 	|| matches: 258
+image: bigben_3.jpg 	|| matches: 260
+image: tatemodern_2.jpg 	|| matches: 261
+image: bigben_16.jpg 	|| matches: 262
+image: trafalgarsquare_1.jpg 	|| matches: 263
+image: londoneye_9.jpg 	|| matches: 263
+Precision = 0.4
+Matching for : londoneye_8.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_8.jpg 	|| matches: 0
+image: bigben_7.jpg 	|| matches: 248
+image: eiffel_18.jpg 	|| matches: 248
+image: londoneye_16.jpg 	|| matches: 249
+image: tatemodern_13.jpg 	|| matches: 250
+image: londoneye_13.jpg 	|| matches: 250
+image: empirestate_10.jpg 	|| matches: 250
+image: notredame_20.jpg 	|| matches: 254
+image: notredame_25.jpg 	|| matches: 254
+image: colosseum_13.jpg 	|| matches: 258
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: londoneye_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 234
+image: tatemodern_13.jpg 	|| matches: 240
+image: trafalgarsquare_20.jpg 	|| matches: 242
+image: londoneye_22.jpg 	|| matches: 243
+image: notredame_25.jpg 	|| matches: 244
+image: londoneye_13.jpg 	|| matches: 246
+image: tatemodern_11.jpg 	|| matches: 248
+image: londoneye_16.jpg 	|| matches: 249
+image: notredame_20.jpg 	|| matches: 250
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: londoneye_8.jpg 	|| matches: 0
+image: londoneye_22.jpg 	|| matches: 238
+image: londoneye_16.jpg 	|| matches: 241
+image: trafalgarsquare_20.jpg 	|| matches: 245
+image: tatemodern_9.jpg 	|| matches: 246
+image: londoneye_13.jpg 	|| matches: 246
+image: tatemodern_11.jpg 	|| matches: 250
+image: bigben_7.jpg 	|| matches: 250
+image: tatemodern_6.jpg 	|| matches: 253
+image: notredame_20.jpg 	|| matches: 253
+Precision = 0.4
+Matching for : londoneye_9.jpg
+Trial : 0 
+The match status is : 
+image: londoneye_9.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 112
+image: tatemodern_13.jpg 	|| matches: 153
+image: empirestate_23.jpg 	|| matches: 164
+image: empirestate_9.jpg 	|| matches: 170
+image: bigben_14.jpg 	|| matches: 177
+image: empirestate_27.jpg 	|| matches: 178
+image: notredame_1.jpg 	|| matches: 182
+image: tatemodern_2.jpg 	|| matches: 187
+image: empirestate_10.jpg 	|| matches: 187
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: londoneye_9.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 163
+image: trafalgarsquare_5.jpg 	|| matches: 167
+image: tatemodern_11.jpg 	|| matches: 169
+image: trafalgarsquare_20.jpg 	|| matches: 182
+image: empirestate_9.jpg 	|| matches: 185
+image: tatemodern_6.jpg 	|| matches: 186
+image: tatemodern_9.jpg 	|| matches: 192
+image: londoneye_13.jpg 	|| matches: 198
+image: empirestate_14.jpg 	|| matches: 200
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: londoneye_9.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 149
+image: tatemodern_11.jpg 	|| matches: 149
+image: empirestate_9.jpg 	|| matches: 170
+image: notredame_1.jpg 	|| matches: 180
+image: londoneye_22.jpg 	|| matches: 186
+image: sanmarco_13.jpg 	|| matches: 187
+image: londoneye_13.jpg 	|| matches: 187
+image: empirestate_10.jpg 	|| matches: 191
+image: tatemodern_2.jpg 	|| matches: 198
+Precision = 0.3
+Matching for : louvre_10.jpg
+Trial : 0 
+The match status is : 
+image: louvre_10.jpg 	|| matches: 0
+image: tatemodern_2.jpg 	|| matches: 238
+image: tatemodern_11.jpg 	|| matches: 248
+image: londoneye_22.jpg 	|| matches: 251
+image: tatemodern_9.jpg 	|| matches: 253
+image: bigben_6.jpg 	|| matches: 257
+image: empirestate_23.jpg 	|| matches: 258
+image: louvre_14.jpg 	|| matches: 259
+image: tatemodern_6.jpg 	|| matches: 260
+image: louvre_4.jpg 	|| matches: 260
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: louvre_10.jpg 	|| matches: 0
+image: londoneye_22.jpg 	|| matches: 229
+image: tatemodern_4.jpg 	|| matches: 230
+image: tatemodern_9.jpg 	|| matches: 238
+image: tatemodern_11.jpg 	|| matches: 242
+image: tatemodern_2.jpg 	|| matches: 248
+image: tatemodern_6.jpg 	|| matches: 256
+image: tatemodern_8.jpg 	|| matches: 258
+image: louvre_4.jpg 	|| matches: 259
+image: bigben_6.jpg 	|| matches: 260
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: louvre_10.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 239
+image: tatemodern_4.jpg 	|| matches: 250
+image: tatemodern_11.jpg 	|| matches: 252
+image: tatemodern_8.jpg 	|| matches: 254
+image: londoneye_22.jpg 	|| matches: 255
+image: tatemodern_2.jpg 	|| matches: 255
+image: tatemodern_9.jpg 	|| matches: 257
+image: trafalgarsquare_20.jpg 	|| matches: 259
+image: bigben_16.jpg 	|| matches: 261
+Precision = 0.1
+Matching for : louvre_11.jpg
+Trial : 0 
+The match status is : 
+image: louvre_11.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 197
+image: tatemodern_4.jpg 	|| matches: 200
+image: trafalgarsquare_20.jpg 	|| matches: 201
+image: tatemodern_8.jpg 	|| matches: 213
+image: trafalgarsquare_5.jpg 	|| matches: 223
+image: empirestate_9.jpg 	|| matches: 223
+image: tatemodern_11.jpg 	|| matches: 223
+image: tatemodern_16.jpg 	|| matches: 226
+image: trafalgarsquare_1.jpg 	|| matches: 226
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_11.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 193
+image: tatemodern_6.jpg 	|| matches: 210
+image: tatemodern_2.jpg 	|| matches: 211
+image: tatemodern_4.jpg 	|| matches: 214
+image: tatemodern_11.jpg 	|| matches: 217
+image: tatemodern_8.jpg 	|| matches: 219
+image: tatemodern_9.jpg 	|| matches: 225
+image: trafalgarsquare_5.jpg 	|| matches: 226
+image: empirestate_9.jpg 	|| matches: 227
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_11.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 221
+image: empirestate_9.jpg 	|| matches: 223
+image: tatemodern_11.jpg 	|| matches: 223
+image: trafalgarsquare_20.jpg 	|| matches: 231
+image: bigben_16.jpg 	|| matches: 231
+image: trafalgarsquare_5.jpg 	|| matches: 234
+image: tatemodern_13.jpg 	|| matches: 235
+image: trafalgarsquare_1.jpg 	|| matches: 235
+Precision = 0.1
+Matching for : louvre_14.jpg
+Trial : 0 
+The match status is : 
+image: louvre_14.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 186
+image: tatemodern_4.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 198
+image: tatemodern_9.jpg 	|| matches: 199
+image: notredame_24.jpg 	|| matches: 211
+image: trafalgarsquare_5.jpg 	|| matches: 216
+image: tatemodern_8.jpg 	|| matches: 219
+image: tatemodern_13.jpg 	|| matches: 223
+image: empirestate_9.jpg 	|| matches: 226
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_14.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 185
+image: trafalgarsquare_20.jpg 	|| matches: 192
+image: tatemodern_9.jpg 	|| matches: 192
+image: tatemodern_4.jpg 	|| matches: 197
+image: notredame_24.jpg 	|| matches: 212
+image: tatemodern_8.jpg 	|| matches: 214
+image: trafalgarsquare_5.jpg 	|| matches: 215
+image: tatemodern_13.jpg 	|| matches: 217
+image: bigben_12.jpg 	|| matches: 217
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 171
+image: tatemodern_6.jpg 	|| matches: 189
+image: tatemodern_9.jpg 	|| matches: 209
+image: trafalgarsquare_20.jpg 	|| matches: 210
+image: trafalgarsquare_5.jpg 	|| matches: 218
+image: notredame_24.jpg 	|| matches: 218
+image: bigben_14.jpg 	|| matches: 225
+image: tatemodern_13.jpg 	|| matches: 225
+image: eiffel_1.jpg 	|| matches: 226
+Precision = 0.1
+Matching for : louvre_15.jpg
+Trial : 0 
+The match status is : 
+image: louvre_15.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 168
+image: tatemodern_9.jpg 	|| matches: 172
+image: tatemodern_4.jpg 	|| matches: 173
+image: trafalgarsquare_20.jpg 	|| matches: 175
+image: tatemodern_13.jpg 	|| matches: 175
+image: tatemodern_11.jpg 	|| matches: 189
+image: tatemodern_2.jpg 	|| matches: 191
+image: trafalgarsquare_5.jpg 	|| matches: 193
+image: tatemodern_24.jpg 	|| matches: 197
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_15.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 187
+image: tatemodern_9.jpg 	|| matches: 192
+image: tatemodern_24.jpg 	|| matches: 193
+image: tatemodern_13.jpg 	|| matches: 198
+image: tatemodern_4.jpg 	|| matches: 199
+image: notredame_1.jpg 	|| matches: 203
+image: bigben_6.jpg 	|| matches: 206
+image: notredame_24.jpg 	|| matches: 206
+image: bigben_16.jpg 	|| matches: 209
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_15.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 173
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: tatemodern_6.jpg 	|| matches: 182
+image: trafalgarsquare_5.jpg 	|| matches: 186
+image: tatemodern_4.jpg 	|| matches: 193
+image: eiffel_18.jpg 	|| matches: 195
+image: bigben_6.jpg 	|| matches: 197
+image: empirestate_9.jpg 	|| matches: 197
+image: tatemodern_24.jpg 	|| matches: 197
+Precision = 0.1
+Matching for : louvre_16.jpg
+Trial : 0 
+The match status is : 
+image: louvre_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 140
+image: tatemodern_6.jpg 	|| matches: 185
+image: tatemodern_13.jpg 	|| matches: 189
+image: trafalgarsquare_20.jpg 	|| matches: 194
+image: trafalgarsquare_1.jpg 	|| matches: 210
+image: trafalgarsquare_5.jpg 	|| matches: 213
+image: empirestate_9.jpg 	|| matches: 216
+image: bigben_16.jpg 	|| matches: 216
+image: empirestate_23.jpg 	|| matches: 219
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 128
+image: trafalgarsquare_20.jpg 	|| matches: 163
+image: tatemodern_6.jpg 	|| matches: 180
+image: tatemodern_9.jpg 	|| matches: 199
+image: trafalgarsquare_5.jpg 	|| matches: 201
+image: empirestate_9.jpg 	|| matches: 204
+image: tatemodern_13.jpg 	|| matches: 205
+image: trafalgarsquare_1.jpg 	|| matches: 207
+image: notredame_1.jpg 	|| matches: 215
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 136
+image: trafalgarsquare_20.jpg 	|| matches: 176
+image: tatemodern_13.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 193
+image: tatemodern_6.jpg 	|| matches: 205
+image: bigben_16.jpg 	|| matches: 208
+image: empirestate_23.jpg 	|| matches: 209
+image: empirestate_9.jpg 	|| matches: 209
+image: tatemodern_8.jpg 	|| matches: 211
+Precision = 0.1
+Matching for : louvre_3.jpg
+Trial : 0 
+The match status is : 
+image: louvre_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 135
+image: trafalgarsquare_20.jpg 	|| matches: 181
+image: tatemodern_13.jpg 	|| matches: 183
+image: tatemodern_6.jpg 	|| matches: 183
+image: tatemodern_9.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 190
+image: empirestate_9.jpg 	|| matches: 196
+image: bigben_16.jpg 	|| matches: 197
+image: londoneye_13.jpg 	|| matches: 198
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 120
+image: tatemodern_6.jpg 	|| matches: 160
+image: trafalgarsquare_20.jpg 	|| matches: 161
+image: trafalgarsquare_5.jpg 	|| matches: 166
+image: tatemodern_9.jpg 	|| matches: 177
+image: bigben_12.jpg 	|| matches: 185
+image: empirestate_9.jpg 	|| matches: 191
+image: tatemodern_8.jpg 	|| matches: 192
+image: empirestate_23.jpg 	|| matches: 195
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_3.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 134
+image: trafalgarsquare_20.jpg 	|| matches: 166
+image: tatemodern_6.jpg 	|| matches: 183
+image: trafalgarsquare_5.jpg 	|| matches: 189
+image: tatemodern_8.jpg 	|| matches: 190
+image: tatemodern_9.jpg 	|| matches: 191
+image: tatemodern_13.jpg 	|| matches: 196
+image: empirestate_9.jpg 	|| matches: 199
+image: empirestate_23.jpg 	|| matches: 201
+Precision = 0.1
+Matching for : louvre_4.jpg
+Trial : 0 
+The match status is : 
+image: louvre_4.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: tatemodern_4.jpg 	|| matches: 216
+image: tatemodern_6.jpg 	|| matches: 225
+image: trafalgarsquare_5.jpg 	|| matches: 235
+image: empirestate_23.jpg 	|| matches: 236
+image: tatemodern_9.jpg 	|| matches: 238
+image: bigben_12.jpg 	|| matches: 240
+image: tatemodern_2.jpg 	|| matches: 242
+image: londoneye_13.jpg 	|| matches: 247
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_4.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 203
+image: tatemodern_9.jpg 	|| matches: 218
+image: trafalgarsquare_20.jpg 	|| matches: 218
+image: tatemodern_4.jpg 	|| matches: 223
+image: bigben_12.jpg 	|| matches: 229
+image: tatemodern_11.jpg 	|| matches: 235
+image: tatemodern_2.jpg 	|| matches: 237
+image: tatemodern_16.jpg 	|| matches: 240
+image: londoneye_13.jpg 	|| matches: 241
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_4.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 173
+image: tatemodern_6.jpg 	|| matches: 221
+image: trafalgarsquare_20.jpg 	|| matches: 222
+image: bigben_16.jpg 	|| matches: 236
+image: empirestate_23.jpg 	|| matches: 245
+image: tatemodern_9.jpg 	|| matches: 246
+image: tatemodern_13.jpg 	|| matches: 248
+image: tatemodern_2.jpg 	|| matches: 251
+image: empirestate_9.jpg 	|| matches: 251
+Precision = 0.1
+Matching for : louvre_8.jpg
+Trial : 0 
+The match status is : 
+image: louvre_8.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 207
+image: tatemodern_13.jpg 	|| matches: 212
+image: louvre_14.jpg 	|| matches: 215
+image: tatemodern_6.jpg 	|| matches: 220
+image: tatemodern_4.jpg 	|| matches: 230
+image: trafalgarsquare_5.jpg 	|| matches: 230
+image: empirestate_14.jpg 	|| matches: 231
+image: empirestate_25.jpg 	|| matches: 234
+image: empirestate_9.jpg 	|| matches: 235
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: louvre_8.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 210
+image: trafalgarsquare_20.jpg 	|| matches: 211
+image: tatemodern_4.jpg 	|| matches: 212
+image: tatemodern_6.jpg 	|| matches: 222
+image: louvre_14.jpg 	|| matches: 226
+image: trafalgarsquare_5.jpg 	|| matches: 228
+image: tatemodern_9.jpg 	|| matches: 230
+image: empirestate_14.jpg 	|| matches: 231
+image: empirestate_9.jpg 	|| matches: 233
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: louvre_8.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 212
+image: tatemodern_6.jpg 	|| matches: 219
+image: tatemodern_13.jpg 	|| matches: 221
+image: tatemodern_4.jpg 	|| matches: 230
+image: empirestate_9.jpg 	|| matches: 231
+image: sanmarco_14.jpg 	|| matches: 232
+image: bigben_14.jpg 	|| matches: 233
+image: empirestate_14.jpg 	|| matches: 233
+image: tatemodern_9.jpg 	|| matches: 234
+Precision = 0.1
+Matching for : louvre_9.jpg
+Trial : 0 
+The match status is : 
+image: louvre_9.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 180
+image: tatemodern_9.jpg 	|| matches: 205
+image: tatemodern_6.jpg 	|| matches: 211
+image: eiffel_19.jpg 	|| matches: 215
+image: empirestate_12.jpg 	|| matches: 219
+image: trafalgarsquare_20.jpg 	|| matches: 219
+image: notredame_1.jpg 	|| matches: 225
+image: tatemodern_2.jpg 	|| matches: 229
+image: bigben_16.jpg 	|| matches: 230
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: louvre_9.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 205
+image: tatemodern_11.jpg 	|| matches: 207
+image: tatemodern_4.jpg 	|| matches: 211
+image: eiffel_18.jpg 	|| matches: 213
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: tatemodern_2.jpg 	|| matches: 221
+image: tatemodern_8.jpg 	|| matches: 224
+image: tatemodern_6.jpg 	|| matches: 225
+image: bigben_14.jpg 	|| matches: 225
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: louvre_9.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 177
+image: tatemodern_2.jpg 	|| matches: 197
+image: eiffel_18.jpg 	|| matches: 209
+image: tatemodern_6.jpg 	|| matches: 209
+image: notredame_1.jpg 	|| matches: 209
+image: tatemodern_8.jpg 	|| matches: 210
+image: tatemodern_13.jpg 	|| matches: 210
+image: bigben_12.jpg 	|| matches: 212
+image: tatemodern_9.jpg 	|| matches: 214
+Precision = 0.1
+Matching for : notredame_1.jpg
+Trial : 0 
+The match status is : 
+image: notredame_1.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 156
+image: trafalgarsquare_20.jpg 	|| matches: 173
+image: tatemodern_4.jpg 	|| matches: 178
+image: tatemodern_11.jpg 	|| matches: 181
+image: empirestate_9.jpg 	|| matches: 186
+image: empirestate_14.jpg 	|| matches: 191
+image: tatemodern_9.jpg 	|| matches: 195
+image: empirestate_10.jpg 	|| matches: 197
+image: tatemodern_6.jpg 	|| matches: 198
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: notredame_1.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 159
+image: tatemodern_4.jpg 	|| matches: 177
+image: tatemodern_11.jpg 	|| matches: 186
+image: tatemodern_6.jpg 	|| matches: 189
+image: empirestate_9.jpg 	|| matches: 190
+image: empirestate_14.jpg 	|| matches: 196
+image: trafalgarsquare_5.jpg 	|| matches: 197
+image: bigben_16.jpg 	|| matches: 199
+image: sanmarco_19.jpg 	|| matches: 199
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: notredame_1.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 163
+image: empirestate_9.jpg 	|| matches: 175
+image: tatemodern_4.jpg 	|| matches: 183
+image: tatemodern_11.jpg 	|| matches: 188
+image: empirestate_27.jpg 	|| matches: 196
+image: empirestate_14.jpg 	|| matches: 197
+image: londoneye_9.jpg 	|| matches: 198
+image: empirestate_10.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 202
+Precision = 0.1
+Matching for : notredame_14.jpg
+Trial : 0 
+The match status is : 
+image: notredame_14.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 175
+image: tatemodern_6.jpg 	|| matches: 185
+image: tatemodern_9.jpg 	|| matches: 193
+image: notredame_5.jpg 	|| matches: 194
+image: tatemodern_4.jpg 	|| matches: 194
+image: trafalgarsquare_20.jpg 	|| matches: 202
+image: trafalgarsquare_5.jpg 	|| matches: 202
+image: empirestate_9.jpg 	|| matches: 205
+image: louvre_14.jpg 	|| matches: 210
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: notredame_14.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 183
+image: notredame_5.jpg 	|| matches: 183
+image: tatemodern_9.jpg 	|| matches: 191
+image: tatemodern_6.jpg 	|| matches: 193
+image: tatemodern_4.jpg 	|| matches: 194
+image: notredame_24.jpg 	|| matches: 196
+image: louvre_14.jpg 	|| matches: 197
+image: tatemodern_8.jpg 	|| matches: 200
+image: trafalgarsquare_5.jpg 	|| matches: 202
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: notredame_14.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 192
+image: notredame_5.jpg 	|| matches: 193
+image: notredame_19.jpg 	|| matches: 198
+image: tatemodern_9.jpg 	|| matches: 204
+image: louvre_14.jpg 	|| matches: 208
+image: empirestate_9.jpg 	|| matches: 210
+image: notredame_24.jpg 	|| matches: 213
+image: tatemodern_11.jpg 	|| matches: 213
+image: empirestate_14.jpg 	|| matches: 214
+Precision = 0.4
+Matching for : notredame_19.jpg
+Trial : 0 
+The match status is : 
+image: notredame_19.jpg 	|| matches: 0
+image: notredame_24.jpg 	|| matches: 139
+image: tatemodern_4.jpg 	|| matches: 170
+image: trafalgarsquare_5.jpg 	|| matches: 177
+image: tatemodern_8.jpg 	|| matches: 185
+image: tatemodern_9.jpg 	|| matches: 189
+image: tatemodern_11.jpg 	|| matches: 190
+image: tatemodern_6.jpg 	|| matches: 191
+image: empirestate_9.jpg 	|| matches: 195
+image: trafalgarsquare_20.jpg 	|| matches: 196
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: notredame_19.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 149
+image: notredame_24.jpg 	|| matches: 154
+image: tatemodern_11.jpg 	|| matches: 164
+image: trafalgarsquare_20.jpg 	|| matches: 176
+image: tatemodern_9.jpg 	|| matches: 179
+image: tatemodern_6.jpg 	|| matches: 181
+image: tatemodern_8.jpg 	|| matches: 193
+image: trafalgarsquare_5.jpg 	|| matches: 195
+image: tatemodern_24.jpg 	|| matches: 196
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_19.jpg 	|| matches: 0
+image: notredame_24.jpg 	|| matches: 145
+image: tatemodern_4.jpg 	|| matches: 152
+image: tatemodern_9.jpg 	|| matches: 172
+image: tatemodern_11.jpg 	|| matches: 176
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: tatemodern_8.jpg 	|| matches: 181
+image: tatemodern_6.jpg 	|| matches: 184
+image: trafalgarsquare_5.jpg 	|| matches: 195
+image: bigben_6.jpg 	|| matches: 196
+Precision = 0.2
+Matching for : notredame_20.jpg
+Trial : 0 
+The match status is : 
+image: notredame_20.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 192
+image: tatemodern_6.jpg 	|| matches: 195
+image: tatemodern_16.jpg 	|| matches: 198
+image: trafalgarsquare_22.jpg 	|| matches: 202
+image: empirestate_15.jpg 	|| matches: 204
+image: trafalgarsquare_6.jpg 	|| matches: 204
+image: sanmarco_14.jpg 	|| matches: 205
+image: trafalgarsquare_21.jpg 	|| matches: 205
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: notredame_20.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 175
+image: tatemodern_9.jpg 	|| matches: 202
+image: notredame_25.jpg 	|| matches: 205
+image: tatemodern_6.jpg 	|| matches: 210
+image: tatemodern_16.jpg 	|| matches: 210
+image: tatemodern_11.jpg 	|| matches: 213
+image: empirestate_14.jpg 	|| matches: 214
+image: tatemodern_13.jpg 	|| matches: 215
+image: eiffel_18.jpg 	|| matches: 216
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_20.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 190
+image: trafalgarsquare_20.jpg 	|| matches: 193
+image: tatemodern_13.jpg 	|| matches: 205
+image: empirestate_25.jpg 	|| matches: 212
+image: tatemodern_11.jpg 	|| matches: 213
+image: tatemodern_16.jpg 	|| matches: 213
+image: trafalgarsquare_5.jpg 	|| matches: 214
+image: tatemodern_9.jpg 	|| matches: 215
+image: empirestate_12.jpg 	|| matches: 215
+Precision = 0.1
+Matching for : notredame_24.jpg
+Trial : 0 
+The match status is : 
+image: notredame_24.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 144
+image: notredame_19.jpg 	|| matches: 147
+image: tatemodern_9.jpg 	|| matches: 175
+image: tatemodern_4.jpg 	|| matches: 178
+image: trafalgarsquare_5.jpg 	|| matches: 186
+image: tatemodern_6.jpg 	|| matches: 187
+image: bigben_6.jpg 	|| matches: 197
+image: bigben_8.jpg 	|| matches: 197
+image: empirestate_14.jpg 	|| matches: 198
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: notredame_24.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 154
+image: notredame_19.jpg 	|| matches: 158
+image: tatemodern_4.jpg 	|| matches: 168
+image: tatemodern_9.jpg 	|| matches: 168
+image: tatemodern_6.jpg 	|| matches: 170
+image: trafalgarsquare_5.jpg 	|| matches: 184
+image: bigben_12.jpg 	|| matches: 187
+image: louvre_14.jpg 	|| matches: 191
+image: tatemodern_16.jpg 	|| matches: 192
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_24.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 143
+image: tatemodern_6.jpg 	|| matches: 148
+image: notredame_19.jpg 	|| matches: 153
+image: trafalgarsquare_5.jpg 	|| matches: 154
+image: tatemodern_4.jpg 	|| matches: 154
+image: tatemodern_9.jpg 	|| matches: 166
+image: tatemodern_16.jpg 	|| matches: 170
+image: empirestate_14.jpg 	|| matches: 172
+image: bigben_12.jpg 	|| matches: 173
+Precision = 0.2
+Matching for : notredame_25.jpg
+Trial : 0 
+The match status is : 
+image: notredame_25.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 183
+image: tatemodern_11.jpg 	|| matches: 185
+image: tatemodern_6.jpg 	|| matches: 190
+image: trafalgarsquare_20.jpg 	|| matches: 192
+image: trafalgarsquare_5.jpg 	|| matches: 203
+image: tatemodern_16.jpg 	|| matches: 208
+image: notredame_20.jpg 	|| matches: 211
+image: tatemodern_13.jpg 	|| matches: 214
+image: tatemodern_9.jpg 	|| matches: 214
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: notredame_25.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 205
+image: tatemodern_4.jpg 	|| matches: 207
+image: trafalgarsquare_5.jpg 	|| matches: 207
+image: tatemodern_11.jpg 	|| matches: 210
+image: tatemodern_6.jpg 	|| matches: 213
+image: notredame_20.jpg 	|| matches: 215
+image: tatemodern_16.jpg 	|| matches: 216
+image: tatemodern_9.jpg 	|| matches: 218
+image: trafalgarsquare_20.jpg 	|| matches: 221
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_25.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 202
+image: tatemodern_16.jpg 	|| matches: 207
+image: notredame_20.jpg 	|| matches: 208
+image: tatemodern_9.jpg 	|| matches: 212
+image: trafalgarsquare_20.jpg 	|| matches: 212
+image: colosseum_6.jpg 	|| matches: 218
+image: tatemodern_6.jpg 	|| matches: 219
+image: tatemodern_13.jpg 	|| matches: 221
+image: londoneye_16.jpg 	|| matches: 221
+Precision = 0.2
+Matching for : notredame_3.jpg
+Trial : 0 
+The match status is : 
+image: notredame_3.jpg 	|| matches: 0
+image: notredame_5.jpg 	|| matches: 118
+image: tatemodern_13.jpg 	|| matches: 183
+image: notredame_14.jpg 	|| matches: 188
+image: empirestate_9.jpg 	|| matches: 195
+image: empirestate_14.jpg 	|| matches: 198
+image: notredame_4.jpg 	|| matches: 200
+image: tatemodern_9.jpg 	|| matches: 201
+image: trafalgarsquare_20.jpg 	|| matches: 203
+image: tatemodern_6.jpg 	|| matches: 206
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: notredame_3.jpg 	|| matches: 0
+image: notredame_5.jpg 	|| matches: 123
+image: notredame_14.jpg 	|| matches: 192
+image: notredame_4.jpg 	|| matches: 196
+image: tatemodern_6.jpg 	|| matches: 197
+image: empirestate_9.jpg 	|| matches: 203
+image: empirestate_14.jpg 	|| matches: 203
+image: notredame_1.jpg 	|| matches: 206
+image: tatemodern_13.jpg 	|| matches: 210
+image: trafalgarsquare_5.jpg 	|| matches: 211
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: notredame_3.jpg 	|| matches: 0
+image: notredame_5.jpg 	|| matches: 116
+image: tatemodern_13.jpg 	|| matches: 186
+image: notredame_14.jpg 	|| matches: 197
+image: notredame_4.jpg 	|| matches: 198
+image: empirestate_9.jpg 	|| matches: 204
+image: empirestate_14.jpg 	|| matches: 205
+image: trafalgarsquare_20.jpg 	|| matches: 206
+image: tatemodern_6.jpg 	|| matches: 211
+image: sanmarco_14.jpg 	|| matches: 216
+Precision = 0.4
+Matching for : notredame_4.jpg
+Trial : 0 
+The match status is : 
+image: notredame_4.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 115
+image: empirestate_9.jpg 	|| matches: 164
+image: tatemodern_13.jpg 	|| matches: 172
+image: empirestate_14.jpg 	|| matches: 180
+image: notredame_1.jpg 	|| matches: 183
+image: trafalgarsquare_20.jpg 	|| matches: 193
+image: notredame_5.jpg 	|| matches: 197
+image: tatemodern_16.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 200
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: notredame_4.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 113
+image: tatemodern_13.jpg 	|| matches: 148
+image: trafalgarsquare_20.jpg 	|| matches: 164
+image: empirestate_9.jpg 	|| matches: 173
+image: tatemodern_9.jpg 	|| matches: 174
+image: empirestate_14.jpg 	|| matches: 176
+image: tatemodern_8.jpg 	|| matches: 178
+image: tatemodern_6.jpg 	|| matches: 179
+image: notredame_1.jpg 	|| matches: 179
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_4.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 110
+image: trafalgarsquare_20.jpg 	|| matches: 159
+image: empirestate_9.jpg 	|| matches: 161
+image: tatemodern_13.jpg 	|| matches: 166
+image: tatemodern_11.jpg 	|| matches: 169
+image: tatemodern_8.jpg 	|| matches: 171
+image: tatemodern_6.jpg 	|| matches: 171
+image: tatemodern_9.jpg 	|| matches: 172
+image: trafalgarsquare_5.jpg 	|| matches: 176
+Precision = 0.1
+Matching for : notredame_5.jpg
+Trial : 0 
+The match status is : 
+image: notredame_5.jpg 	|| matches: 0
+image: notredame_3.jpg 	|| matches: 121
+image: tatemodern_4.jpg 	|| matches: 148
+image: notredame_4.jpg 	|| matches: 162
+image: tatemodern_13.jpg 	|| matches: 165
+image: empirestate_14.jpg 	|| matches: 170
+image: empirestate_9.jpg 	|| matches: 175
+image: notredame_14.jpg 	|| matches: 178
+image: notredame_1.jpg 	|| matches: 180
+image: trafalgarsquare_5.jpg 	|| matches: 188
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: notredame_5.jpg 	|| matches: 0
+image: notredame_3.jpg 	|| matches: 125
+image: tatemodern_4.jpg 	|| matches: 151
+image: tatemodern_13.jpg 	|| matches: 169
+image: tatemodern_9.jpg 	|| matches: 170
+image: notredame_4.jpg 	|| matches: 172
+image: empirestate_9.jpg 	|| matches: 178
+image: empirestate_14.jpg 	|| matches: 179
+image: tatemodern_11.jpg 	|| matches: 180
+image: notredame_14.jpg 	|| matches: 182
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: notredame_5.jpg 	|| matches: 0
+image: notredame_3.jpg 	|| matches: 123
+image: tatemodern_4.jpg 	|| matches: 129
+image: notredame_4.jpg 	|| matches: 165
+image: empirestate_14.jpg 	|| matches: 168
+image: empirestate_9.jpg 	|| matches: 177
+image: tatemodern_13.jpg 	|| matches: 177
+image: notredame_14.jpg 	|| matches: 180
+image: tatemodern_11.jpg 	|| matches: 182
+image: notredame_1.jpg 	|| matches: 185
+Precision = 0.5
+Matching for : notredame_8.jpg
+Trial : 0 
+The match status is : 
+image: notredame_8.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 200
+image: tatemodern_9.jpg 	|| matches: 201
+image: tatemodern_6.jpg 	|| matches: 205
+image: tatemodern_4.jpg 	|| matches: 217
+image: trafalgarsquare_20.jpg 	|| matches: 219
+image: bigben_16.jpg 	|| matches: 220
+image: trafalgarsquare_5.jpg 	|| matches: 225
+image: notredame_19.jpg 	|| matches: 228
+image: bigben_12.jpg 	|| matches: 229
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: notredame_8.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 188
+image: tatemodern_11.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 202
+image: tatemodern_8.jpg 	|| matches: 205
+image: louvre_14.jpg 	|| matches: 207
+image: tatemodern_6.jpg 	|| matches: 210
+image: bigben_6.jpg 	|| matches: 211
+image: notredame_24.jpg 	|| matches: 212
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: notredame_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 175
+image: tatemodern_6.jpg 	|| matches: 177
+image: tatemodern_9.jpg 	|| matches: 179
+image: tatemodern_11.jpg 	|| matches: 181
+image: trafalgarsquare_20.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 205
+image: bigben_16.jpg 	|| matches: 207
+image: tatemodern_8.jpg 	|| matches: 214
+image: tatemodern_2.jpg 	|| matches: 214
+Precision = 0.1
+Matching for : sanmarco_1.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 198
+image: trafalgarsquare_5.jpg 	|| matches: 213
+image: tatemodern_9.jpg 	|| matches: 218
+image: empirestate_9.jpg 	|| matches: 226
+image: empirestate_14.jpg 	|| matches: 229
+image: sanmarco_14.jpg 	|| matches: 230
+image: tatemodern_6.jpg 	|| matches: 231
+image: tatemodern_4.jpg 	|| matches: 231
+image: tatemodern_13.jpg 	|| matches: 233
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: sanmarco_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 204
+image: tatemodern_4.jpg 	|| matches: 205
+image: trafalgarsquare_5.jpg 	|| matches: 213
+image: tatemodern_6.jpg 	|| matches: 215
+image: empirestate_10.jpg 	|| matches: 215
+image: tatemodern_13.jpg 	|| matches: 216
+image: empirestate_15.jpg 	|| matches: 221
+image: trafalgarsquare_6.jpg 	|| matches: 222
+image: empirestate_14.jpg 	|| matches: 222
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 199
+image: trafalgarsquare_5.jpg 	|| matches: 202
+image: tatemodern_6.jpg 	|| matches: 215
+image: tatemodern_9.jpg 	|| matches: 217
+image: empirestate_14.jpg 	|| matches: 220
+image: tatemodern_4.jpg 	|| matches: 222
+image: tatemodern_13.jpg 	|| matches: 222
+image: empirestate_9.jpg 	|| matches: 224
+image: tatemodern_16.jpg 	|| matches: 224
+Precision = 0.1
+Matching for : sanmarco_13.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 152
+image: tatemodern_4.jpg 	|| matches: 158
+image: tatemodern_11.jpg 	|| matches: 174
+image: empirestate_9.jpg 	|| matches: 178
+image: tatemodern_6.jpg 	|| matches: 181
+image: trafalgarsquare_5.jpg 	|| matches: 182
+image: empirestate_12.jpg 	|| matches: 185
+image: trafalgarsquare_20.jpg 	|| matches: 186
+image: notredame_1.jpg 	|| matches: 186
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 139
+image: tatemodern_11.jpg 	|| matches: 149
+image: tatemodern_4.jpg 	|| matches: 158
+image: empirestate_9.jpg 	|| matches: 170
+image: notredame_1.jpg 	|| matches: 174
+image: bigben_16.jpg 	|| matches: 175
+image: empirestate_12.jpg 	|| matches: 175
+image: londoneye_23.jpg 	|| matches: 177
+image: trafalgarsquare_5.jpg 	|| matches: 180
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_13.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 139
+image: tatemodern_4.jpg 	|| matches: 147
+image: tatemodern_11.jpg 	|| matches: 154
+image: empirestate_9.jpg 	|| matches: 171
+image: notredame_1.jpg 	|| matches: 178
+image: tatemodern_6.jpg 	|| matches: 178
+image: trafalgarsquare_20.jpg 	|| matches: 179
+image: trafalgarsquare_22.jpg 	|| matches: 181
+image: trafalgarsquare_5.jpg 	|| matches: 182
+Precision = 0.1
+Matching for : sanmarco_14.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 159
+image: trafalgarsquare_20.jpg 	|| matches: 167
+image: tatemodern_13.jpg 	|| matches: 169
+image: trafalgarsquare_5.jpg 	|| matches: 176
+image: tatemodern_11.jpg 	|| matches: 178
+image: trafalgarsquare_6.jpg 	|| matches: 179
+image: empirestate_14.jpg 	|| matches: 180
+image: tatemodern_9.jpg 	|| matches: 182
+image: empirestate_15.jpg 	|| matches: 182
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_14.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 148
+image: tatemodern_6.jpg 	|| matches: 160
+image: tatemodern_13.jpg 	|| matches: 161
+image: tatemodern_9.jpg 	|| matches: 166
+image: trafalgarsquare_5.jpg 	|| matches: 173
+image: tatemodern_11.jpg 	|| matches: 174
+image: empirestate_15.jpg 	|| matches: 178
+image: empirestate_14.jpg 	|| matches: 179
+image: tatemodern_16.jpg 	|| matches: 181
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 143
+image: trafalgarsquare_20.jpg 	|| matches: 143
+image: tatemodern_6.jpg 	|| matches: 156
+image: tatemodern_9.jpg 	|| matches: 163
+image: tatemodern_13.jpg 	|| matches: 166
+image: trafalgarsquare_5.jpg 	|| matches: 166
+image: tatemodern_16.jpg 	|| matches: 180
+image: empirestate_14.jpg 	|| matches: 182
+image: tatemodern_11.jpg 	|| matches: 184
+Precision = 0.1
+Matching for : sanmarco_18.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_18.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 166
+image: tatemodern_8.jpg 	|| matches: 181
+image: tatemodern_4.jpg 	|| matches: 181
+image: tatemodern_6.jpg 	|| matches: 189
+image: trafalgarsquare_20.jpg 	|| matches: 193
+image: tatemodern_9.jpg 	|| matches: 208
+image: empirestate_9.jpg 	|| matches: 212
+image: tatemodern_16.jpg 	|| matches: 213
+image: bigben_6.jpg 	|| matches: 216
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_18.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 171
+image: tatemodern_9.jpg 	|| matches: 185
+image: tatemodern_8.jpg 	|| matches: 185
+image: tatemodern_11.jpg 	|| matches: 196
+image: trafalgarsquare_20.jpg 	|| matches: 198
+image: tatemodern_16.jpg 	|| matches: 202
+image: tatemodern_4.jpg 	|| matches: 203
+image: notredame_1.jpg 	|| matches: 205
+image: trafalgarsquare_5.jpg 	|| matches: 205
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_18.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 151
+image: tatemodern_6.jpg 	|| matches: 173
+image: tatemodern_8.jpg 	|| matches: 190
+image: trafalgarsquare_20.jpg 	|| matches: 193
+image: tatemodern_4.jpg 	|| matches: 197
+image: tatemodern_9.jpg 	|| matches: 200
+image: empirestate_9.jpg 	|| matches: 211
+image: bigben_6.jpg 	|| matches: 215
+image: notredame_1.jpg 	|| matches: 217
+Precision = 0.1
+Matching for : sanmarco_19.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_19.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 124
+image: tatemodern_11.jpg 	|| matches: 145
+image: notredame_1.jpg 	|| matches: 158
+image: tatemodern_9.jpg 	|| matches: 161
+image: empirestate_9.jpg 	|| matches: 161
+image: empirestate_27.jpg 	|| matches: 164
+image: empirestate_10.jpg 	|| matches: 165
+image: sanmarco_13.jpg 	|| matches: 166
+image: londoneye_23.jpg 	|| matches: 168
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: sanmarco_19.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 137
+image: tatemodern_13.jpg 	|| matches: 139
+image: tatemodern_9.jpg 	|| matches: 159
+image: empirestate_9.jpg 	|| matches: 159
+image: londoneye_23.jpg 	|| matches: 168
+image: notredame_1.jpg 	|| matches: 172
+image: sanmarco_14.jpg 	|| matches: 174
+image: trafalgarsquare_20.jpg 	|| matches: 175
+image: tatemodern_6.jpg 	|| matches: 176
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: sanmarco_19.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 141
+image: tatemodern_11.jpg 	|| matches: 149
+image: empirestate_25.jpg 	|| matches: 160
+image: empirestate_9.jpg 	|| matches: 162
+image: tatemodern_9.jpg 	|| matches: 168
+image: sanmarco_13.jpg 	|| matches: 169
+image: empirestate_14.jpg 	|| matches: 173
+image: notredame_1.jpg 	|| matches: 176
+image: empirestate_10.jpg 	|| matches: 176
+Precision = 0.2
+Matching for : sanmarco_20.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_20.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 147
+image: empirestate_16.jpg 	|| matches: 183
+image: tatemodern_13.jpg 	|| matches: 183
+image: trafalgarsquare_20.jpg 	|| matches: 190
+image: trafalgarsquare_5.jpg 	|| matches: 193
+image: empirestate_14.jpg 	|| matches: 196
+image: tatemodern_16.jpg 	|| matches: 197
+image: bigben_6.jpg 	|| matches: 197
+image: tatemodern_6.jpg 	|| matches: 203
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_20.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 139
+image: empirestate_16.jpg 	|| matches: 180
+image: tatemodern_13.jpg 	|| matches: 183
+image: trafalgarsquare_20.jpg 	|| matches: 187
+image: tatemodern_6.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 188
+image: empirestate_14.jpg 	|| matches: 197
+image: tatemodern_8.jpg 	|| matches: 200
+image: tatemodern_9.jpg 	|| matches: 201
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_20.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 182
+image: empirestate_16.jpg 	|| matches: 183
+image: tatemodern_6.jpg 	|| matches: 183
+image: tatemodern_4.jpg 	|| matches: 193
+image: tatemodern_16.jpg 	|| matches: 195
+image: empirestate_14.jpg 	|| matches: 197
+image: bigben_6.jpg 	|| matches: 198
+image: bigben_3.jpg 	|| matches: 201
+image: trafalgarsquare_20.jpg 	|| matches: 204
+Precision = 0.1
+Matching for : sanmarco_22.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_22.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 208
+image: tatemodern_4.jpg 	|| matches: 215
+image: tatemodern_8.jpg 	|| matches: 233
+image: tatemodern_13.jpg 	|| matches: 234
+image: tatemodern_16.jpg 	|| matches: 235
+image: bigben_6.jpg 	|| matches: 236
+image: trafalgarsquare_20.jpg 	|| matches: 240
+image: bigben_12.jpg 	|| matches: 240
+image: tatemodern_9.jpg 	|| matches: 243
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_22.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 194
+image: tatemodern_8.jpg 	|| matches: 206
+image: tatemodern_4.jpg 	|| matches: 222
+image: trafalgarsquare_20.jpg 	|| matches: 236
+image: tatemodern_16.jpg 	|| matches: 238
+image: bigben_12.jpg 	|| matches: 245
+image: tatemodern_9.jpg 	|| matches: 245
+image: eiffel_18.jpg 	|| matches: 251
+image: eiffel_1.jpg 	|| matches: 251
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_22.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 184
+image: tatemodern_4.jpg 	|| matches: 196
+image: tatemodern_9.jpg 	|| matches: 218
+image: tatemodern_11.jpg 	|| matches: 220
+image: tatemodern_16.jpg 	|| matches: 227
+image: tatemodern_13.jpg 	|| matches: 231
+image: trafalgarsquare_20.jpg 	|| matches: 232
+image: trafalgarsquare_5.jpg 	|| matches: 232
+image: tatemodern_8.jpg 	|| matches: 232
+Precision = 0.1
+Matching for : sanmarco_3.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_3.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 202
+image: trafalgarsquare_20.jpg 	|| matches: 240
+image: empirestate_25.jpg 	|| matches: 244
+image: tatemodern_6.jpg 	|| matches: 245
+image: empirestate_9.jpg 	|| matches: 248
+image: tatemodern_16.jpg 	|| matches: 248
+image: bigben_6.jpg 	|| matches: 249
+image: empirestate_14.jpg 	|| matches: 251
+image: notredame_25.jpg 	|| matches: 251
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_3.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 221
+image: tatemodern_13.jpg 	|| matches: 225
+image: tatemodern_4.jpg 	|| matches: 229
+image: tatemodern_16.jpg 	|| matches: 229
+image: tatemodern_8.jpg 	|| matches: 232
+image: empirestate_9.jpg 	|| matches: 238
+image: tatemodern_9.jpg 	|| matches: 245
+image: empirestate_25.jpg 	|| matches: 246
+image: trafalgarsquare_20.jpg 	|| matches: 246
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_3.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 198
+image: tatemodern_6.jpg 	|| matches: 211
+image: trafalgarsquare_20.jpg 	|| matches: 215
+image: empirestate_9.jpg 	|| matches: 230
+image: tatemodern_4.jpg 	|| matches: 231
+image: tatemodern_8.jpg 	|| matches: 232
+image: empirestate_25.jpg 	|| matches: 235
+image: tatemodern_16.jpg 	|| matches: 240
+image: colosseum_6.jpg 	|| matches: 242
+Precision = 0.1
+Matching for : sanmarco_4.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_4.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 207
+image: bigben_6.jpg 	|| matches: 214
+image: sanmarco_19.jpg 	|| matches: 216
+image: tatemodern_8.jpg 	|| matches: 221
+image: empirestate_25.jpg 	|| matches: 222
+image: empirestate_14.jpg 	|| matches: 222
+image: tatemodern_9.jpg 	|| matches: 222
+image: bigben_16.jpg 	|| matches: 223
+image: bigben_14.jpg 	|| matches: 225
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: sanmarco_4.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 207
+image: tatemodern_6.jpg 	|| matches: 207
+image: empirestate_25.jpg 	|| matches: 214
+image: sanmarco_5.jpg 	|| matches: 215
+image: bigben_3.jpg 	|| matches: 215
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: bigben_6.jpg 	|| matches: 218
+image: tatemodern_4.jpg 	|| matches: 219
+image: empirestate_9.jpg 	|| matches: 220
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: sanmarco_4.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 191
+image: bigben_12.jpg 	|| matches: 197
+image: bigben_6.jpg 	|| matches: 201
+image: trafalgarsquare_20.jpg 	|| matches: 203
+image: tatemodern_13.jpg 	|| matches: 203
+image: sanmarco_5.jpg 	|| matches: 204
+image: tatemodern_4.jpg 	|| matches: 205
+image: bigben_8.jpg 	|| matches: 212
+image: sanmarco_19.jpg 	|| matches: 213
+Precision = 0.3
+Matching for : sanmarco_5.jpg
+Trial : 0 
+The match status is : 
+image: sanmarco_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 178
+image: tatemodern_4.jpg 	|| matches: 183
+image: tatemodern_9.jpg 	|| matches: 185
+image: trafalgarsquare_5.jpg 	|| matches: 186
+image: empirestate_25.jpg 	|| matches: 189
+image: empirestate_9.jpg 	|| matches: 190
+image: tatemodern_13.jpg 	|| matches: 191
+image: tatemodern_11.jpg 	|| matches: 194
+image: empirestate_14.jpg 	|| matches: 195
+Precision = 0.1
+Trial : 1 
+The match status is : 
+image: sanmarco_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: tatemodern_4.jpg 	|| matches: 191
+image: tatemodern_6.jpg 	|| matches: 191
+image: empirestate_25.jpg 	|| matches: 193
+image: trafalgarsquare_5.jpg 	|| matches: 194
+image: empirestate_9.jpg 	|| matches: 198
+image: empirestate_14.jpg 	|| matches: 199
+image: tatemodern_9.jpg 	|| matches: 201
+image: empirestate_23.jpg 	|| matches: 201
+Precision = 0.1
+Trial : 2 
+The match status is : 
+image: sanmarco_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 182
+image: tatemodern_9.jpg 	|| matches: 190
+image: tatemodern_4.jpg 	|| matches: 191
+image: trafalgarsquare_5.jpg 	|| matches: 194
+image: empirestate_9.jpg 	|| matches: 196
+image: empirestate_25.jpg 	|| matches: 196
+image: empirestate_14.jpg 	|| matches: 199
+image: sanmarco_14.jpg 	|| matches: 201
+image: tatemodern_6.jpg 	|| matches: 202
+Precision = 0.2
+Matching for : tatemodern_11.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_11.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 162
+image: tatemodern_4.jpg 	|| matches: 191
+image: tatemodern_13.jpg 	|| matches: 196
+image: empirestate_10.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 201
+image: trafalgarsquare_5.jpg 	|| matches: 202
+image: londoneye_22.jpg 	|| matches: 206
+image: empirestate_9.jpg 	|| matches: 206
+image: trafalgarsquare_6.jpg 	|| matches: 211
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: tatemodern_11.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 195
+image: empirestate_9.jpg 	|| matches: 198
+image: trafalgarsquare_20.jpg 	|| matches: 211
+image: tatemodern_13.jpg 	|| matches: 212
+image: londoneye_9.jpg 	|| matches: 217
+image: tatemodern_8.jpg 	|| matches: 218
+image: tatemodern_16.jpg 	|| matches: 222
+image: empirestate_15.jpg 	|| matches: 222
+image: empirestate_22.jpg 	|| matches: 224
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: tatemodern_11.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 183
+image: tatemodern_13.jpg 	|| matches: 197
+image: trafalgarsquare_20.jpg 	|| matches: 201
+image: tatemodern_9.jpg 	|| matches: 202
+image: notredame_1.jpg 	|| matches: 211
+image: trafalgarsquare_5.jpg 	|| matches: 213
+image: londoneye_9.jpg 	|| matches: 216
+image: empirestate_15.jpg 	|| matches: 218
+image: trafalgarsquare_6.jpg 	|| matches: 220
+Precision = 0.4
+Matching for : tatemodern_13.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_13.jpg 	|| matches: 0
+image: notredame_1.jpg 	|| matches: 144
+image: empirestate_27.jpg 	|| matches: 150
+image: tatemodern_11.jpg 	|| matches: 150
+image: empirestate_10.jpg 	|| matches: 155
+image: empirestate_9.jpg 	|| matches: 157
+image: empirestate_14.jpg 	|| matches: 163
+image: notredame_4.jpg 	|| matches: 169
+image: londoneye_13.jpg 	|| matches: 170
+image: sanmarco_19.jpg 	|| matches: 172
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: tatemodern_13.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 117
+image: notredame_1.jpg 	|| matches: 153
+image: empirestate_9.jpg 	|| matches: 155
+image: trafalgarsquare_20.jpg 	|| matches: 158
+image: empirestate_14.jpg 	|| matches: 162
+image: londoneye_13.jpg 	|| matches: 169
+image: sanmarco_19.jpg 	|| matches: 175
+image: notredame_4.jpg 	|| matches: 176
+image: sanmarco_14.jpg 	|| matches: 181
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: tatemodern_13.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 129
+image: empirestate_9.jpg 	|| matches: 157
+image: empirestate_14.jpg 	|| matches: 167
+image: notredame_1.jpg 	|| matches: 168
+image: empirestate_27.jpg 	|| matches: 182
+image: empirestate_15.jpg 	|| matches: 182
+image: notredame_4.jpg 	|| matches: 182
+image: tatemodern_9.jpg 	|| matches: 182
+image: trafalgarsquare_5.jpg 	|| matches: 186
+Precision = 0.3
+Matching for : tatemodern_14.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 163
+image: trafalgarsquare_20.jpg 	|| matches: 185
+image: trafalgarsquare_5.jpg 	|| matches: 201
+image: tatemodern_9.jpg 	|| matches: 203
+image: tatemodern_6.jpg 	|| matches: 206
+image: notredame_20.jpg 	|| matches: 224
+image: notredame_1.jpg 	|| matches: 225
+image: bigben_16.jpg 	|| matches: 225
+image: tatemodern_24.jpg 	|| matches: 228
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: tatemodern_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 181
+image: trafalgarsquare_20.jpg 	|| matches: 194
+image: trafalgarsquare_5.jpg 	|| matches: 195
+image: tatemodern_9.jpg 	|| matches: 200
+image: tatemodern_6.jpg 	|| matches: 214
+image: tatemodern_13.jpg 	|| matches: 228
+image: sanmarco_14.jpg 	|| matches: 229
+image: notredame_24.jpg 	|| matches: 230
+image: trafalgarsquare_6.jpg 	|| matches: 230
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: tatemodern_14.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 188
+image: trafalgarsquare_20.jpg 	|| matches: 188
+image: trafalgarsquare_5.jpg 	|| matches: 193
+image: tatemodern_9.jpg 	|| matches: 198
+image: tatemodern_6.jpg 	|| matches: 212
+image: tatemodern_11.jpg 	|| matches: 219
+image: tatemodern_8.jpg 	|| matches: 223
+image: tatemodern_16.jpg 	|| matches: 225
+image: sanmarco_14.jpg 	|| matches: 229
+Precision = 0.7
+Matching for : tatemodern_16.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 196
+image: tatemodern_8.jpg 	|| matches: 204
+image: tatemodern_11.jpg 	|| matches: 208
+image: tatemodern_6.jpg 	|| matches: 208
+image: empirestate_9.jpg 	|| matches: 210
+image: empirestate_14.jpg 	|| matches: 213
+image: tatemodern_9.jpg 	|| matches: 214
+image: trafalgarsquare_20.jpg 	|| matches: 214
+image: empirestate_15.jpg 	|| matches: 216
+Precision = 0.6
+Trial : 1 
+The match status is : 
+image: tatemodern_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 178
+image: trafalgarsquare_20.jpg 	|| matches: 186
+image: tatemodern_6.jpg 	|| matches: 188
+image: tatemodern_9.jpg 	|| matches: 202
+image: tatemodern_11.jpg 	|| matches: 207
+image: tatemodern_13.jpg 	|| matches: 208
+image: empirestate_14.jpg 	|| matches: 210
+image: empirestate_9.jpg 	|| matches: 215
+image: trafalgarsquare_6.jpg 	|| matches: 218
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: tatemodern_16.jpg 	|| matches: 0
+image: tatemodern_11.jpg 	|| matches: 201
+image: tatemodern_6.jpg 	|| matches: 205
+image: tatemodern_9.jpg 	|| matches: 207
+image: tatemodern_13.jpg 	|| matches: 212
+image: empirestate_14.jpg 	|| matches: 213
+image: trafalgarsquare_6.jpg 	|| matches: 213
+image: trafalgarsquare_20.jpg 	|| matches: 215
+image: empirestate_15.jpg 	|| matches: 215
+image: empirestate_9.jpg 	|| matches: 216
+Precision = 0.5
+Matching for : tatemodern_2.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_2.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 205
+image: tatemodern_13.jpg 	|| matches: 209
+image: tatemodern_8.jpg 	|| matches: 215
+image: tatemodern_9.jpg 	|| matches: 217
+image: tatemodern_6.jpg 	|| matches: 217
+image: londoneye_13.jpg 	|| matches: 234
+image: tatemodern_11.jpg 	|| matches: 234
+image: empirestate_9.jpg 	|| matches: 238
+image: bigben_16.jpg 	|| matches: 238
+Precision = 0.7
+Trial : 1 
+The match status is : 
+image: tatemodern_2.jpg 	|| matches: 0
+image: tatemodern_8.jpg 	|| matches: 181
+image: tatemodern_13.jpg 	|| matches: 201
+image: tatemodern_4.jpg 	|| matches: 216
+image: tatemodern_9.jpg 	|| matches: 224
+image: tatemodern_6.jpg 	|| matches: 228
+image: trafalgarsquare_20.jpg 	|| matches: 228
+image: empirestate_9.jpg 	|| matches: 229
+image: bigben_16.jpg 	|| matches: 230
+image: bigben_12.jpg 	|| matches: 232
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: tatemodern_2.jpg 	|| matches: 0
+image: tatemodern_8.jpg 	|| matches: 183
+image: tatemodern_13.jpg 	|| matches: 193
+image: tatemodern_6.jpg 	|| matches: 208
+image: tatemodern_11.jpg 	|| matches: 212
+image: tatemodern_9.jpg 	|| matches: 215
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: tatemodern_4.jpg 	|| matches: 216
+image: notredame_1.jpg 	|| matches: 222
+image: bigben_16.jpg 	|| matches: 225
+Precision = 0.7
+Matching for : tatemodern_24.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_24.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 139
+image: tatemodern_9.jpg 	|| matches: 152
+image: trafalgarsquare_5.jpg 	|| matches: 158
+image: tatemodern_6.jpg 	|| matches: 160
+image: tatemodern_11.jpg 	|| matches: 165
+image: trafalgarsquare_20.jpg 	|| matches: 166
+image: empirestate_9.jpg 	|| matches: 170
+image: tatemodern_8.jpg 	|| matches: 175
+image: bigben_6.jpg 	|| matches: 179
+Precision = 0.6
+Trial : 1 
+The match status is : 
+image: tatemodern_24.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 137
+image: trafalgarsquare_20.jpg 	|| matches: 151
+image: tatemodern_9.jpg 	|| matches: 164
+image: tatemodern_6.jpg 	|| matches: 170
+image: empirestate_9.jpg 	|| matches: 171
+image: trafalgarsquare_5.jpg 	|| matches: 171
+image: tatemodern_8.jpg 	|| matches: 176
+image: tatemodern_11.jpg 	|| matches: 181
+image: notredame_24.jpg 	|| matches: 190
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: tatemodern_24.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 157
+image: tatemodern_9.jpg 	|| matches: 159
+image: trafalgarsquare_5.jpg 	|| matches: 168
+image: tatemodern_8.jpg 	|| matches: 169
+image: tatemodern_4.jpg 	|| matches: 169
+image: empirestate_9.jpg 	|| matches: 174
+image: tatemodern_6.jpg 	|| matches: 175
+image: tatemodern_11.jpg 	|| matches: 181
+image: tatemodern_16.jpg 	|| matches: 186
+Precision = 0.7
+Matching for : tatemodern_4.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_4.jpg 	|| matches: 0
+image: trafalgarsquare_5.jpg 	|| matches: 152
+image: tatemodern_8.jpg 	|| matches: 163
+image: tatemodern_6.jpg 	|| matches: 169
+image: trafalgarsquare_20.jpg 	|| matches: 172
+image: bigben_12.jpg 	|| matches: 180
+image: tatemodern_9.jpg 	|| matches: 197
+image: tatemodern_11.jpg 	|| matches: 202
+image: notredame_1.jpg 	|| matches: 212
+image: empirestate_9.jpg 	|| matches: 215
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: tatemodern_4.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 141
+image: tatemodern_8.jpg 	|| matches: 165
+image: trafalgarsquare_5.jpg 	|| matches: 165
+image: bigben_12.jpg 	|| matches: 170
+image: tatemodern_6.jpg 	|| matches: 173
+image: tatemodern_9.jpg 	|| matches: 196
+image: empirestate_23.jpg 	|| matches: 203
+image: tatemodern_11.jpg 	|| matches: 209
+image: tatemodern_2.jpg 	|| matches: 215
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: tatemodern_4.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 134
+image: tatemodern_8.jpg 	|| matches: 145
+image: tatemodern_6.jpg 	|| matches: 166
+image: trafalgarsquare_5.jpg 	|| matches: 167
+image: bigben_12.jpg 	|| matches: 171
+image: tatemodern_9.jpg 	|| matches: 181
+image: empirestate_23.jpg 	|| matches: 187
+image: tatemodern_2.jpg 	|| matches: 193
+image: tatemodern_11.jpg 	|| matches: 204
+Precision = 0.6
+Matching for : tatemodern_6.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_6.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 115
+image: trafalgarsquare_20.jpg 	|| matches: 168
+image: tatemodern_9.jpg 	|| matches: 170
+image: tatemodern_8.jpg 	|| matches: 186
+image: empirestate_9.jpg 	|| matches: 198
+image: tatemodern_24.jpg 	|| matches: 200
+image: bigben_12.jpg 	|| matches: 201
+image: empirestate_12.jpg 	|| matches: 205
+image: empirestate_15.jpg 	|| matches: 208
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: tatemodern_6.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 127
+image: trafalgarsquare_20.jpg 	|| matches: 160
+image: bigben_12.jpg 	|| matches: 168
+image: tatemodern_8.jpg 	|| matches: 181
+image: tatemodern_9.jpg 	|| matches: 182
+image: tatemodern_24.jpg 	|| matches: 193
+image: trafalgarsquare_5.jpg 	|| matches: 201
+image: empirestate_12.jpg 	|| matches: 204
+image: louvre_14.jpg 	|| matches: 208
+Precision = 0.5
+Trial : 2 
+The match status is : 
+image: tatemodern_6.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 146
+image: tatemodern_9.jpg 	|| matches: 165
+image: trafalgarsquare_20.jpg 	|| matches: 177
+image: bigben_12.jpg 	|| matches: 183
+image: trafalgarsquare_5.jpg 	|| matches: 190
+image: tatemodern_8.jpg 	|| matches: 194
+image: empirestate_12.jpg 	|| matches: 197
+image: bigben_6.jpg 	|| matches: 198
+image: empirestate_15.jpg 	|| matches: 198
+Precision = 0.4
+Matching for : tatemodern_8.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 161
+image: tatemodern_6.jpg 	|| matches: 181
+image: trafalgarsquare_20.jpg 	|| matches: 182
+image: tatemodern_9.jpg 	|| matches: 194
+image: bigben_12.jpg 	|| matches: 202
+image: tatemodern_11.jpg 	|| matches: 205
+image: empirestate_23.jpg 	|| matches: 211
+image: tatemodern_2.jpg 	|| matches: 214
+image: tatemodern_13.jpg 	|| matches: 220
+Precision = 0.7
+Trial : 1 
+The match status is : 
+image: tatemodern_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 163
+image: trafalgarsquare_20.jpg 	|| matches: 183
+image: tatemodern_2.jpg 	|| matches: 189
+image: tatemodern_6.jpg 	|| matches: 190
+image: tatemodern_9.jpg 	|| matches: 201
+image: tatemodern_11.jpg 	|| matches: 214
+image: bigben_12.jpg 	|| matches: 216
+image: empirestate_23.jpg 	|| matches: 220
+image: trafalgarsquare_5.jpg 	|| matches: 228
+Precision = 0.6
+Trial : 2 
+The match status is : 
+image: tatemodern_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 173
+image: trafalgarsquare_20.jpg 	|| matches: 184
+image: tatemodern_11.jpg 	|| matches: 188
+image: tatemodern_6.jpg 	|| matches: 192
+image: tatemodern_9.jpg 	|| matches: 205
+image: bigben_12.jpg 	|| matches: 215
+image: tatemodern_2.jpg 	|| matches: 233
+image: bigben_16.jpg 	|| matches: 236
+image: trafalgarsquare_5.jpg 	|| matches: 237
+Precision = 0.6
+Matching for : tatemodern_9.jpg
+Trial : 0 
+The match status is : 
+image: tatemodern_9.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 154
+image: tatemodern_11.jpg 	|| matches: 157
+image: trafalgarsquare_20.jpg 	|| matches: 162
+image: tatemodern_13.jpg 	|| matches: 168
+image: tatemodern_4.jpg 	|| matches: 173
+image: trafalgarsquare_5.jpg 	|| matches: 174
+image: empirestate_9.jpg 	|| matches: 175
+image: bigben_6.jpg 	|| matches: 182
+image: bigben_12.jpg 	|| matches: 183
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: tatemodern_9.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 150
+image: tatemodern_11.jpg 	|| matches: 164
+image: trafalgarsquare_20.jpg 	|| matches: 166
+image: tatemodern_6.jpg 	|| matches: 168
+image: tatemodern_13.jpg 	|| matches: 173
+image: trafalgarsquare_5.jpg 	|| matches: 193
+image: tatemodern_24.jpg 	|| matches: 196
+image: tatemodern_2.jpg 	|| matches: 197
+image: trafalgarsquare_6.jpg 	|| matches: 201
+Precision = 0.7
+Trial : 2 
+The match status is : 
+image: tatemodern_9.jpg 	|| matches: 0
+image: tatemodern_6.jpg 	|| matches: 159
+image: tatemodern_11.jpg 	|| matches: 162
+image: tatemodern_4.jpg 	|| matches: 164
+image: tatemodern_13.jpg 	|| matches: 164
+image: tatemodern_8.jpg 	|| matches: 170
+image: trafalgarsquare_20.jpg 	|| matches: 175
+image: bigben_12.jpg 	|| matches: 188
+image: empirestate_9.jpg 	|| matches: 189
+image: tatemodern_2.jpg 	|| matches: 191
+Precision = 0.7
+Matching for : trafalgarsquare_1.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 171
+image: trafalgarsquare_5.jpg 	|| matches: 188
+image: tatemodern_9.jpg 	|| matches: 195
+image: tatemodern_6.jpg 	|| matches: 196
+image: tatemodern_4.jpg 	|| matches: 200
+image: empirestate_9.jpg 	|| matches: 201
+image: empirestate_15.jpg 	|| matches: 209
+image: bigben_16.jpg 	|| matches: 210
+image: tatemodern_13.jpg 	|| matches: 214
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 170
+image: trafalgarsquare_5.jpg 	|| matches: 182
+image: tatemodern_4.jpg 	|| matches: 194
+image: tatemodern_6.jpg 	|| matches: 195
+image: tatemodern_9.jpg 	|| matches: 202
+image: bigben_12.jpg 	|| matches: 206
+image: tatemodern_13.jpg 	|| matches: 208
+image: bigben_16.jpg 	|| matches: 211
+image: londoneye_9.jpg 	|| matches: 212
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_1.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 155
+image: tatemodern_6.jpg 	|| matches: 178
+image: trafalgarsquare_5.jpg 	|| matches: 184
+image: tatemodern_9.jpg 	|| matches: 190
+image: tatemodern_4.jpg 	|| matches: 194
+image: empirestate_9.jpg 	|| matches: 195
+image: londoneye_9.jpg 	|| matches: 197
+image: tatemodern_11.jpg 	|| matches: 203
+image: tatemodern_8.jpg 	|| matches: 203
+Precision = 0.3
+Matching for : trafalgarsquare_15.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_15.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 168
+image: trafalgarsquare_5.jpg 	|| matches: 186
+image: tatemodern_4.jpg 	|| matches: 196
+image: tatemodern_13.jpg 	|| matches: 206
+image: tatemodern_9.jpg 	|| matches: 209
+image: tatemodern_6.jpg 	|| matches: 221
+image: empirestate_9.jpg 	|| matches: 221
+image: tatemodern_11.jpg 	|| matches: 225
+image: londoneye_13.jpg 	|| matches: 227
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_15.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 175
+image: tatemodern_13.jpg 	|| matches: 179
+image: trafalgarsquare_5.jpg 	|| matches: 207
+image: tatemodern_6.jpg 	|| matches: 220
+image: tatemodern_9.jpg 	|| matches: 223
+image: empirestate_9.jpg 	|| matches: 228
+image: notredame_1.jpg 	|| matches: 231
+image: tatemodern_2.jpg 	|| matches: 233
+image: tatemodern_16.jpg 	|| matches: 233
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_15.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 167
+image: trafalgarsquare_5.jpg 	|| matches: 201
+image: tatemodern_13.jpg 	|| matches: 201
+image: tatemodern_6.jpg 	|| matches: 204
+image: tatemodern_4.jpg 	|| matches: 205
+image: empirestate_9.jpg 	|| matches: 210
+image: tatemodern_11.jpg 	|| matches: 218
+image: tatemodern_9.jpg 	|| matches: 220
+image: bigben_12.jpg 	|| matches: 222
+Precision = 0.3
+Matching for : trafalgarsquare_16.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_16.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 115
+image: trafalgarsquare_20.jpg 	|| matches: 118
+image: trafalgarsquare_5.jpg 	|| matches: 145
+image: tatemodern_11.jpg 	|| matches: 157
+image: trafalgarsquare_22.jpg 	|| matches: 158
+image: tatemodern_8.jpg 	|| matches: 176
+image: tatemodern_9.jpg 	|| matches: 178
+image: empirestate_12.jpg 	|| matches: 181
+image: empirestate_9.jpg 	|| matches: 184
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_16.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 127
+image: tatemodern_4.jpg 	|| matches: 145
+image: trafalgarsquare_5.jpg 	|| matches: 154
+image: tatemodern_9.jpg 	|| matches: 178
+image: trafalgarsquare_22.jpg 	|| matches: 181
+image: tatemodern_13.jpg 	|| matches: 184
+image: empirestate_14.jpg 	|| matches: 188
+image: tatemodern_11.jpg 	|| matches: 191
+image: empirestate_12.jpg 	|| matches: 193
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_16.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 128
+image: tatemodern_4.jpg 	|| matches: 129
+image: trafalgarsquare_5.jpg 	|| matches: 151
+image: tatemodern_11.jpg 	|| matches: 160
+image: tatemodern_9.jpg 	|| matches: 170
+image: trafalgarsquare_22.jpg 	|| matches: 173
+image: tatemodern_6.jpg 	|| matches: 178
+image: empirestate_9.jpg 	|| matches: 186
+image: tatemodern_13.jpg 	|| matches: 186
+Precision = 0.4
+Matching for : trafalgarsquare_20.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_20.jpg 	|| matches: 0
+image: trafalgarsquare_5.jpg 	|| matches: 83
+image: tatemodern_4.jpg 	|| matches: 102
+image: tatemodern_6.jpg 	|| matches: 142
+image: tatemodern_9.jpg 	|| matches: 158
+image: tatemodern_8.jpg 	|| matches: 160
+image: londoneye_13.jpg 	|| matches: 172
+image: empirestate_9.jpg 	|| matches: 175
+image: trafalgarsquare_22.jpg 	|| matches: 176
+image: tatemodern_24.jpg 	|| matches: 176
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_20.jpg 	|| matches: 0
+image: trafalgarsquare_5.jpg 	|| matches: 78
+image: tatemodern_4.jpg 	|| matches: 129
+image: tatemodern_9.jpg 	|| matches: 155
+image: tatemodern_11.jpg 	|| matches: 161
+image: tatemodern_6.jpg 	|| matches: 161
+image: tatemodern_13.jpg 	|| matches: 162
+image: trafalgarsquare_22.jpg 	|| matches: 165
+image: sanmarco_14.jpg 	|| matches: 167
+image: bigben_12.jpg 	|| matches: 169
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_20.jpg 	|| matches: 0
+image: trafalgarsquare_5.jpg 	|| matches: 88
+image: tatemodern_4.jpg 	|| matches: 121
+image: tatemodern_9.jpg 	|| matches: 171
+image: trafalgarsquare_22.jpg 	|| matches: 180
+image: sanmarco_14.jpg 	|| matches: 184
+image: tatemodern_11.jpg 	|| matches: 187
+image: bigben_12.jpg 	|| matches: 189
+image: tatemodern_8.jpg 	|| matches: 189
+image: tatemodern_6.jpg 	|| matches: 189
+Precision = 0.3
+Matching for : trafalgarsquare_21.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_21.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 147
+image: notredame_20.jpg 	|| matches: 171
+image: tatemodern_6.jpg 	|| matches: 174
+image: trafalgarsquare_5.jpg 	|| matches: 175
+image: tatemodern_4.jpg 	|| matches: 180
+image: sanmarco_14.jpg 	|| matches: 180
+image: empirestate_12.jpg 	|| matches: 181
+image: empirestate_14.jpg 	|| matches: 183
+image: empirestate_15.jpg 	|| matches: 186
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_21.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 147
+image: tatemodern_6.jpg 	|| matches: 158
+image: trafalgarsquare_5.jpg 	|| matches: 167
+image: tatemodern_4.jpg 	|| matches: 167
+image: tatemodern_9.jpg 	|| matches: 169
+image: sanmarco_14.jpg 	|| matches: 175
+image: empirestate_15.jpg 	|| matches: 176
+image: bigben_14.jpg 	|| matches: 177
+image: notredame_20.jpg 	|| matches: 179
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_21.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 144
+image: tatemodern_4.jpg 	|| matches: 167
+image: londoneye_13.jpg 	|| matches: 168
+image: tatemodern_6.jpg 	|| matches: 169
+image: tatemodern_9.jpg 	|| matches: 170
+image: notredame_20.jpg 	|| matches: 171
+image: colosseum_8.jpg 	|| matches: 176
+image: trafalgarsquare_5.jpg 	|| matches: 179
+image: sanmarco_14.jpg 	|| matches: 180
+Precision = 0.3
+Matching for : trafalgarsquare_22.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_22.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 128
+image: trafalgarsquare_5.jpg 	|| matches: 144
+image: tatemodern_11.jpg 	|| matches: 171
+image: trafalgarsquare_16.jpg 	|| matches: 179
+image: tatemodern_9.jpg 	|| matches: 186
+image: notredame_20.jpg 	|| matches: 189
+image: empirestate_14.jpg 	|| matches: 191
+image: tatemodern_13.jpg 	|| matches: 197
+image: colosseum_3.jpg 	|| matches: 197
+Precision = 0.4
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_22.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 127
+image: trafalgarsquare_5.jpg 	|| matches: 144
+image: tatemodern_11.jpg 	|| matches: 167
+image: trafalgarsquare_16.jpg 	|| matches: 186
+image: tatemodern_13.jpg 	|| matches: 186
+image: tatemodern_9.jpg 	|| matches: 187
+image: empirestate_15.jpg 	|| matches: 190
+image: empirestate_14.jpg 	|| matches: 192
+image: sanmarco_14.jpg 	|| matches: 193
+Precision = 0.4
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_22.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 126
+image: trafalgarsquare_5.jpg 	|| matches: 130
+image: notredame_20.jpg 	|| matches: 166
+image: tatemodern_4.jpg 	|| matches: 177
+image: tatemodern_13.jpg 	|| matches: 184
+image: tatemodern_11.jpg 	|| matches: 184
+image: tatemodern_9.jpg 	|| matches: 185
+image: empirestate_14.jpg 	|| matches: 189
+image: trafalgarsquare_16.jpg 	|| matches: 189
+Precision = 0.4
+Matching for : trafalgarsquare_25.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_25.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 199
+image: tatemodern_9.jpg 	|| matches: 205
+image: tatemodern_13.jpg 	|| matches: 214
+image: trafalgarsquare_20.jpg 	|| matches: 221
+image: empirestate_9.jpg 	|| matches: 227
+image: trafalgarsquare_5.jpg 	|| matches: 227
+image: tatemodern_11.jpg 	|| matches: 228
+image: tatemodern_6.jpg 	|| matches: 228
+image: bigben_12.jpg 	|| matches: 229
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_25.jpg 	|| matches: 0
+image: tatemodern_9.jpg 	|| matches: 193
+image: tatemodern_4.jpg 	|| matches: 200
+image: trafalgarsquare_20.jpg 	|| matches: 216
+image: tatemodern_11.jpg 	|| matches: 218
+image: tatemodern_6.jpg 	|| matches: 219
+image: bigben_12.jpg 	|| matches: 224
+image: tatemodern_16.jpg 	|| matches: 228
+image: trafalgarsquare_5.jpg 	|| matches: 228
+image: tatemodern_2.jpg 	|| matches: 231
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_25.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 196
+image: tatemodern_9.jpg 	|| matches: 210
+image: trafalgarsquare_5.jpg 	|| matches: 222
+image: tatemodern_13.jpg 	|| matches: 225
+image: trafalgarsquare_20.jpg 	|| matches: 229
+image: tatemodern_6.jpg 	|| matches: 229
+image: tatemodern_2.jpg 	|| matches: 237
+image: louvre_14.jpg 	|| matches: 238
+image: tatemodern_16.jpg 	|| matches: 239
+Precision = 0.3
+Matching for : trafalgarsquare_5.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 64
+image: tatemodern_4.jpg 	|| matches: 108
+image: trafalgarsquare_22.jpg 	|| matches: 153
+image: tatemodern_6.jpg 	|| matches: 162
+image: empirestate_9.jpg 	|| matches: 165
+image: tatemodern_24.jpg 	|| matches: 166
+image: tatemodern_9.jpg 	|| matches: 167
+image: trafalgarsquare_16.jpg 	|| matches: 173
+image: trafalgarsquare_1.jpg 	|| matches: 175
+Precision = 0.5
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 64
+image: tatemodern_4.jpg 	|| matches: 105
+image: trafalgarsquare_22.jpg 	|| matches: 137
+image: tatemodern_13.jpg 	|| matches: 139
+image: tatemodern_9.jpg 	|| matches: 151
+image: empirestate_9.jpg 	|| matches: 161
+image: tatemodern_6.jpg 	|| matches: 164
+image: londoneye_9.jpg 	|| matches: 171
+image: empirestate_23.jpg 	|| matches: 172
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_5.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 66
+image: tatemodern_4.jpg 	|| matches: 104
+image: tatemodern_6.jpg 	|| matches: 156
+image: trafalgarsquare_22.jpg 	|| matches: 157
+image: empirestate_9.jpg 	|| matches: 161
+image: tatemodern_16.jpg 	|| matches: 162
+image: tatemodern_24.jpg 	|| matches: 162
+image: tatemodern_8.jpg 	|| matches: 162
+image: empirestate_23.jpg 	|| matches: 165
+Precision = 0.3
+Matching for : trafalgarsquare_6.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_6.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 186
+image: tatemodern_4.jpg 	|| matches: 191
+image: tatemodern_11.jpg 	|| matches: 199
+image: tatemodern_9.jpg 	|| matches: 200
+image: empirestate_9.jpg 	|| matches: 201
+image: tatemodern_6.jpg 	|| matches: 202
+image: trafalgarsquare_5.jpg 	|| matches: 204
+image: sanmarco_14.jpg 	|| matches: 206
+image: tatemodern_13.jpg 	|| matches: 206
+Precision = 0.3
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_6.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 157
+image: tatemodern_4.jpg 	|| matches: 187
+image: tatemodern_9.jpg 	|| matches: 187
+image: trafalgarsquare_5.jpg 	|| matches: 188
+image: tatemodern_11.jpg 	|| matches: 188
+image: empirestate_14.jpg 	|| matches: 199
+image: tatemodern_13.jpg 	|| matches: 203
+image: empirestate_15.jpg 	|| matches: 203
+image: tatemodern_6.jpg 	|| matches: 204
+Precision = 0.3
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_6.jpg 	|| matches: 0
+image: trafalgarsquare_20.jpg 	|| matches: 150
+image: tatemodern_9.jpg 	|| matches: 177
+image: tatemodern_4.jpg 	|| matches: 179
+image: trafalgarsquare_5.jpg 	|| matches: 187
+image: bigben_6.jpg 	|| matches: 187
+image: empirestate_9.jpg 	|| matches: 188
+image: tatemodern_6.jpg 	|| matches: 190
+image: tatemodern_11.jpg 	|| matches: 191
+image: empirestate_14.jpg 	|| matches: 194
+Precision = 0.3
+Matching for : trafalgarsquare_8.jpg
+Trial : 0 
+The match status is : 
+image: trafalgarsquare_8.jpg 	|| matches: 0
+image: tatemodern_13.jpg 	|| matches: 212
+image: tatemodern_4.jpg 	|| matches: 218
+image: empirestate_9.jpg 	|| matches: 228
+image: notredame_1.jpg 	|| matches: 233
+image: londoneye_23.jpg 	|| matches: 236
+image: londoneye_13.jpg 	|| matches: 236
+image: bigben_6.jpg 	|| matches: 237
+image: empirestate_14.jpg 	|| matches: 237
+image: trafalgarsquare_5.jpg 	|| matches: 239
+Precision = 0.2
+Trial : 1 
+The match status is : 
+image: trafalgarsquare_8.jpg 	|| matches: 0
+image: tatemodern_4.jpg 	|| matches: 209
+image: tatemodern_13.jpg 	|| matches: 215
+image: bigben_6.jpg 	|| matches: 231
+image: notredame_1.jpg 	|| matches: 232
+image: empirestate_14.jpg 	|| matches: 237
+image: tatemodern_9.jpg 	|| matches: 243
+image: londoneye_13.jpg 	|| matches: 247
+image: trafalgarsquare_20.jpg 	|| matches: 247
+image: tatemodern_11.jpg 	|| matches: 248
+Precision = 0.2
+Trial : 2 
+The match status is : 
+image: trafalgarsquare_8.jpg 	|| matches: 0
+image: empirestate_9.jpg 	|| matches: 230
+image: tatemodern_13.jpg 	|| matches: 235
+image: trafalgarsquare_20.jpg 	|| matches: 236
+image: notredame_1.jpg 	|| matches: 244
+image: empirestate_14.jpg 	|| matches: 248
+image: colosseum_8.jpg 	|| matches: 250
+image: sanmarco_20.jpg 	|| matches: 251
+image: londoneye_13.jpg 	|| matches: 252
+image: sanmarco_19.jpg 	|| matches: 252
+Precision = 0.2

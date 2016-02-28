@@ -123,7 +123,7 @@ void inverseWarp(CImg<double> input_image, CImg<double>& warped,
 	// double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
 	// 		-0.000306, 0.000731, 1.0 };
 	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
-	double transformation1[3][3] = { 5.73598, -4.93054, 519.11, 4.20396, -3.58771, 367.323, 0.0108999, -0.00940478, 1.0  };
+	double transformation1[3][3] = { 1.70676, -1.50589, 391.045, 2.70702, -1.99364, 436.17, 0.0070001, -0.00490387, 1.0  };
 	if (flag == 1) {
 		transformation = transformation1;
 	}
@@ -416,28 +416,31 @@ int main(int argc, char **argv) {
 
 				// randomly picking input image
 
-				char temp_result[1024];
+				// char temp_result[1024];
+				// int dirmove = chdir(result);
+				// cout << "picking random..." << endl;
+				// int imgindex = (rand() % filecount) + 1;
+				// cout << "picked image : " << filelist[imgindex] << endl << "";
+				// string inputFile = strcpy(temp_result,
+				// 		filelist[imgindex].c_str());
+				// string place = inputFile.substr(0, inputFile.find("_"));
+
 				int dirmove = chdir(result);
-				cout << "picking random..." << endl;
-				int imgindex = (rand() % filecount) + 1;
-				cout << "picked image : " << filelist[imgindex] << endl << "";
-				string inputFile = strcpy(temp_result,
-						filelist[imgindex].c_str());
-				string place = inputFile.substr(0, inputFile.find("_"));
-
-				// Getting image vector for input image and forming descriptors
-
-				CImg<double> input_image(inputFile.c_str());
-				int imgwidth = input_image.width();
-				CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
-				vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
-				print_descriptor(descriptors, input_image);
-
-				int trials = 3;
-				for (int r = 0; r < trials; r++) {
-					cout << "Trial : " << r << " " << endl;
-					question4(input_image, descriptors, filecount, filelist,
-							place);
+				for (int o = 0; o < filecount; o++) {
+					char temp_result[1024];
+					string inputFile = strcpy(temp_result, filelist[o].c_str());
+					string place = inputFile.substr(0, inputFile.find("_"));
+					CImg<double> input_image(inputFile.c_str());
+					int imgwidth = input_image.width();
+					CImg<double> gray = input_image.get_RGBtoHSI().get_channel(2);
+					vector<SiftDescriptor> descriptors = Sift::compute_sift(gray);
+					int trials = 3;
+					cout<<"Matching for : "<<filelist[o]<<"\n";
+					for (int r = 0; r < trials; r++) {
+						cout << "Trial : " << r << " " << endl;
+						question4(input_image, descriptors, filecount, filelist,
+								place);
+					}
 				}
 
 			} else {
