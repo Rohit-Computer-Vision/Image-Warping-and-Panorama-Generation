@@ -114,14 +114,15 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors,
 }
 
 void inverseWarp(CImg<double> input_image, CImg<double> warped,
-		double transformation[3][3], int flag = 0) {
+	double transformation[3][3], int flag = 0) {
 	double sum = 0.0;
 	warped.fill(255, 255, 255);
 	double coordinates[3] = { 0, 0, 1.0 };
 	double out[3] = { 0, 0, 0 };
 
-	double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0,
-			-0.000306, 0.000731, 1.0 };
+	//double transformation1[3][3] = { 0.907, 0.258, -182.0, -0.153, 1.44, 58.0, -0.000306, 0.000731, 1.0 };
+	//double transformation1[3][3] = { 1,0,0,0.51482,0,0,0,0,1 };
+	double transformation1[3][3] = { 1.3468,0,0,1.309,0,0,0,0,1 };
 	if (flag == 1) {
 		transformation = transformation1;
 	}
@@ -384,8 +385,7 @@ int main(int argc, char **argv) {
 					question3(inputFile, filecount, filelist, place);
 				}
 
-			}
-			else if (question == "q4") {
+			} else if (question == "q4") {
 
 				// randomly picking input image
 
@@ -413,8 +413,7 @@ int main(int argc, char **argv) {
 							place);
 				}
 
-			}
-			else {
+			} else {
 
 				// Getting image vector for input image and forming descriptors
 
@@ -472,8 +471,7 @@ int main(int argc, char **argv) {
 					input_image.get_normalize(0, 255).save("sift.png");
 					input_image2.get_normalize(0, 255).save("sift2.png");
 
-				}
-				else if (question == "q2") {
+				} else if (question == "q2") {
 
 					if (argc < 4) {
 						cout
@@ -524,13 +522,11 @@ int main(int argc, char **argv) {
 
 					}
 
-				}
-				else {
+				} else {
 					cout << "Wrong option...Please enter a question number";
 				}
 			}
-		}
-		else if (part == "part2") {
+		} else if (part == "part2") {
 			if (question == "q1") {
 				cout << "Part2 - Question 1:" << '\n';
 				string inputFile = argv[3];
@@ -539,8 +535,7 @@ int main(int argc, char **argv) {
 				double transformation[3][3];
 				inverseWarp(input_image, warped, transformation, 1);
 				warped.save("part2-q1.png");
-			}
-			else if (question == "q2") {
+			} else if (question == "q2") {
 				cout << "Part2 - Question 2:" << '\n';
 				if (argc < 4) {
 					cout << "Insufficent number of arguments; correct usage:"
@@ -593,25 +588,21 @@ int main(int argc, char **argv) {
 				double new_image_x_dash, new_image_y_dash, new_image_w_dash;
 				int max_inliers = 0, inliers = 0, threshold;
 
-				cout << "\n1";
 				//initializations for elements that are 1
 				for (int i = 0; i < 8; i += 2) {
 					trans(2, i) = 1;
 					trans(5, i + 1) = 1;
 				}
 
-				cout << "\n2";
-
 				//increase this to try more sets of points
-				int q = -1;
-				while (q < 1) {
+				int q = -1, reps = 500;
+				while (q < reps) {
 					q++;
-					//for (int q = 0; q < 10; q++) {
-					cout << "\nRep:" << q;
-
+					cout << "\n\nRep:" << q;
+					inliers = 0;
 					for (r = 0; r < 4; r++) {
 						// gives a random number between 0 and image width
-						//srand(time(NULL));
+						srand(time(NULL));
 						rand_x = rand() % img_rows;
 						rand_y = rand() % img_cols;
 						x[r] = descriptors[rand_x].col;
@@ -620,28 +611,38 @@ int main(int argc, char **argv) {
 						y_dash[r] = matches[rand_y].row;
 					}
 					//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
-					cout << "\nDone with 4 points";
+					//cout << "\nDone with 4 points";
 					for (k = 0; k < 8; k += 2) {
-						//har ek ko ulta
-						trans(0, k) = x[q];
-						trans(1, k) = y[q];
-						trans(6, k) = -x[q] * x_dash[q];
-						trans(7, k) = -y[q] * x_dash[q];
-						new_coords(0, k) = x_dash[q];
+						int u = k / 2;
+						trans(0, k) = x[u];
+						trans(1, k) = y[u];
+						trans(6, k) = -x[u] * x_dash[u];
+						trans(7, k) = -y[u] * x_dash[u];
+						new_coords(0, k) = x_dash[u];
 
-						trans(3, k + 1) = x[q];
-						trans(4, k + 1) = y[q];
-						trans(6, k + 1) = -x[q] * y_dash[q];
-						trans(7, k + 1) = -y[q] * y_dash[q];
-						new_coords(0, k + 1) = y_dash[q];
+						trans(3, k + 1) = x[u];
+						trans(4, k + 1) = y[u];
+						trans(6, k + 1) = -x[u] * y_dash[u];
+						trans(7, k + 1) = -y[u] * y_dash[u];
+						new_coords(0, k + 1) = y_dash[u];
 					}
-					cout << "\nDone with trans inits";
+					//cout << "\nDone with trans inits";
 					h = new_coords.solve(trans);
-					cout << "\nafter solve";
+					/*cout << "\ntrans: ";
+					for (int v = 0; v < 8; v++) {
+						for (int l = 0; l < 8; l++)
+							cout << trans(v,l) << " ";
+						cout << "\n";
+					}
+					cout << "\nnew_coords: ";
+					for (int v = 0; v < 8; v++)
+						cout << new_coords(0, v) << " ";
+					cout << "\n";*/
+
+					//cout << "\nafter solve";
 					convert_to_3x3(h, homography);
-					cout << "\nafter converting to 3x3";
+					//cout << "\nafter converting to 3x3";
 					for (int m = 0; m < descriptors.size() - 1; m++) {
-						//cout << "\nm=" << m << endl;
 						image_x = descriptors[m].col;
 						image_y = descriptors[m].row;
 						image_x_dash = matches[m].col;
@@ -657,8 +658,17 @@ int main(int argc, char **argv) {
 						new_image_x_dash /= new_image_w_dash;
 						new_image_y_dash /= new_image_w_dash;
 
+						//cout << endl;
+						for (int b = 0; b < 3; b++)
+							for (int c = 0; c < 3; c++)
+								cout << homography[b][c] << " ";
+						//cout << endl;
+
+						cout << "\nnew: " << new_image_x_dash << ","
+								<< new_image_y_dash << endl;
+						cout << "img: " << image_x_dash << "," << image_y_dash;
+
 						//check number of inliers and save best h
-						inliers = 0;
 						threshold = 20; //radius of pixel range to check for classifying a point as an inlier
 						if (new_image_x_dash >= image_x_dash - threshold
 								&& new_image_x_dash
@@ -670,16 +680,26 @@ int main(int argc, char **argv) {
 							}
 						}
 					}
+					cout << "\n Inliers: " << inliers;
 					if (max_inliers < inliers) {
 						max_inliers = inliers;
 						global_h = h;
+						/*cout << "\nh: ";
+						for (int v = 0; v < 8; v++)
+							cout << h(0, v) << " ";
+
+						cout << endl << "global: ";
+						for (int v = 0; v < 8; v++)
+							cout << global_h(0, v) << " ";
+						*/
 					}
-					cout<<"finishing one loop \n";
+					//cout<<"\nfinishing one loop";
 				}
-				cout << "h: ";
+				cout << "\nGlobal h: ";
 				for (int g = 0; g < 8; g++) {
 					cout << global_h(0, g) << " ";
 				}
+				cout << "\n\n";
 			}
 
 		} else
