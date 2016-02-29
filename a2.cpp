@@ -447,7 +447,7 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 
 	//increase this to try more sets of points
 	int q = -1, reps = 10000;
-	int threshold = 50; //radius of pixel range to check for classifying a point as an inlier
+	int threshold = 15; //radius of pixel range to check for classifying a point as an inlier
 	for (int q = 0; q < reps; q++) {
 		cout << endl << "Rep:" << q;
 		inliers = 0;
@@ -455,8 +455,11 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 //		cout << "\npoints: " << endl;
 		for (r = 0; r < 4; r++) {
 			// gives a random number between 0 and image width
-			rand_x = rand() % descriptors.size();
 			//rand_y = rand() % img_cols;
+			rand_x = rand() % descriptors.size();
+			while(distances[rand_x] > 50){
+				rand_x = rand() % descriptors.size();
+			}
 			cout << " " << rand_x;
 			x[r] = descriptors[rand_x].col;
 			y[r] = descriptors[rand_x].row;
@@ -466,7 +469,7 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 		}
 		if (areTheyCloseBy(x, y) == 1) {
 			//reject these points and start over
-			cout << " skip";
+			cout << "\nskip";
 			continue;
 		}
 		//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
@@ -798,6 +801,7 @@ int main(int argc, char **argv) {
 				cout << endl << "\n\n Main global: ";
 				for (int v = 0; v < 8; v++)
 					cout << global_h(0, v) << " ";
+				cout<<"\n";
 			}
 		} else
 			throw std::string("unknown part!");
