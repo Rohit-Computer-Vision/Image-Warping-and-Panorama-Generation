@@ -11,6 +11,7 @@
 #include <map>
 #include <math.h>
 #include <ctime>
+#include <algorithm>
 
 //Use the cimg namespace to access the functions easily
 using namespace cimg_library;
@@ -114,8 +115,8 @@ vector<vector<int> > quantize_vectors(const vector<SiftDescriptor> descriptors,
 	return result;
 }
 
-void findInverse(double transformation[3][3], double t_inv[3][3]) {
-	double det = transformation[0][0]
+double findDet(double transformation[3][3]) {
+	return transformation[0][0]
 			* (transformation[1][1] * transformation[2][2]
 					- transformation[2][1] * transformation[1][2])
 			- transformation[0][1]
@@ -124,6 +125,10 @@ void findInverse(double transformation[3][3], double t_inv[3][3]) {
 			+ transformation[0][2]
 					* (transformation[1][0] * transformation[2][1]
 							- transformation[1][1] * transformation[2][0]);
+}
+
+void findInverse(double transformation[3][3], double t_inv[3][3]) {
+	double det = findDet(transformation);
 
 	cout << endl << "Determinant:" << det << endl;
 	double invdet = 1 / det;
@@ -155,6 +160,20 @@ void findInverse(double transformation[3][3], double t_inv[3][3]) {
 	t_inv[2][2] = invdet
 			* (transformation[0][0] * transformation[1][1]
 					- transformation[1][0] * transformation[0][1]);
+}
+
+int areTheyCloseBy(int x[4], int y[4]) {
+	//this function skips the iteration if any pair out of the 4 points randomly generated is close by
+	int x2[4] = {x[0], x[1], x[2], x[3]};
+	int y2[4] = {y[0], y[1], y[2], y[3]};
+	sort(x2, x2 + 4);
+	sort(y2, y2 + 4);
+	for (int i = 0; i < 3; i++) {
+		if (x2[i + 1] - x2[i] < 20 || y2[i + 1] - y2[i] < 20) {
+			return 1;
+		}
+	}
+	return 0;
 }
 
 void inverseWarp(CImg<double> input_image, CImg<double>& warped,
@@ -432,19 +451,24 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 	for (int q = 0; q < reps; q++) {
 		cout << endl << "Rep:" << q;
 		inliers = 0;
-		srand(time(NULL));
+
 //		cout << "\npoints: " << endl;
 		for (r = 0; r < 4; r++) {
 			// gives a random number between 0 and image width
-			rand_x = rand() % img_rows;
-			rand_y = rand() % img_cols;
+			rand_x = rand() % descriptors.size();
+			//rand_y = rand() % img_cols;
+			cout << " " << rand_x;
 			x[r] = descriptors[rand_x].col;
-			y[r] = descriptors[rand_y].row;
+			y[r] = descriptors[rand_x].row;
 			x_dash[r] = matches[rand_x].col;
-			y_dash[r] = matches[rand_y].row;
+			y_dash[r] = matches[rand_x].row;
 //			cout << x[r] << "," << y[r] << " " << x_dash[r] << "," << y_dash[r] << endl;
 		}
-
+		if (areTheyCloseBy(x, y) == 1) {
+			//reject these points and start over
+			cout << " skip";
+			continue;
+		}
 		//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
 		for (k = 0; k < 8; k += 2) {
 			int u = k / 2;
@@ -460,6 +484,7 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 			trans(7, k + 1) = -y[u] * y_dash[u];
 			new_coords(0, k + 1) = y_dash[u];
 		}
+
 //		cout << "\ntrans: " << endl;
 //		for (k = 0; k < 8; k++) {
 //			for (int k2 = 0; k2 < 8; k2++)
@@ -549,12 +574,13 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 	CImg<double> warped1 = input_image;
 	inverseWarp(input_image, warped1, homography, 0);
 	warped1.save("part2-q2_1.png");
-	CImg<double> warped2 = input_image2;
+	/*CImg<double> warped2 = input_image2;
 	inverseWarp(input_image2, warped2, homography, 0);
-	warped2.save("part2-q2_2.png");
+	warped2.save("part2-q2_2.png");*/
 }
 
 int main(int argc, char **argv) {
+	srand(time(NULL));
 	try {
 		DIR *dir;
 		struct dirent *ent;
