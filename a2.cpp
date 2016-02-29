@@ -759,17 +759,13 @@ int main(int argc, char **argv) {
 				double det;
 				double homography[3][3];
 				string filename;
-				int tries = 0;
 				for (int img = 4; img < argc; img++) {
 					det = 0.0;
-					tries = 0;
-					while (tries < 10 && (det < 0.2 || det > 5.0)) {
-						cout << "\n" << argv[img] << "try " << tries << endl;
+					//while (tries < 5 && (det < 0.2 || det > 5.0)) {
+						cout << "\n" << argv[img] << endl;
 						part2q2(argv[3], argv[img], global_h);
 						convert_to_3x3(global_h, homography);
-						det = findDet(homography);
-						tries++;
-					}
+						//det = findDet(homography);
 					inverseWarp(input_image, warped, homography, 0);
 					filename = string(argv[img]) + "warped.png";
 					warped.save(filename.c_str());
