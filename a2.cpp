@@ -130,7 +130,7 @@ double findDet(double transformation[3][3]) {
 void findInverse(double transformation[3][3], double t_inv[3][3]) {
 	double det = findDet(transformation);
 
-	cout << endl << "Determinant:" << det << endl;
+	//cout << endl << "Determinant:" << det << endl;
 	double invdet = 1 / det;
 
 	t_inv[0][0] = invdet
@@ -428,7 +428,6 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 	CImg<double> trans(8, 8);
 	trans.fill(0, 0, 0);
 	CImg<double> h(1, 8);
-	//CImg<double> global_h(1, 8); //declared already
 	double homography[3][3]; //to pass to inverseWarp
 	CImg<double> new_coords(1, 8);
 	CImg<double> warped = input_image;
@@ -449,27 +448,22 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 	int q = -1, reps = 10000;
 	int threshold = 15; //radius of pixel range to check for classifying a point as an inlier
 	for (int q = 0; q < reps; q++) {
-		cout << endl << "Rep:" << q;
+		//cout << endl << "Rep:" << q;
 		inliers = 0;
 
-//		cout << "\npoints: " << endl;
 		for (r = 0; r < 4; r++) {
 			// gives a random number between 0 and image width
-			//rand_y = rand() % img_cols;
 			rand_x = rand() % descriptors.size();
 			while (distances[rand_x] > 50) {
 				rand_x = rand() % descriptors.size();
 			}
-			cout << " " << rand_x;
 			x[r] = descriptors[rand_x].col;
 			y[r] = descriptors[rand_x].row;
 			x_dash[r] = matches[rand_x].col;
 			y_dash[r] = matches[rand_x].row;
-//			cout << x[r] << "," << y[r] << " " << x_dash[r] << "," << y_dash[r] << endl;
 		}
 		if (areTheyCloseBy(x, y) == 1) {
 			//reject these points and start over
-			cout << "\nskip";
 			continue;
 		}
 		//calculating the 1st matrix trans and 3rd matrix new_coords (lec09_slide40)
@@ -488,28 +482,8 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 			new_coords(0, k + 1) = y_dash[u];
 		}
 
-//		cout << "\ntrans: " << endl;
-//		for (k = 0; k < 8; k++) {
-//			for (int k2 = 0; k2 < 8; k2++)
-//				cout << trans(k2, k) << " ";
-//			cout << endl;
-//		}
-//		cout << "\nnew_coords: " << endl;
-//		for (k = 0; k < 8; k++)
-//			cout << new_coords(0, k) << " ";
 		h = new_coords;
 		h.solve(trans);
-		/*cout << endl << "trans: ";
-		 for (int v = 0; v < 8; v++) {
-		 for (int l = 0; l < 8; l++)
-		 cout << trans(v,l) << " ";
-		 cout << endl << "";
-		 }
-		 cout << endl << "new_coords: ";
-		 for (int v = 0; v < 8; v++)
-		 cout << new_coords(0, v) << " ";
-		 cout << endl << "";*/
-
 		convert_to_3x3(h, homography);
 		for (int m = 0; m < descriptors.size() - 1; m++) {
 			image_x = descriptors[m].col;
@@ -527,18 +501,7 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 			new_image_x_dash /= new_image_w_dash;
 			new_image_y_dash /= new_image_w_dash;
 
-			// //cout << endl;
-			// for (int b = 0; b < 3; b++)
-			// 	for (int c = 0; c < 3; c++)
-			// 		cout << homography[b][c] << " ";
-			// //cout << endl;
-
-			// cout << "\nnew: " << new_image_x_dash << ","
-			// 		<< new_image_y_dash << endl;
-			// cout << "img: " << image_x_dash << "," << image_y_dash;
-
 			//check number of inliers and save best h
-
 			if (new_image_x_dash >= image_x_dash - threshold
 					&& new_image_x_dash <= image_x_dash + threshold) {
 				if (new_image_y_dash >= image_y_dash - threshold
@@ -547,32 +510,14 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 				}
 			}
 		}
-		cout << " Inliers: " << inliers;
+		//cout << " Inliers: " << inliers;
 		if (max_inliers < inliers) {
 			max_inliers = inliers;
 			global_h = h;
-			/*cout << "\nh: ";
-			 for (int v = 0; v < 8; v++)
-			 cout << h(0, v) << " ";
-
-			 cout << endl << "global: ";
-			 for (int v = 0; v < 8; v++)
-			 cout << global_h(0, v) << " "; */
-
 		}
 
 	}
-	cout << endl << "Global h: ";
-	for (int g = 0; g < 8; g++) {
-		cout << global_h(0, g) << " ";
-	}
-	cout << endl;
 	convert_to_3x3(global_h, homography);
-	cout << endl << "Global homography: ";
-	for (int g = 0; g < 3; g++)
-		for (int g2 = 0; g2 < 3; g2++)
-			cout << homography[g][g2] << " ";
-	cout << endl;
 
 	CImg<double> warped1 = input_image;
 	inverseWarp(input_image, warped1, homography, 0);
@@ -801,7 +746,7 @@ int main(int argc, char **argv) {
 				cout << "\n";
 			} else if (question == "q3") {
 				//void part2q2(string inputFile, string infile2, CImg<double> &global_h)
-				cout << "Part2 - Question 2:" << endl;
+				cout << "Part2 - Question 3:" << endl;
 				if (argc < 4) {
 					cout << "Insufficent number of arguments; correct usage:"
 							<< endl;
@@ -810,23 +755,21 @@ int main(int argc, char **argv) {
 				}
 				CImg<double> global_h(1, 8);
 				CImg<double> input_image(argv[3]);
-				CImg<double> warped1 = input_image;
+				CImg<double> warped = input_image;
 				double det;
 				double homography[3][3];
 				string filename;
 				for (int img = 4; img < argc; img++) {
 					det = 0.0;
 					cout << "\nFor " << argv[img] << endl;
-					while(det < 0.2 || det > 5.0) {
-						cout<<argv[3]<<"\n";
-						cout<<argv[img]<<"\n";
+					while (det < 0.2 || det > 5.0) {
 						part2q2(argv[3], argv[img], global_h);
 						convert_to_3x3(global_h, homography);
 						det = findDet(homography);
 					}
-					inverseWarp(input_image, warped1, homography, 0);
+					inverseWarp(input_image, warped, homography, 0);
 					filename = string(argv[img]) + "warped.png";
-					warped1.save(filename.c_str());
+					warped.save(filename.c_str());
 				}
 			}
 		} else
