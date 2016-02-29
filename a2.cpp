@@ -164,8 +164,8 @@ void findInverse(double transformation[3][3], double t_inv[3][3]) {
 
 int areTheyCloseBy(int x[4], int y[4]) {
 	//this function skips the iteration if any pair out of the 4 points randomly generated is close by
-	int x2[4] = {x[0], x[1], x[2], x[3]};
-	int y2[4] = {y[0], y[1], y[2], y[3]};
+	int x2[4] = { x[0], x[1], x[2], x[3] };
+	int y2[4] = { y[0], y[1], y[2], y[3] };
 	sort(x2, x2 + 4);
 	sort(y2, y2 + 4);
 	for (int i = 0; i < 3; i++) {
@@ -457,7 +457,7 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 			// gives a random number between 0 and image width
 			//rand_y = rand() % img_cols;
 			rand_x = rand() % descriptors.size();
-			while(distances[rand_x] > 50){
+			while (distances[rand_x] > 50) {
 				rand_x = rand() % descriptors.size();
 			}
 			cout << " " << rand_x;
@@ -577,9 +577,6 @@ void part2q2(string inputFile, string infile2, CImg<double> &global_h) {
 	CImg<double> warped1 = input_image;
 	inverseWarp(input_image, warped1, homography, 0);
 	warped1.save("part2-q2_1.png");
-	/*CImg<double> warped2 = input_image2;
-	inverseWarp(input_image2, warped2, homography, 0);
-	warped2.save("part2-q2_2.png");*/
 }
 
 int main(int argc, char **argv) {
@@ -801,7 +798,29 @@ int main(int argc, char **argv) {
 				cout << endl << "\n\n Main global: ";
 				for (int v = 0; v < 8; v++)
 					cout << global_h(0, v) << " ";
-				cout<<"\n";
+				cout << "\n";
+			} else if (question == "q3") {
+				//void part2q2(string inputFile, string infile2, CImg<double> &global_h)
+				cout << "Part2 - Question 2:" << endl;
+				if (argc < 4) {
+					cout << "Insufficent number of arguments; correct usage:"
+							<< endl;
+					cout << "    a2 part_id question_number ..." << endl;
+					return -1;
+				}
+				CImg<double> global_h(1, 8);
+				CImg<double> input_image(argv[3]);
+				CImg<double> warped1 = input_image;
+				double homography[3][3];
+				string filename;
+				for (int img = 4; img < argc; img++) {
+					cout << "\nFor " << argv[img] << endl;
+					part2q2(argv[3], argv[img], global_h);
+					convert_to_3x3(global_h, homography);
+					inverseWarp(input_image, warped1, homography, 0);
+					filename = string(argv[img]) + "warped.png";
+					warped1.save(filename.c_str());
+				}
 			}
 		} else
 			throw std::string("unknown part!");
