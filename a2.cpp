@@ -811,12 +811,19 @@ int main(int argc, char **argv) {
 				CImg<double> global_h(1, 8);
 				CImg<double> input_image(argv[3]);
 				CImg<double> warped1 = input_image;
+				double det;
 				double homography[3][3];
 				string filename;
 				for (int img = 4; img < argc; img++) {
+					det = 0.0;
 					cout << "\nFor " << argv[img] << endl;
-					part2q2(argv[3], argv[img], global_h);
-					convert_to_3x3(global_h, homography);
+					while(det < 0.2 || det > 5.0) {
+						cout<<argv[3]<<"\n";
+						cout<<argv[img]<<"\n";
+						part2q2(argv[3], argv[img], global_h);
+						convert_to_3x3(global_h, homography);
+						det = findDet(homography);
+					}
 					inverseWarp(input_image, warped1, homography, 0);
 					filename = string(argv[img]) + "warped.png";
 					warped1.save(filename.c_str());
